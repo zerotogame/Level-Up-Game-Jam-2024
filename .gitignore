@@ -1,0 +1,12 @@
+# Ignore everything
+/*
+
+# But don't ignore the Assets directory
+!/Assets
+!.gitignore
+
+# However, ignore .meta files within the Assets directory
+/Assets/*.meta
+
+# Ignore idea directory
+.idea
