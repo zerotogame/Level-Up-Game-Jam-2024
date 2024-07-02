@@ -1,9 +1,13 @@
 # Ignore everything
 /*
 
-# But don't ignore the Assets directory
+# But don't ignore this directories
 !/Assets
 !.gitignore
+!/ProjectSettings
+!/UserSettings
+!/Packages
+!/.collabignore
 
 # However, ignore .meta files within the Assets directory
 /Assets/*.meta
