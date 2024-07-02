@@ -1,6 +1,10 @@
+# Ignore directories
+
 /Library
+/Temp
 /Logs
 /UserSettings
+
 
 # Ignore idea directory
 .idea
