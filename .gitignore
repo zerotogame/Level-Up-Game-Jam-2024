@@ -8,8 +8,5 @@
 !/Packages
 !/.collabignore
 
-# However, ignore .meta files within the Assets directory
-/Assets/*.meta
-
 # Ignore idea directory
 .idea
