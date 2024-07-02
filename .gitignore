@@ -1,12 +1,6 @@
-# Ignore everything
-/*
-
-# But don't ignore this directories
-!/Assets
-!.gitignore
-!/ProjectSettings
-!/Packages
-!/.collabignore
+/Library
+/Logs
+/UserSettings
 
 # Ignore idea directory
 .idea
