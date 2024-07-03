@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1802642955079909093}
   - component: {fileID: -3757955129084171057}
   - component: {fileID: -8230983506476086849}
+  - component: {fileID: 3165183638869521326}
   m_Layer: 5
   m_Name: iglesia
   m_TagString: Untagged
@@ -89,3 +90,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _type: Casa
+--- !u!114 &3165183638869521326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8389172065662445546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1318c061cb38d4480b5e71881415a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 0}
