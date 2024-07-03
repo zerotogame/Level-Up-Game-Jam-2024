@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 135250938}
   - component: {fileID: 135250940}
   - component: {fileID: 135250939}
+  - component: {fileID: 135250941}
   m_Layer: 5
   m_Name: Area-
   m_TagString: Untagged
@@ -197,6 +198,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135250937}
   m_CullTransparentMesh: 1
+--- !u!114 &135250941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135250937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e82bb7bdcf706b44afc90ad0fa5653e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  numberOfPrefabs: 3
+  area: {fileID: 0}
+  buildings:
+  - {fileID: -8230983506476086849, guid: cf5252106cb68a14fb131562f1f31580, type: 3}
+  - {fileID: -8230983506476086849, guid: 95395b8d3a146a14c98c2afdf2dd1c25, type: 3}
+  - {fileID: -8230983506476086849, guid: 3115d07668c0d2245922b870a8a51d7b, type: 3}
 --- !u!1 &186401903
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +228,7 @@ GameObject:
   - component: {fileID: 186401904}
   - component: {fileID: 186401906}
   - component: {fileID: 186401905}
+  - component: {fileID: 186401907}
   m_Layer: 5
   m_Name: Area-Eris
   m_TagString: Untagged
@@ -272,6 +293,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186401903}
   m_CullTransparentMesh: 1
+--- !u!114 &186401907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186401903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e82bb7bdcf706b44afc90ad0fa5653e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  numberOfPrefabs: 3
+  area: {fileID: 0}
+  buildings:
+  - {fileID: -8230983506476086849, guid: cf5252106cb68a14fb131562f1f31580, type: 3}
+  - {fileID: -8230983506476086849, guid: 95395b8d3a146a14c98c2afdf2dd1c25, type: 3}
+  - {fileID: -8230983506476086849, guid: 3115d07668c0d2245922b870a8a51d7b, type: 3}
 --- !u!1 &218183157
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +323,7 @@ GameObject:
   - component: {fileID: 218183158}
   - component: {fileID: 218183160}
   - component: {fileID: 218183159}
+  - component: {fileID: 218183161}
   m_Layer: 5
   m_Name: Area-Loki
   m_TagString: Untagged
@@ -347,6 +388,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218183157}
   m_CullTransparentMesh: 1
+--- !u!114 &218183161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218183157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e82bb7bdcf706b44afc90ad0fa5653e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  numberOfPrefabs: 3
+  area: {fileID: 0}
+  buildings:
+  - {fileID: -8230983506476086849, guid: cf5252106cb68a14fb131562f1f31580, type: 3}
+  - {fileID: -8230983506476086849, guid: 95395b8d3a146a14c98c2afdf2dd1c25, type: 3}
+  - {fileID: -8230983506476086849, guid: 3115d07668c0d2245922b870a8a51d7b, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
