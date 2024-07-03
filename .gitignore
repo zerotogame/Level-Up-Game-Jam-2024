@@ -4,7 +4,7 @@
 /Temp
 /Logs
 /UserSettings
-/Assets
+/Assets/Plugins
 
 # Ignore idea directory
 .idea
