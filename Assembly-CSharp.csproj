@@ -63,7 +63,10 @@
     <Compile Include="Assets\Scripts\instanceBuilding.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\Card.cs" />
+    <Compile Include="Assets\Scripts\BarraScripts\BarraLocura.cs" />
     <Compile Include="Assets\Scripts\BuildingPoint.cs" />
+    <Compile Include="Assets\Scripts\GameController\GameContStat.cs" />
+    <Compile Include="Assets\Scripts\Personaje\Personaje.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
