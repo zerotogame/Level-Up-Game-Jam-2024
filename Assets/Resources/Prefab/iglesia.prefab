@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1802642955079909093}
   - component: {fileID: -3757955129084171057}
   - component: {fileID: -8230983506476086849}
-  - component: {fileID: 3165183638869521326}
+  - component: {fileID: -8293868463678346799}
   m_Layer: 5
   m_Name: iglesia
-  m_TagString: Untagged
+  m_TagString: PointBuilding
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,17 +89,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ee0fac743978242921e145a9e90577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: Casa
---- !u!114 &3165183638869521326
-MonoBehaviour:
+  _type: Iglesia
+  cardPrefab: {fileID: 0}
+--- !u!61 &-8293868463678346799
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8389172065662445546}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c1318c061cb38d4480b5e71881415a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 0}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

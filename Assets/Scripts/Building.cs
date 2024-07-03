@@ -7,7 +7,7 @@ public class Building : MonoBehaviour
 {
     private string _objectID;
     public string _type;
-
+    public Card cardPrefab; // Referencia al prefab de la carta
 
     public Building(string objectID, string type)
     {
@@ -27,6 +27,19 @@ public class Building : MonoBehaviour
         set { _type = value; }
     }
 
+    public void SetCardPrefab(Card card)
+    {
+        cardPrefab = card;
+        Debug.Log("Card Prefab set to: " + (cardPrefab != null ? cardPrefab.name : "null"));
+        // Aquí puedes realizar cualquier acción adicional necesaria al establecer el prefab de la carta
+    }
+
+    public void ClearCardPrefab()
+    {
+        cardPrefab = null;
+        Debug.Log("Card Prefab cleared.");
+        // Aquí puedes realizar cualquier acción adicional necesaria al limpiar el prefab de la carta
+    }
 
     void generateId()
     {
