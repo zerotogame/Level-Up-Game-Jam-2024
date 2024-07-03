@@ -11,6 +11,8 @@ public class instanceBuilding : MonoBehaviour
 
       void Start()
       {
+          area = GetComponent<RectTransform>();
+
           for (int i = 0; i < numberOfPrefabs; i++)
           {
               InstantiatePrefabInArea();
