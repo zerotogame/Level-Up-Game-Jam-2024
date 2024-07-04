@@ -12,11 +12,20 @@ public class BarraLocura : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         GameContStat.velocidadPersonajesLoki = 2f;
         GameContStat.velocidadPersonajesVeles = 2f;
         GameContStat.velocidadPersonajesEris = 2f;
         GameContStat.velocidadPersonajesCthulhu = 2f;
-}
+    }
+    private void Update()
+    {
+        if(barraLocura.fillAmount == 1)
+        {
+            victoryPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
 
     // -------PANELES BOTONES--------------
     public void PauseButton() 
@@ -38,8 +47,11 @@ public class BarraLocura : MonoBehaviour
     {
         Application.Quit();
     }
-
-
+    public void ReiniciarButton() 
+    {
+        SceneManager.LoadScene("BarraYPersonajes");
+        Time.timeScale = 1f;
+    }
 
     // -------PERONAJES BOTONES--------------
     public void LokiMasLocura() 
