@@ -9,7 +9,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void JugarBoton() 
     {
-        SceneManager.LoadScene("BarraYPersonajes");
+        SceneManager.LoadScene("Game");
     }
 
     public void SalirBoton()

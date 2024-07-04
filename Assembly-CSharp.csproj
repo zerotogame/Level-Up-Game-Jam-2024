@@ -61,35 +61,57 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Personaje\RandomWalkManager.cs" />
+    <Compile Include="Assets\Scripts\Cards\DraggableCard.cs" />
     <Compile Include="Assets\Scripts\instanceBuilding.cs" />
     <Compile Include="Assets\Scripts\GameController\MainMenuManager.cs" />
+    <Compile Include="Assets\Scripts\Cards\Mazo.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
-    <Compile Include="Assets\Scripts\Card.cs" />
+    <Compile Include="Assets\Scripts\Cards\Card.cs" />
     <Compile Include="Assets\Scripts\BarraScripts\BarraLocura.cs" />
-    <Compile Include="Assets\Scripts\BuildingPoint.cs" />
     <Compile Include="Assets\Scripts\GameController\GameContStat.cs" />
     <Compile Include="Assets\Scripts\Personaje\Personaje.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Event\{0ea81685-82b9-4c78-a36b-08ee83db7185}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Event\{d9cff275-bf7b-4d96-891a-6c685dad3753}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\BankFolder\{06206104-162c-4095-bcd7-c89c2c24a7c4}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EncodingSetting\{f41aa176-4a44-41e2-8bfb-05766fa053e2}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{a1bbdb2a-778e-4d54-a00b-b5c78bc77f47}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\SnapshotGroup\{f923bfbf-f558-4f53-9407-0a589ec99770}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\ParameterPresetFolder\{545c4017-bfcf-4855-9ae7-d26d8fbcfa5b}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{bac71758-fbe5-4bf9-93f6-1253f5731db7}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Master.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Asset\{e262cec8-b807-41ad-b8cd-6aac5d01144e}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Tags.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Bank\{a34f360a-ffa1-42d8-a1bf-b77417665359}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EffectPresetFolder\{60d4a08d-dcee-4042-98ae-c94c428bf0e1}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\SandboxFolder\{b7cf8eea-bfdc-4a66-8bb4-e3f484e0d4dd}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Return\{a0442cfc-7e87-408b-a102-4ca3bbf564ea}.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{14bfd137-80a8-495d-ba09-d73abf5e269a}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Mixer.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{bf48c664-cacf-4e86-ac44-0dbc5c244252}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Workspace.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Platform\{c60852e5-0435-49a5-a45b-f304f984d230}.xml" />
+    <None Include="Assets\Resources\Insanity board FMOD\Metadata\ProfilerFolder\{8926f052-d474-4b04-b0fa-e5f985770fc3}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>

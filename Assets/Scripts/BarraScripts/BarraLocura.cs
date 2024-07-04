@@ -94,7 +94,7 @@ public class BarraLocura : MonoBehaviour
     }
     public void ReiniciarButton()
     {
-        SceneManager.LoadScene("BarraYPersonajes");
+        SceneManager.LoadScene("Game");
         Time.timeScale = 1f;
     }
     private void CondicionDeVictoria()
