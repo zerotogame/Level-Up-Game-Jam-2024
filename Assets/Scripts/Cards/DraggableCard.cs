@@ -3,13 +3,16 @@ using UnityEngine.EventSystems;
 
 public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDragHandler
 {
-    private bool isDraggable = true; // Flag para verificar si la carta es draggable
-
-    private RectTransform rectTransform;
-    private Canvas canvas;
-
-    private Card card; // Referencia al objeto Card que esta DraggableCard representa
-    private Building currentBuilding; // Para mantener el Building actual
+    [SerializeField]
+    public bool isDraggable = true; // Flag para verificar si la carta es draggable
+    [SerializeField]
+    public RectTransform rectTransform;
+    [SerializeField]
+    public Canvas canvas;
+    [SerializeField]
+    public Card card; // Referencia al objeto Card que esta DraggableCard representa
+    [SerializeField]
+    public Building currentBuilding; // Para mantener el Building actual
 
     void Start()
     {
@@ -49,6 +52,8 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         if (currentBuilding != null)
         {
             currentBuilding.SetCardPrefab(card);
+            SetDraggable(false); // Hacer que la carta no sea arrastrable
+            CenterAndResizeCard(currentBuilding); // Centrar y reducir la carta
         }
     }
 
@@ -79,5 +84,16 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
                 Debug.Log("Exited Building: " + collision.gameObject.name);
             }
         }
+    }
+
+    // Método para centrar la carta en el Building y reducir su tamaño a la mitad
+    private void CenterAndResizeCard(Building building)
+    {
+        // Centrar la carta en el Building
+        transform.SetParent(building.transform);
+        rectTransform.anchoredPosition = Vector2.zero;
+
+        // Reducir el tamaño de la carta a la mitad
+        rectTransform.localScale = new Vector3(0.5f, 0.5f, 1f);
     }
 }
