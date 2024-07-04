@@ -8,7 +8,7 @@ public class Card : MonoBehaviour
 {
    [SerializeField] private string cardName;
    [SerializeField] private string cardDescription;
-   [SerializeField] private Sprite cardImage;
+   //[SerializeField] private Sprite cardImage;
    [SerializeField] private int cardCost;
 
     public bool checkboxVelvet;
@@ -33,12 +33,13 @@ public class Card : MonoBehaviour
         set { cardDescription = value; }
     }
 
+/*
     public Sprite CardImage
     {
         get { return cardImage; }
         set { cardImage = value; }
     }
-
+*/
 
     public void Play()
     {

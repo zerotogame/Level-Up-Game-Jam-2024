@@ -14,11 +14,15 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     [SerializeField]
     public Building currentBuilding; // Para mantener el Building actual
 
+    private Vector2 originalPosition; // Para guardar la posición original de la carta
+
+
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         card = GetComponent<Card>(); // Asegúrate de tener una referencia al componente Card
+        originalPosition = rectTransform.anchoredPosition; // Guardar la posición original al inicio
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -54,7 +58,10 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             currentBuilding.SetCardPrefab(card);
             SetDraggable(false); // Hacer que la carta no sea arrastrable
             CenterAndResizeCard(currentBuilding); // Centrar y reducir la carta
-        }
+        } else{
+           // Si no hay Building válido, volver a la posición original
+           rectTransform.anchoredPosition = originalPosition;
+       }
     }
 
     // Método para cambiar el estado de draggable desde fuera del script

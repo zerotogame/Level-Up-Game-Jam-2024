@@ -4,48 +4,104 @@ using System.Linq;
 
 public class Mazo : MonoBehaviour
 {
+    [Header("Paths de las cartas")]
+    [SerializeField] private string velesPath = "Prefabs/Cards/Veles_Card";
+    [SerializeField] private string lokiPath = "Prefabs/Cards/Loki_Card";
+    [SerializeField] private string cthuluPath = "Prefabs/Cards/Cthulu_Card";
+    [SerializeField] private string erisPath = "Prefabs/Cards/Eris_Card";
 
-    private static string cardPath = "Assets/Resources/Prefab/Cards/";
-    public string velvetPath = cardPath+"Velvet_Card";
-    public string lokiPath = cardPath+"Loki_Card";
-    public string cthuluPath = cardPath+"Cuthulu_Card";
-    public string erisPath = cardPath+"Eris_Card";
+    public int totalCartasDioses = 2;
 
-    private List<GameObject> velvetCartas = new List<GameObject>();
+    private List<GameObject> velesCartas = new List<GameObject>();
     private List<GameObject> lokiCartas = new List<GameObject>();
     private List<GameObject> cthuluCartas = new List<GameObject>();
     private List<GameObject> erisCartas = new List<GameObject>();
 
+    private int currentContainerIndex = 0; // Índice para seguir el orden de los contenedores
+
     void Start()
     {
         // Cargar prefabs desde las carpetas
-        velvetCartas = LoadPrefabsFromFolder(velvetPath);
+        velesCartas = LoadPrefabsFromFolder(velesPath);
+        Debug.Log("Cartas de Veles: " + velesCartas.Count);
         lokiCartas = LoadPrefabsFromFolder(lokiPath);
+        Debug.Log("Cartas de Loki: " + lokiCartas.Count);
         cthuluCartas = LoadPrefabsFromFolder(cthuluPath);
+        Debug.Log("Cartas de Cthulu: " + cthuluCartas.Count);
         erisCartas = LoadPrefabsFromFolder(erisPath);
+        Debug.Log("Cartas de Eris: " + erisCartas.Count);
 
         // Instanciar cartas
-        InstanciarCartas(velvetCartas, 2);
-        InstanciarCartas(lokiCartas, 2);
-        InstanciarCartas(cthuluCartas, 2);
-        InstanciarCartas(erisCartas, 2);
+        InstanciarCartasEnContenedor(velesCartas, totalCartasDioses);
+        InstanciarCartasEnContenedor(lokiCartas, totalCartasDioses);
+        InstanciarCartasEnContenedor(cthuluCartas, totalCartasDioses);
+        InstanciarCartasEnContenedor(erisCartas, totalCartasDioses);
     }
 
     List<GameObject> LoadPrefabsFromFolder(string path)
     {
-        return Resources.LoadAll<GameObject>(path).ToList();
+        Debug.Log("Cargando prefabs de la ruta: " + path);
+        Object[] loadedObjects = Resources.LoadAll<GameObject>(path);
+        List<GameObject> loadedPrefabs = new List<GameObject>();
+
+        foreach (Object obj in loadedObjects)
+        {
+            if (obj is GameObject go)
+            {
+                if (go.GetComponent<Card>() != null)
+                {
+                    loadedPrefabs.Add(go);
+                }
+            }
+        }
+
+        if (loadedPrefabs.Count == 0)
+        {
+            Debug.LogError("No se encontraron prefabs en la ruta: " + path);
+        }
+
+        return loadedPrefabs;
     }
 
-    void InstanciarCartas(List<GameObject> cartas, int cantidad)
+    void InstanciarCartasEnContenedor(List<GameObject> cartas, int cantidad)
     {
-        //DEBUG.Log("Instanciando cartas total cartas " + cartas.Count + " cantidad " + cantidad);
-        for (int i = 0; i < cantidad; i++)
+        if (cartas.Count < cantidad)
         {
-            if (cartas.Count == 0) break;
+            Debug.LogError($"No hay suficientes cartas para instanciar {cantidad} cartas.");
+            return;
+        }
 
-            int randomIndex = Random.Range(0, cartas.Count);
-            GameObject cartaPrefab = cartas[randomIndex];
-            Instantiate(cartaPrefab, transform);
+        // Obtener todos los contenedores "container_card" bajo Mazo
+        Transform[] containers = transform.GetComponentsInChildren<Transform>()
+                                  .Where(t => t.name == "container_card").ToArray();
+
+        if (containers.Length == 0)
+        {
+            Debug.LogError("No se encontraron contenedores 'container_card' bajo Mazo.");
+            return;
+        }
+
+        // Instanciar una carta en cada contenedor en orden
+        for (int i = 0; i < Mathf.Min(containers.Length, cantidad); i++)
+        {
+            // Asegurar que no exceda el número de cartas disponibles
+            if (cartas.Count == 0)
+            {
+                Debug.LogWarning("Se acabaron las cartas disponibles.");
+                break;
+            }
+
+            // Obtener la carta correspondiente según el índice actual
+            GameObject cartaPrefab = cartas[0];
+
+            // Instanciar la carta en el contenedor actual
+            Instantiate(cartaPrefab, containers[currentContainerIndex]);
+
+            Debug.Log($"Instanciando carta {cartaPrefab.name} en contenedor {containers[currentContainerIndex].name}");
+
+            // Eliminar el prefab de la lista para evitar duplicados y avanzar al siguiente contenedor
+            cartas.RemoveAt(0);
+            currentContainerIndex = (currentContainerIndex + 1) % containers.Length; // Avanzar circularmente
         }
     }
 }

@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   m_Layer: 5
-  m_Name: Card 3
-  m_TagString: Cuthulu_Card
+  m_Name: Card_Loki_2
+  m_TagString: Loki_Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,10 +110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: 
   cardDescription: 
-  cardImage: {fileID: 0}
   cardCost: 0
   checkboxVelvet: 0
-  checkboxLoki: 0
+  checkboxLoki: 1
   checkboxCuthulu: 0
   checkboxEris: 0
 --- !u!61 &8486616435051818566

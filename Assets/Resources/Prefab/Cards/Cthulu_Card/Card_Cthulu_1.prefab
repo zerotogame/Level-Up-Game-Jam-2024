@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8389172065662445546
+--- !u!1 &8483634528787715998
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 112170156161529349}
-  - component: {fileID: 1802642955079909093}
-  - component: {fileID: -3757955129084171057}
-  - component: {fileID: -8230983506476086849}
-  - component: {fileID: -8293868463678346799}
-  - component: {fileID: 1662150288620120877}
+  - component: {fileID: 3693726282245405198}
+  - component: {fileID: 7833704400353582858}
+  - component: {fileID: 2276869944980965969}
+  - component: {fileID: 1545474640387188820}
+  - component: {fileID: 1324077976571218424}
+  - component: {fileID: 8486616435051818566}
+  - component: {fileID: 7905241211896955286}
   m_Layer: 5
-  m_Name: iglesia
-  m_TagString: PointBuilding
+  m_Name: Card_Cthulu_1
+  m_TagString: Cuthulu_Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &112170156161529349
+--- !u!224 &3693726282245405198
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8389172065662445546}
+  m_GameObject: {fileID: 8483634528787715998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -35,26 +36,26 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 100}
+  m_SizeDelta: {x: 100, y: 180.54}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1802642955079909093
+--- !u!222 &7833704400353582858
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8389172065662445546}
+  m_GameObject: {fileID: 8483634528787715998}
   m_CullTransparentMesh: 1
---- !u!114 &-3757955129084171057
+--- !u!114 &2276869944980965969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8389172065662445546}
+  m_GameObject: {fileID: 8483634528787715998}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -68,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3ce5bab87e00c3a4cacaf5f629cadd55, type: 3}
+  m_Sprite: {fileID: 31126026, guid: e5199c89c79c48a4f8032b77c35f51a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -78,27 +79,49 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-8230983506476086849
+--- !u!114 &1545474640387188820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8389172065662445546}
+  m_GameObject: {fileID: 8483634528787715998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64ee0fac743978242921e145a9e90577, type: 3}
+  m_Script: {fileID: 11500000, guid: 28a35ae81f13b944ba5e0f82dbc637eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: Iglesia
-  cardPrefab: {fileID: 0}
---- !u!61 &-8293868463678346799
+  isDraggable: 1
+  rectTransform: {fileID: 0}
+  canvas: {fileID: 0}
+  card: {fileID: 0}
+  currentBuilding: {fileID: 0}
+--- !u!114 &1324077976571218424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483634528787715998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc67fbe3583e1f640bdb834dce8193aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardName: 
+  cardDescription: 
+  cardCost: 0
+  checkboxVelvet: 0
+  checkboxLoki: 0
+  checkboxCuthulu: 1
+  checkboxEris: 0
+--- !u!61 &8486616435051818566
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8389172065662445546}
+  m_GameObject: {fileID: 8483634528787715998}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -135,16 +158,16 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 70, y: 100}
+  m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0
---- !u!50 &1662150288620120877
+--- !u!50 &7905241211896955286
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8389172065662445546}
+  m_GameObject: {fileID: 8483634528787715998}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0

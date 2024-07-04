@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   m_Layer: 5
-  m_Name: Card 5
+  m_Name: Card_Eris_2
   m_TagString: Eris_Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,12 +110,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: 
   cardDescription: 
-  cardImage: {fileID: 0}
   cardCost: 0
   checkboxVelvet: 0
   checkboxLoki: 0
   checkboxCuthulu: 0
-  checkboxEris: 0
+  checkboxEris: 1
 --- !u!61 &8486616435051818566
 BoxCollider2D:
   m_ObjectHideFlags: 0

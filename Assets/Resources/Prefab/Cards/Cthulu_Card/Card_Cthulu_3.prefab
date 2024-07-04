@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   m_Layer: 5
-  m_Name: Card 4
-  m_TagString: Eris_Card
+  m_Name: Card_Cthulu_3
+  m_TagString: Cuthulu_Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -384739927, guid: 80a5aad96a655fc4d862f342cca35090, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -110,11 +110,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: 
   cardDescription: 
-  cardImage: {fileID: 0}
   cardCost: 0
   checkboxVelvet: 0
   checkboxLoki: 0
-  checkboxCuthulu: 0
+  checkboxCuthulu: 1
   checkboxEris: 0
 --- !u!61 &8486616435051818566
 BoxCollider2D:

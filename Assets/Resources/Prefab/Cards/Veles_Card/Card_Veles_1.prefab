@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   m_Layer: 5
-  m_Name: Card 1
+  m_Name: Card_Veles_1
   m_TagString: Velvet_Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1976361362, guid: eb81f28b38f718849afca912e147ed60, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -110,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: 
   cardDescription: 
-  cardImage: {fileID: 0}
   cardCost: 0
   checkboxVelvet: 1
   checkboxLoki: 0
