@@ -5,22 +5,21 @@ using UnityEngine;
 public class Personaje : MonoBehaviour
 {
     public float moveSpeed = 2f; // Velocidad de movimiento del sprite
-    public Vector2 areaSize = new Vector2(10f, 10f); // Tamaño del área en la que se moverá el sprite
-
     private Vector2 targetPosition;
+    private Vector2 areaCenter;
+    private Vector2 areaSize;
+    public int personajeID;
 
-    void Start()
+    public void Initialize(Vector2 center, Vector2 size)
     {
+        areaCenter = center;
+        areaSize = size;
         SetNewRandomTargetPosition();
     }
 
     void Update()
     {
-        if (GameContStat.velocidadPersonajes >= 2f)
-            moveSpeed = GameContStat.velocidadPersonajes;
-        else
-            moveSpeed = 2f;
-
+        PresonajesEleccion();
 
         MoveTowardsTargetPosition();
         if (ReachedTargetPosition())
@@ -29,15 +28,30 @@ public class Personaje : MonoBehaviour
         }
     }
 
+    private void PresonajesEleccion() 
+    {
+        if (personajeID == 1)
+            moveSpeed = GameContStat.velocidadPersonajesLoki;
+        else if (personajeID == 2)
+            moveSpeed = GameContStat.velocidadPersonajesEris;
+        else if (personajeID == 3)
+            moveSpeed = GameContStat.velocidadPersonajesVeles;
+        else if (personajeID == 4)
+            moveSpeed = GameContStat.velocidadPersonajesCthulhu;
+    }
+
+
     void SetNewRandomTargetPosition()
     {
-        float randomX = Random.Range(-areaSize.x / 2, areaSize.x / 2);
-        float randomY = Random.Range(-areaSize.y / 2, areaSize.y / 2);
+        // Define una nueva posición aleatoria dentro del área
+        float randomX = Random.Range(areaCenter.x - areaSize.x / 2, areaCenter.x + areaSize.x / 2);
+        float randomY = Random.Range(areaCenter.y - areaSize.y / 2, areaCenter.y + areaSize.y / 2);
         targetPosition = new Vector2(randomX, randomY);
     }
 
     void MoveTowardsTargetPosition()
     {
+        // Mueve el sprite hacia la posición objetivo
         Vector2 currentPosition = transform.position;
         Vector2 newPosition = Vector2.MoveTowards(currentPosition, targetPosition, moveSpeed * Time.deltaTime);
         transform.position = newPosition;
@@ -45,6 +59,7 @@ public class Personaje : MonoBehaviour
 
     bool ReachedTargetPosition()
     {
+        // Comprueba si el sprite ha alcanzado la posición objetivo
         return Vector2.Distance(transform.position, targetPosition) < 0.1f;
     }
 }

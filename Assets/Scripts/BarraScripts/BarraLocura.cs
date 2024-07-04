@@ -7,22 +7,52 @@ public class BarraLocura : MonoBehaviour
 {
 
     public Image barraLocura;
-    void Update()
+
+    public void LokiMasLocura() 
     {
-        PresionarTeclas();
+        barraLocura.fillAmount += .05f;
+        GameContStat.velocidadPersonajesLoki += 2f;
     }
 
-    void PresionarTeclas()
+    public void LokiMenosLocura()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            barraLocura.fillAmount += .1f;
-            GameContStat.velocidadPersonajes += 2f;
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            barraLocura.fillAmount -= .1f;
-            GameContStat.velocidadPersonajes -= 2f;
-        }
+        barraLocura.fillAmount -= .05f;
+        GameContStat.velocidadPersonajesLoki -= 2f;
+    }
+
+    public void ErisMasLocura()
+    {
+        barraLocura.fillAmount += .05f;
+        GameContStat.velocidadPersonajesEris += 2f;
+    }
+
+    public void ErisMenosLocura()
+    {
+        barraLocura.fillAmount -= .05f;
+        GameContStat.velocidadPersonajesEris -= 2f;
+    }
+
+    public void CuMasLocura()
+    {
+        barraLocura.fillAmount += .05f;
+        GameContStat.velocidadPersonajesCthulhu += 2f;
+    }
+
+    public void CuMenosLocura()
+    {
+        barraLocura.fillAmount -= .05f;
+        GameContStat.velocidadPersonajesCthulhu -= 2f;
+    }
+
+    public void VelesMasLocura()
+    {
+        barraLocura.fillAmount += .05f;
+        GameContStat.velocidadPersonajesVeles += 2f;
+    }
+
+    public void VelesMenosLocura()
+    {
+        barraLocura.fillAmount -= .05f;
+        GameContStat.velocidadPersonajesVeles -= 2f;
     }
 }
