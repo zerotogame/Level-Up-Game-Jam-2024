@@ -744,103 +744,6 @@ Transform:
   - {fileID: 1949342649}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &565679959
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1238255216}
-    m_Modifications:
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 180.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8483634528787715998, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-      propertyPath: m_Name
-      value: Card 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
 --- !u!1 &605745477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +977,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-<<<<<<< HEAD:Assets/Scenes/Game.unity
   - {fileID: 1180627643}
   - {fileID: 608575112}
   - {fileID: 366668436}
@@ -1083,9 +985,6 @@ RectTransform:
   - {fileID: 645069813}
   - {fileID: 784959403}
   - {fileID: 1384338817}
-=======
-  - {fileID: 2102551581}
->>>>>>> Mendoza:Assets/Scenes/SampleScene.unity
   m_Father: {fileID: 1949342649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1133,7 +1032,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-<<<<<<< HEAD:Assets/Scenes/Game.unity
 --- !u!114 &1238255220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,8 +1146,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f43ae9df03d132840932e536cc91dc90, type: 3}
-=======
->>>>>>> Mendoza:Assets/Scenes/SampleScene.unity
 --- !u!1 &1368356030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,7 +1746,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-<<<<<<< HEAD:Assets/Scenes/Game.unity
 --- !u!224 &2009913112 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1117161533260284900, guid: f43ae9df03d132840932e536cc91dc90, type: 3}
@@ -2050,13 +1945,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f43ae9df03d132840932e536cc91dc90, type: 3}
-=======
---- !u!224 &2102551581 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3693726282245405198, guid: 9eb6d8bd6f537cd438d1663bacd28879, type: 3}
-  m_PrefabInstance: {fileID: 565679959}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> Mendoza:Assets/Scenes/SampleScene.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
