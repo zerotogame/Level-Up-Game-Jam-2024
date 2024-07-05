@@ -8,10 +8,10 @@ public class Card : MonoBehaviour
 {
    [SerializeField] private string cardName;
    [SerializeField] private string cardDescription;
-   //[SerializeField] private Sprite cardImage;
-   [SerializeField] private int cardCost;
+   [SerializeField] private int locura;
+   [SerializeField] private int inteligencia;
 
-    public bool checkboxVelvet;
+    public bool checkboxVeles;
     public bool checkboxLoki;
     public bool checkboxCuthulu;
     public bool checkboxEris;
@@ -33,14 +33,6 @@ public class Card : MonoBehaviour
         set { cardDescription = value; }
     }
 
-/*
-    public Sprite CardImage
-    {
-        get { return cardImage; }
-        set { cardImage = value; }
-    }
-*/
-
     public void Play()
     {
         Debug.Log("Card Played: " + cardName);
@@ -48,27 +40,30 @@ public class Card : MonoBehaviour
 
     private void SetTypeGod(){
          // Capturar el tag del objeto
-                string objectTag = gameObject.tag;
+         string objectTag = gameObject.tag;
 
-                // Usar un switch para setear el checkbox correspondiente
-                switch (objectTag)
-                {
-                    case "Velvet_Card":
-                        checkboxVelvet = true;
-                        break;
-                    case "Loki_Card":
-                        checkboxLoki = true;
-                        break;
-                    case "Cuthulu_Card":
-                        checkboxCuthulu = true;
-                        break;
-                    case "Eris_Card":
-                        checkboxEris = true;
-                        break;
-                    default:
-                        Debug.LogWarning("Tag no reconocido: " + objectTag);
-                        break;
-                }
+         // Usar un switch para setear el checkbox correspondiente
+         switch (objectTag){
+            case "Veles_Card":
+                checkboxVeles = true;
+            break;
+
+            case "Loki_Card":
+                checkboxLoki = true;
+            break;
+
+            case "Cuthulu_Card":
+                checkboxCuthulu = true;
+            break;
+
+            case "Eris_Card":
+                checkboxEris = true;
+            break;
+
+            default:
+                Debug.LogWarning("Tag no reconocido: " + objectTag);
+            break;
+         }
     }
 
 }
