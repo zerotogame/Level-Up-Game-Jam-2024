@@ -25,12 +25,26 @@ public class Personaje : MonoBehaviour
 
     void Update()
     {
+
         PresonajesEleccion();
+        AnimacionesCaminataYMuyLoco();
 
         MoveTowardsTargetPosition();
         if (ReachedTargetPosition())
         {
             SetNewRandomTargetPosition();
+        }
+    }
+
+    private void AnimacionesCaminataYMuyLoco() 
+    { 
+        if(GameContStat.barraLocuraCantidad < 0.7f) 
+        {
+            animator.SetBool("MuyLoco", false);
+        }
+        else
+        {
+            animator.SetBool("MuyLoco", true);
         }
     }
     private void PresonajesEleccion()

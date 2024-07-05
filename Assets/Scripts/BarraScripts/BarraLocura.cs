@@ -10,16 +10,19 @@ public class BarraLocura : MonoBehaviour
     public Image barraLocura;
     public GameObject pausePanel, victoryPanel, defeatPanel;
 
+
     private void Start()
     {
         Time.timeScale = 1f;
-        GameContStat.velocidadPersonajesLoki = 2f;
-        GameContStat.velocidadPersonajesVeles = 2f;
-        GameContStat.velocidadPersonajesEris = 2f;
-        GameContStat.velocidadPersonajesCthulhu = 2f;
+        GameContStat.velocidadPersonajesLoki = 1f;
+        GameContStat.velocidadPersonajesVeles = 1f;
+        GameContStat.velocidadPersonajesEris = 1f;
+        GameContStat.velocidadPersonajesCthulhu = 1f;
+        GameContStat.barraLocuraCantidad = 0.5f;
     }
     private void Update()
     {
+        GameContStat.barraLocuraCantidad = barraLocura.fillAmount;
         CondicionDeVictoria();
         CondicionDeDerrota();
         TeclasLocura();
@@ -51,10 +54,10 @@ public class BarraLocura : MonoBehaviour
         if (barraLocura.fillAmount >= 0.7f)
         {
             barraLocura.fillAmount += 0.025f * Time.deltaTime;
-            GameContStat.velocidadPersonajesLoki += 1f * Time.deltaTime;
-            GameContStat.velocidadPersonajesVeles += 1f * Time.deltaTime;
-            GameContStat.velocidadPersonajesEris += 1f * Time.deltaTime;
-            GameContStat.velocidadPersonajesCthulhu += 1f * Time.deltaTime;
+            GameContStat.velocidadPersonajesLoki += .5f * Time.deltaTime;
+            GameContStat.velocidadPersonajesVeles += .5f * Time.deltaTime;
+            GameContStat.velocidadPersonajesEris += .5f * Time.deltaTime;
+            GameContStat.velocidadPersonajesCthulhu += .5f * Time.deltaTime;
         }
         if (barraLocura.fillAmount < 0.7f && barraLocura.fillAmount > 0.3f)
         {
@@ -62,10 +65,10 @@ public class BarraLocura : MonoBehaviour
         }
         if (barraLocura.fillAmount < 0.6f)
         {
-            GameContStat.velocidadPersonajesLoki -= 1f * Time.deltaTime;
-            GameContStat.velocidadPersonajesVeles -= 1f * Time.deltaTime;
-            GameContStat.velocidadPersonajesEris -= 1f * Time.deltaTime;
-            GameContStat.velocidadPersonajesCthulhu -= 1f * Time.deltaTime;
+            GameContStat.velocidadPersonajesLoki -= .5f * Time.deltaTime;
+            GameContStat.velocidadPersonajesVeles -= .5f * Time.deltaTime;
+            GameContStat.velocidadPersonajesEris -= .5f * Time.deltaTime;
+            GameContStat.velocidadPersonajesCthulhu -= .5f * Time.deltaTime;
             CondicionesVelocidadPerosnajes();
         }
         if (barraLocura.fillAmount < 0.3f)
@@ -119,64 +122,65 @@ public class BarraLocura : MonoBehaviour
     public void LokiMasLocura()
     {
         barraLocura.fillAmount += .025f;
-        GameContStat.velocidadPersonajesLoki += 2f;
+        GameContStat.velocidadPersonajesLoki += 1f;
     }
 
     public void LokiMenosLocura()
     {
         barraLocura.fillAmount -= .025f;
-        GameContStat.velocidadPersonajesLoki -= 2f;
+        GameContStat.velocidadPersonajesLoki -= 1f;
         CondicionesVelocidadPerosnajes();
     }
 
     public void ErisMasLocura()
     {
         barraLocura.fillAmount += .025f;
-        GameContStat.velocidadPersonajesEris += 2f;
+        GameContStat.velocidadPersonajesEris += 1f;
     }
 
     public void ErisMenosLocura()
     {
         barraLocura.fillAmount -= .025f;
-        GameContStat.velocidadPersonajesEris -= 2f;
+        GameContStat.velocidadPersonajesEris -= 1f;
         CondicionesVelocidadPerosnajes();
     }
 
     public void CuMasLocura()
     {
         barraLocura.fillAmount += .025f;
-        GameContStat.velocidadPersonajesCthulhu += 2f;
+        GameContStat.velocidadPersonajesCthulhu += 1f;
     }
 
     public void CuMenosLocura()
     {
         barraLocura.fillAmount -= .025f;
-        GameContStat.velocidadPersonajesCthulhu -= 2f;
+        GameContStat.velocidadPersonajesCthulhu -= 1f;
         CondicionesVelocidadPerosnajes();
+        
     }
 
     public void VelesMasLocura()
     {
         barraLocura.fillAmount += .025f;
-        GameContStat.velocidadPersonajesVeles += 2f;
+        GameContStat.velocidadPersonajesVeles += 1f;
     }
 
     public void VelesMenosLocura()
     {
         barraLocura.fillAmount -= .025f;
-        GameContStat.velocidadPersonajesVeles -= 2f;
+        GameContStat.velocidadPersonajesVeles -= 1f;
         CondicionesVelocidadPerosnajes();
     }
 
     private void CondicionesVelocidadPerosnajes()
     {
-        if (GameContStat.velocidadPersonajesLoki <= 2f)
-            GameContStat.velocidadPersonajesLoki = 2f;
-        if (GameContStat.velocidadPersonajesEris <= 2f)
-            GameContStat.velocidadPersonajesEris = 2f;
-        if (GameContStat.velocidadPersonajesCthulhu <= 2f)
-            GameContStat.velocidadPersonajesCthulhu = 2f;
-        if (GameContStat.velocidadPersonajesVeles <= 2f)
-            GameContStat.velocidadPersonajesVeles = 2f;
+        if (GameContStat.velocidadPersonajesLoki <= 1f)
+            GameContStat.velocidadPersonajesLoki = 1f;
+        if (GameContStat.velocidadPersonajesEris <= 1f)
+            GameContStat.velocidadPersonajesEris = 1f;
+        if (GameContStat.velocidadPersonajesCthulhu <= 1f)
+            GameContStat.velocidadPersonajesCthulhu = 1f;
+        if (GameContStat.velocidadPersonajesVeles <= 1f)
+            GameContStat.velocidadPersonajesVeles = 1f;
     }
 }
