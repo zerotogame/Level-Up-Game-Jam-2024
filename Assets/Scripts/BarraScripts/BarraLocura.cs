@@ -18,9 +18,11 @@ public class BarraLocura : MonoBehaviour
         GameContStat.velocidadPersonajesVeles = 1f;
         GameContStat.velocidadPersonajesEris = 1f;
         GameContStat.velocidadPersonajesCthulhu = 1f;
+        GameContStat.barraLocuraCantidad = 0.5f;
     }
     private void Update()
     {
+        GameContStat.barraLocuraCantidad = barraLocura.fillAmount;
         CondicionDeVictoria();
         CondicionDeDerrota();
         TeclasLocura();
