@@ -10,6 +10,7 @@ public class BarraLocura : MonoBehaviour
     public Image barraLocura;
     public GameObject pausePanel, victoryPanel, defeatPanel;
 
+
     private void Start()
     {
         Time.timeScale = 1f;
