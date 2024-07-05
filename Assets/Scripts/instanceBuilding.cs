@@ -9,7 +9,9 @@ public class InstanceBuilding : MonoBehaviour
 
     [Header("Número minimo de edificios")]
     [SerializeField] private int minBuildings = 3;
-    private int maxBuildings = 8;
+    // Número máximo de edificios
+    //Se indica de forma automatica dependiendo del numero de puntos de anclaje que tenga el objeto
+   [SerializeField] private int maxBuildings = 3;
 
     void Start()
     {
@@ -19,6 +21,9 @@ public class InstanceBuilding : MonoBehaviour
             Debug.LogError("Debes asignar al menos 3 prefabs en la lista 'buildings'.");
             return;
         }
+
+        area = GetComponent<RectTransform>();
+        maxBuildings = area.childCount;
 
         // Obtener los puntos de anclaje (hijos del objeto actual)
         List<Transform> anchorPoints = new List<Transform>();

@@ -12,10 +12,13 @@ public class Mazo : MonoBehaviour
 
     public int totalCartasDioses = 2;
 
+    public GameObject nextCardPrefab; // Referencia al prefab de la próxima carta
+
     private List<GameObject> velesCartas = new List<GameObject>();
     private List<GameObject> lokiCartas = new List<GameObject>();
     private List<GameObject> cthuluCartas = new List<GameObject>();
     private List<GameObject> erisCartas = new List<GameObject>();
+    private List<GameObject> allCards = new List<GameObject>();
 
     private int currentContainerIndex = 0; // Índice para seguir el orden de los contenedores
 
@@ -27,11 +30,26 @@ public class Mazo : MonoBehaviour
         cthuluCartas = LoadPrefabsFromFolder(cthuluPath);
         erisCartas = LoadPrefabsFromFolder(erisPath);
 
+        allCards.AddRange(velesCartas);
+        allCards.AddRange(lokiCartas);
+        allCards.AddRange(cthuluCartas);
+        allCards.AddRange(erisCartas);
+        allCards = allCards.OrderBy(x => Random.value).ToList();
+        nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
+
         // Instanciar cartas
         InstanciarCartasEnContenedor(velesCartas, totalCartasDioses);
         InstanciarCartasEnContenedor(lokiCartas, totalCartasDioses);
         InstanciarCartasEnContenedor(cthuluCartas, totalCartasDioses);
         InstanciarCartasEnContenedor(erisCartas, totalCartasDioses);
+    }
+
+    //Comprobar si algun contenedor hijo ha perdido sus hijos
+
+    void Update()
+    {
+        // Verificar dinámicamente si el contenedor ha perdido sus hijos
+        CheckIfContainerLosesChildren();
     }
 
     List<GameObject> LoadPrefabsFromFolder(string path)
@@ -98,4 +116,37 @@ public class Mazo : MonoBehaviour
             currentContainerIndex = (currentContainerIndex + 1) % containers.Length; // Avanzar circularmente
         }
     }
+
+
+        void CheckIfContainerLosesChildren()
+        {
+            // Obtener todos los contenedores "container_card" bajo Mazo
+            Transform[] containers = transform.GetComponentsInChildren<Transform>()
+                                      .Where(t => t.name == "container_card").ToArray();
+
+            // Verificar si algún contenedor ha perdido sus hijos
+            foreach (Transform container in containers)
+            {
+                if (container.childCount == 0)
+                {
+
+                    if (nextCardPrefab == null)
+                    {
+                        Debug.LogWarning("No existe carta en el manager");
+                        return;
+                    }
+
+                    // Elegir una nueva carta aleatoria y eliminarla de la lista
+                    nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
+                    allCards.Remove(nextCardPrefab);
+
+                    // Instanciar una nueva carta en el contenedor
+                    Instantiate(nextCardPrefab, container);
+                    Debug.Log("El contenedor ahora está vacío.");
+                    // Aquí puedes ejecutar cualquier otra acción que necesites cuando el contenedor pierde sus hijos
+                }
+            }
+        }
+
+
 }

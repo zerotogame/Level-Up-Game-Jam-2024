@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class NextCardManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class NextCardManager : MonoBehaviour
     [SerializeField] private string erisPath = "Prefabs/Cards/Eris_Card";
 
     [SerializeField] private GameObject currentCard;
+
 
     private List<GameObject> cardPrefabs;
 
@@ -32,24 +34,54 @@ public class NextCardManager : MonoBehaviour
     void LoadCardPrefabs()
     {
         // Cargar cada prefab y añadirlo a la lista de prefabs
-        GameObject velesCard = Resources.Load<GameObject>(velesPath);
-        GameObject lokiCard = Resources.Load<GameObject>(lokiPath);
-        GameObject cthuluCard = Resources.Load<GameObject>(cthuluPath);
-        GameObject erisCard = Resources.Load<GameObject>(erisPath);
+        List<GameObject> velesCard = LoadPrefabsFromFolder(velesPath);
+        List<GameObject> lokiCard = LoadPrefabsFromFolder(lokiPath);
+        List<GameObject> cthuluCard = LoadPrefabsFromFolder(cthuluPath);
+        List<GameObject> erisCard = LoadPrefabsFromFolder(erisPath);
+
+        cardPrefabs.AddRange(velesCard);
+        cardPrefabs.AddRange(lokiCard);
+        cardPrefabs.AddRange(cthuluCard);
+        cardPrefabs.AddRange(erisCard);
+
+        cardPrefabs = cardPrefabs.OrderBy(x => Random.value).ToList();
 
         // Verificar si los prefabs se cargaron correctamente
+
         Debug.Log("Cargando prefabs...");
-        if (velesCard != null) { cardPrefabs.Add(velesCard); Debug.Log("Veles_Card cargada correctamente."); }
-        else Debug.LogError("Error al cargar Veles_Card.");
 
-        if (lokiCard != null) { cardPrefabs.Add(lokiCard); Debug.Log("Loki_Card cargada correctamente."); }
-        else Debug.LogError("Error al cargar Loki_Card.");
+        if (cardPrefabs.Count == 0)
+        {
+            Debug.LogError("No se encontraron cartas en las rutas especificadas.");
+            return;
+        }
 
-        if (cthuluCard != null) { cardPrefabs.Add(cthuluCard); Debug.Log("Cthulu_Card cargada correctamente."); }
-        else Debug.LogError("Error al cargar Cthulu_Card.");
+        Debug.Log("Prefabs cargados correctamente. Total de cartas: " + cardPrefabs.Count);
 
-        if (erisCard != null) { cardPrefabs.Add(erisCard); Debug.Log("Eris_Card cargada correctamente."); }
-        else Debug.LogError("Error al cargar Eris_Card.");
+    }
+
+    List<GameObject> LoadPrefabsFromFolder(string path)
+    {
+        Object[] loadedObjects = Resources.LoadAll<GameObject>(path);
+        List<GameObject> loadedPrefabs = new List<GameObject>();
+
+        foreach (Object obj in loadedObjects)
+        {
+            if (obj is GameObject go)
+            {
+                if (go.GetComponent<Card>() != null)
+                {
+                    loadedPrefabs.Add(go);
+                }
+            }
+        }
+
+        if (loadedPrefabs.Count == 0)
+        {
+            Debug.LogError("No se encontraron prefabs en la ruta: " + path);
+        }
+
+        return loadedPrefabs;
     }
 
     void InitializeRandomCard()
@@ -66,9 +98,27 @@ public class NextCardManager : MonoBehaviour
         // Instanciar la carta aleatoria
         currentCard = Instantiate(cardPrefabs[randomIndex], transform.position, transform.rotation);
 
-        // Hacer que la carta instanciada sea hija del objeto vacío (opcional)
-        currentCard.transform.parent = this.transform;
+        Debug.Log("Carta instanciada: " + currentCard.name);
+    }
+
+
+    public void NextCard()
+    {
+        // Destruir la carta actual
+        Destroy(currentCard);
+
+        // Escoger un índice aleatorio
+        int randomIndex = Random.Range(0, cardPrefabs.Count);
+
+        // Instanciar la carta aleatoria
+        currentCard = Instantiate(cardPrefabs[randomIndex], transform.position, transform.rotation);
 
         Debug.Log("Carta instanciada: " + currentCard.name);
     }
+    public GameObject GetCurrentCard()
+    {
+        return currentCard;
+    }
+
+
 }
