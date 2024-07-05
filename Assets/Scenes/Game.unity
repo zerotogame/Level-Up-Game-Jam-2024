@@ -4706,7 +4706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847e5da437855ad4da1274d6f2336d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritePrefab: {fileID: 3050047151891035721, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+  spritePrefab: {fileID: 8340160384418500009, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
   numberOfSprites: 50
   areaCenter: {x: 0, y: 0}
   areaSize: {x: 26, y: 16}
@@ -4723,7 +4723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847e5da437855ad4da1274d6f2336d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritePrefab: {fileID: 4888601673212287181, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+  spritePrefab: {fileID: 3050047151891035721, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
   numberOfSprites: 50
   areaCenter: {x: 0, y: 0}
   areaSize: {x: 26, y: 16}
@@ -4740,7 +4740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847e5da437855ad4da1274d6f2336d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritePrefab: {fileID: 8340160384418500009, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+  spritePrefab: {fileID: 4888601673212287181, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
   numberOfSprites: 50
   areaCenter: {x: 0, y: 0}
   areaSize: {x: 26, y: 16}
