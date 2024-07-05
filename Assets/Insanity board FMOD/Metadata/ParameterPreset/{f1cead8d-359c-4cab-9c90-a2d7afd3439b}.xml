@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{f1cead8d-359c-4cab-9c90-a2d7afd3439b}">
+		<property name="name">
+			<value>Locura</value>
+		</property>
+		<relationship name="folder">
+			<destination>{545c4017-bfcf-4855-9ae7-d26d8fbcfa5b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ed312f3c-2457-40fa-a070-83b460e51b64}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ed312f3c-2457-40fa-a070-83b460e51b64}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
