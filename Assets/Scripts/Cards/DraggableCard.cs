@@ -77,6 +77,10 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         {
             currentBuilding = collision.gameObject.GetComponent<Building>();
             Debug.Log("Entered Building: " + collision.gameObject.name);
+
+            //Generate new Card in after point
+            
+
         }
     }
 
@@ -101,6 +105,6 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         rectTransform.anchoredPosition = Vector2.zero;
 
         // Reducir el tamaño de la carta a la mitad
-        rectTransform.localScale = new Vector3(0.5f, 0.5f, 1f);
+        rectTransform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
     }
 }

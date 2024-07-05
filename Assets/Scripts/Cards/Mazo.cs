@@ -23,13 +23,9 @@ public class Mazo : MonoBehaviour
     {
         // Cargar prefabs desde las carpetas
         velesCartas = LoadPrefabsFromFolder(velesPath);
-        Debug.Log("Cartas de Veles: " + velesCartas.Count);
         lokiCartas = LoadPrefabsFromFolder(lokiPath);
-        Debug.Log("Cartas de Loki: " + lokiCartas.Count);
         cthuluCartas = LoadPrefabsFromFolder(cthuluPath);
-        Debug.Log("Cartas de Cthulu: " + cthuluCartas.Count);
         erisCartas = LoadPrefabsFromFolder(erisPath);
-        Debug.Log("Cartas de Eris: " + erisCartas.Count);
 
         // Instanciar cartas
         InstanciarCartasEnContenedor(velesCartas, totalCartasDioses);
@@ -40,7 +36,7 @@ public class Mazo : MonoBehaviour
 
     List<GameObject> LoadPrefabsFromFolder(string path)
     {
-        Debug.Log("Cargando prefabs de la ruta: " + path);
+
         Object[] loadedObjects = Resources.LoadAll<GameObject>(path);
         List<GameObject> loadedPrefabs = new List<GameObject>();
 
@@ -96,8 +92,6 @@ public class Mazo : MonoBehaviour
 
             // Instanciar la carta en el contenedor actual
             Instantiate(cartaPrefab, containers[currentContainerIndex]);
-
-            Debug.Log($"Instanciando carta {cartaPrefab.name} en contenedor {containers[currentContainerIndex].name}");
 
             // Eliminar el prefab de la lista para evitar duplicados y avanzar al siguiente contenedor
             cartas.RemoveAt(0);
