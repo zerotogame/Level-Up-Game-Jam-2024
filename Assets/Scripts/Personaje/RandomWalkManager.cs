@@ -10,7 +10,7 @@ public class RandomWalkManager : MonoBehaviour
     public Vector2 areaSize = new Vector2(10f, 10f); // Tamaño del área de generación
     public float moveSpeed = 2f; // Velocidad de movimiento del sprite
 
-    void Start()
+    void Awake()
     {
         for (int i = 0; i < numberOfSprites; i++)
         {

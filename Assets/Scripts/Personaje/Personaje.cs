@@ -9,12 +9,18 @@ public class Personaje : MonoBehaviour
     private Vector2 areaCenter;
     private Vector2 areaSize;
     public int personajeID;
+    private Animator animator;
 
     public void Initialize(Vector2 center, Vector2 size)
     {
         areaCenter = center;
         areaSize = size;
         SetNewRandomTargetPosition();
+    }
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -27,19 +33,29 @@ public class Personaje : MonoBehaviour
             SetNewRandomTargetPosition();
         }
     }
-
-    private void PresonajesEleccion() 
+    private void PresonajesEleccion()
     {
         if (personajeID == 1)
+        {
             moveSpeed = GameContStat.velocidadPersonajesLoki;
+            animator.speed = 1f + (moveSpeed * 0.1f);
+        }
         else if (personajeID == 2)
+        {
             moveSpeed = GameContStat.velocidadPersonajesEris;
+            animator.speed = 1f + (moveSpeed * 0.1f);
+        }
         else if (personajeID == 3)
+        {
             moveSpeed = GameContStat.velocidadPersonajesVeles;
+            animator.speed = 1f + (moveSpeed * 0.1f);
+        }
         else if (personajeID == 4)
+        {
             moveSpeed = GameContStat.velocidadPersonajesCthulhu;
+            animator.speed = 1f + (moveSpeed * 0.1f);
+        }
     }
-
 
     void SetNewRandomTargetPosition()
     {
@@ -54,6 +70,17 @@ public class Personaje : MonoBehaviour
         // Mueve el sprite hacia la posición objetivo
         Vector2 currentPosition = transform.position;
         Vector2 newPosition = Vector2.MoveTowards(currentPosition, targetPosition, moveSpeed * Time.deltaTime);
+
+        // Ajustar la escala según la dirección del movimiento
+        if (newPosition.x > currentPosition.x)
+        {
+            transform.localScale = new Vector3(0.2f, 0.2f, 0.2f); // Moverse a la derecha (escala normal)
+        }
+        else if (newPosition.x < currentPosition.x)
+        {
+            transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f); // Moverse a la izquierda (escala invertida)
+        }
+
         transform.position = newPosition;
     }
 
