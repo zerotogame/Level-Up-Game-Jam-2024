@@ -7,60 +7,55 @@ public class InstanceBuilding : MonoBehaviour
     public List<Building> buildings; // Lista de edificios
     public RectTransform area; // El RectTransform que define el área
 
+    [Header("Número minimo de edificios")]
+    [SerializeField] private int minBuildings = 3;
+    private int maxBuildings = 8;
+
     void Start()
     {
-        if (buildings.Count != 3)
+        // Verificar que hay al menos 3 prefabs en la lista de edificios
+        if (buildings.Count < 3)
         {
-            Debug.LogError("Debes asignar exactamente 3 prefabs en la lista 'buildings'.");
+            Debug.LogError("Debes asignar al menos 3 prefabs en la lista 'buildings'.");
             return;
         }
 
-        area = GetComponent<RectTransform>();
-
-
-        // Recorre cada hijo del objeto actual
-        for (int i = 0; i < 3; i++)
+        // Obtener los puntos de anclaje (hijos del objeto actual)
+        List<Transform> anchorPoints = new List<Transform>();
+        for (int i = 0; i < transform.childCount; i++)
         {
-            Transform child = transform.GetChild(i);
+            anchorPoints.Add(transform.GetChild(i));
+        }
 
-            // Encuentra un prefab que no haya sido usado aún
-            for (int j = 0; j < buildings.Count; j++)
-            {
-                    // Instancia el prefab en la posición y rotación del objeto hijo vacío
-                                        Building randomBuilding = GetRandomBuilding();
-                    Building instance = Instantiate(randomBuilding, child.position, child.rotation, area);
+        // Determinar aleatoriamente el número de edificios a generar
+        int numBuildings = Random.Range(minBuildings, Mathf.Min(maxBuildings + 1, anchorPoints.Count + 1));
 
-                    // Marca el prefab como usado
+        // Instanciar edificios en los puntos de anclaje seleccionados aleatoriamente
+        for (int i = 0; i < numBuildings; i++)
+        {
+            // Seleccionar un punto de anclaje aleatorio
+            int randomIndex = Random.Range(0, anchorPoints.Count);
+            Transform anchor = anchorPoints[randomIndex];
 
+            // Instanciar un edificio aleatorio como hijo del punto de anclaje
+            Building randomBuilding = GetRandomBuilding();
+            Building instance = Instantiate(randomBuilding, anchor.position, anchor.rotation, anchor);
 
-                    // Destruye el objeto hijo vacío original
-                    Destroy(child.gameObject);
+            // Eliminar el punto de anclaje de la lista para no reutilizarlo
+            anchorPoints.RemoveAt(randomIndex);
+        }
 
-                    break;
-
-            }
+        // Eliminar los puntos de anclaje no utilizados
+        foreach (Transform unusedAnchor in anchorPoints)
+        {
+            Destroy(unusedAnchor.gameObject);
         }
     }
 
-    Vector3 GetRandomPositionInArea()
+    // Método para obtener un edificio aleatorio de la lista de edificios
+    public Building GetRandomBuilding()
     {
-        // Obtener las dimensiones del RectTransform
-        float width = area.rect.width;
-        float height = area.rect.height;
-
-        // Calcular una posición aleatoria dentro del RectTransform
-        float randomX = Random.Range(-width / 2, width / 2);
-        float randomY = Random.Range(-height / 2, height / 2);
-
-        return new Vector3(randomX, randomY, 0);
+        int randomIndex = Random.Range(0, buildings.Count);
+        return buildings[randomIndex];
     }
-
-     /**
-         * Método que en el array selecciona un building aleatorio
-         */
-        public Building GetRandomBuilding()
-        {
-            int randomIndex = Random.Range(0, buildings.Count);
-            return buildings[randomIndex];
-        }
 }
