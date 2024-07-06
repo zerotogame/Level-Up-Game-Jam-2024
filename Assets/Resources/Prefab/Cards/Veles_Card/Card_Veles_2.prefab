@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1324077976571218424}
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
-  - component: {fileID: 5326117461052335000}
+  - component: {fileID: 3971424403630299802}
   m_Layer: 5
   m_Name: Card_Veles_2
   m_TagString: Veles_Card
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 776041576, guid: 20d17d44d6dd1fd42ac64bccf910e4b3, type: 3}
+  m_Sprite: {fileID: -91234519, guid: be53c214ffe708b47a45e2ffb07cb42d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
   cardDescription: 
   locura: 0
   inteligencia: 0
-  _spriteDorsal: {fileID: -1798844032, guid: e04e6c162bacbcc47b16c68622f33bbb, type: 3}
+  _spriteDorsal: {fileID: 1976361362, guid: eb81f28b38f718849afca912e147ed60, type: 3}
   godType: 0
 --- !u!61 &8486616435051818566
 BoxCollider2D:
@@ -190,7 +190,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5326117461052335000
+--- !u!114 &3971424403630299802
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,4 +202,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6303fda03f1ea2c4c92870d65979034f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CardIDInfo: 7
+  CardIDInfo: 8

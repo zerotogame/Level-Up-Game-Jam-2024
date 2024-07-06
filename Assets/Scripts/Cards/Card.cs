@@ -17,7 +17,7 @@ public class Card : MonoBehaviour
    [SerializeField] private string cardDescription;
    [SerializeField] private float locura =0f;
    [SerializeField] private float inteligencia =0f;
-   [SerializeField] private Image _spriteDorsal;
+   [SerializeField] private Sprite _spriteDorsal;
 
     public GodType godType;
 
@@ -50,7 +50,7 @@ public class Card : MonoBehaviour
         set { inteligencia = value; }
     }
 
-    public Image SpriteDorsal
+    public Sprite  SpriteDorsal
     {
         get { return _spriteDorsal; }
         set { _spriteDorsal = value; }

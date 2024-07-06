@@ -70,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1976361362, guid: eb81f28b38f718849afca912e147ed60, type: 3}
+  m_Sprite: {fileID: 776041576, guid: 20d17d44d6dd1fd42ac64bccf910e4b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
   cardDescription: 
   locura: 0
   inteligencia: 0
-  _spriteDorsal: {fileID: -1798844032, guid: e04e6c162bacbcc47b16c68622f33bbb, type: 3}
+  _spriteDorsal: {fileID: 1976361362, guid: eb81f28b38f718849afca912e147ed60, type: 3}
   godType: 0
 --- !u!61 &8486616435051818566
 BoxCollider2D:
