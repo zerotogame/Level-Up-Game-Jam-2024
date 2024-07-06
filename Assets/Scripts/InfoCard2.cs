@@ -35,16 +35,35 @@ public class InfoCard2 : MonoBehaviour
 
     private void OnMouseOver()
     {
-        LokiDorsalPanelMethod();
-        LokiFrontal1PanelMethod();
-        ErisDorsalPanelMethod();
-        ErisFrontal1PanelMethod();
-        VelesDorsalPanelMethod();
-        VelesFrontal1PanelMethod();
-        VelesFrontal2PanelMethod();
-        CthulhuDorsalPanelMethod();
-        CthulhuFrontal1PanelMethod();
-        CthulhuFrontal2PanelMethod();
+        if (GameContStat.infoMouseOver && !GameContStat.infoMouseDerecho)
+        {
+            LokiDorsalPanelMethod();
+            LokiFrontal1PanelMethod();
+            ErisDorsalPanelMethod();
+            ErisFrontal1PanelMethod();
+            VelesDorsalPanelMethod();
+            VelesFrontal1PanelMethod();
+            VelesFrontal2PanelMethod();
+            CthulhuDorsalPanelMethod();
+            CthulhuFrontal1PanelMethod();
+            CthulhuFrontal2PanelMethod();
+        }
+        if (GameContStat.infoMouseDerecho) 
+        {
+            if(Input.GetMouseButtonDown(1))
+            {
+                LokiDorsalPanelMethod();
+                LokiFrontal1PanelMethod();
+                ErisDorsalPanelMethod();
+                ErisFrontal1PanelMethod();
+                VelesDorsalPanelMethod();
+                VelesFrontal1PanelMethod();
+                VelesFrontal2PanelMethod();
+                CthulhuDorsalPanelMethod();
+                CthulhuFrontal1PanelMethod();
+                CthulhuFrontal2PanelMethod();
+            }
+        }
     }
 
     private void OnMouseExit()
@@ -135,9 +154,9 @@ public class InfoCard2 : MonoBehaviour
         if (CardIDInfo == 9)
         {
             if (!pressed)
-                panelesDioses[6].gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                panelesDioses[9].gameObject.transform.GetChild(0).gameObject.SetActive(true);
             else
-                panelesDioses[6].gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                panelesDioses[9].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
     private void CthulhuFrontal1PanelMethod()

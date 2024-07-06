@@ -8,7 +8,7 @@ public class BarraLocura : MonoBehaviour
 {
 
     public Image barraLocura;
-    public GameObject pausePanel, victoryPanel, defeatPanel;
+    public GameObject victoryPanel, defeatPanel;
 
 
     private void Start()
@@ -77,16 +77,7 @@ public class BarraLocura : MonoBehaviour
     }
 
     // -------PANELES BOTONES--------------
-    public void PauseButton()
-    {
-        pausePanel.SetActive(true);
-        Time.timeScale = 0f;
-    }
-    public void PauseButtonBack()
-    {
-        pausePanel.SetActive(false);
-        Time.timeScale = 1f;
-    }
+
     public void MenuButton()
     {
         SceneManager.LoadScene("MainMenuScene");

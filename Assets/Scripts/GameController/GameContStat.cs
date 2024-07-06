@@ -9,6 +9,9 @@ public static class GameContStat
 
     public static float barraLocuraCantidad = 0.5f;
 
+    public static bool infoMouseOver = true;
+    public static bool infoMouseDerecho = false;
+
     // VARIABLES ESTATICAS(NO CAMBIA SU VALOR) DE IDENTIFICACION
 
     public static float CardIDLoki1 = 1.1f;
