@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class Mazo : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Mazo : MonoBehaviour
     public int totalCartasDioses = 2;
 
     public GameObject nextCardPrefab; // Referencia al prefab de la próxima carta
+    public GameObject containerNextCard; // Referencia al contenedor de la próxima carta
 
     private List<GameObject> velesCartas = new List<GameObject>();
     private List<GameObject> lokiCartas = new List<GameObject>();
@@ -37,6 +39,7 @@ public class Mazo : MonoBehaviour
 
         allCards = allCards.OrderBy(x => Random.value).ToList();
         nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
+        containerNextCard.GetComponent<Image>().sprite = nextCardPrefab.GetComponent<Card>().SpriteDorsal.sprite;
 
         // Instanciar cartas
         InstanciarCartasEnContenedor(velesCartas, totalCartasDioses);
@@ -44,8 +47,6 @@ public class Mazo : MonoBehaviour
         InstanciarCartasEnContenedor(cthuluCartas, totalCartasDioses);
         InstanciarCartasEnContenedor(erisCartas, totalCartasDioses);
     }
-
-    //Comprobar si algun contenedor hijo ha perdido sus hijos
 
     void Update()
     {
@@ -55,7 +56,6 @@ public class Mazo : MonoBehaviour
 
     List<GameObject> LoadPrefabsFromFolder(string path)
     {
-
         Object[] loadedObjects = Resources.LoadAll<GameObject>(path);
         List<GameObject> loadedPrefabs = new List<GameObject>();
 
@@ -85,7 +85,6 @@ public class Mazo : MonoBehaviour
             Debug.LogError($"No hay suficientes cartas para instanciar {cantidad} cartas.");
             return;
         }
-
         cartas = cartas.OrderBy(x => Random.value).ToList();
 
         // Obtener todos los contenedores "container_card" bajo Mazo
@@ -101,55 +100,41 @@ public class Mazo : MonoBehaviour
         // Instanciar una carta en cada contenedor en orden
         for (int i = 0; i < Mathf.Min(containers.Length, cantidad); i++)
         {
-            // Asegurar que no exceda el número de cartas disponibles
             if (cartas.Count == 0)
             {
                 Debug.LogWarning("Se acabaron las cartas disponibles.");
                 break;
             }
 
-            // Obtener la carta correspondiente según el índice actual
             GameObject cartaPrefab = cartas[0];
-
-            // Instanciar la carta en el contenedor actual
             Instantiate(cartaPrefab, containers[currentContainerIndex]);
 
-            // Eliminar el prefab de la lista para evitar duplicados y avanzar al siguiente contenedor
             cartas.RemoveAt(0);
-            currentContainerIndex = (currentContainerIndex + 1) % containers.Length; // Avanzar circularmente
+            currentContainerIndex = (currentContainerIndex + 1) % containers.Length;
         }
     }
 
-
-        void CheckIfContainerLosesChildren()
-        {
-            // Obtener todos los contenedores "container_card" bajo Mazo
-            Transform[] containers = transform.GetComponentsInChildren<Transform>()
+    void CheckIfContainerLosesChildren()
+    {
+        Transform[] containers = transform.GetComponentsInChildren<Transform>()
                                       .Where(t => t.name == "container_card").ToArray();
 
-            // Verificar si algún contenedor ha perdido sus hijos
-            foreach (Transform container in containers)
+        foreach (Transform container in containers)
+        {
+            if (container.childCount == 0)
             {
-                if (container.childCount == 0)
+                if (nextCardPrefab == null)
                 {
-
-                    if (nextCardPrefab == null)
-                    {
-                        Debug.LogWarning("No existe carta en el manager");
-                        return;
-                    }
-
-                    // Elegir una nueva carta aleatoria y eliminarla de la lista
-                    nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
-                    allCards.Remove(nextCardPrefab);
-
-                    // Instanciar una nueva carta en el contenedor
-                    Instantiate(nextCardPrefab, container);
-                    Debug.Log("El contenedor ahora está vacío.");
-                    // Aquí puedes ejecutar cualquier otra acción que necesites cuando el contenedor pierde sus hijos
+                    Debug.LogWarning("No existe carta en el manager");
+                    return;
                 }
+
+                nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
+                containerNextCard.GetComponent<Image>().sprite = nextCardPrefab.GetComponent<Card>().SpriteDorsal.sprite;
+
+                Instantiate(nextCardPrefab, container);
+                Debug.Log("El contenedor ahora está vacío.");
             }
         }
-
-
+    }
 }

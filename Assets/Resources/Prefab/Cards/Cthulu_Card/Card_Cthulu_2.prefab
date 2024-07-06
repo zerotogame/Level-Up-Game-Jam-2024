@@ -116,6 +116,7 @@ MonoBehaviour:
   cardDescription: 
   locura: 0
   inteligencia: 0
+  _spriteDorsal: {fileID: -384739927, guid: 80a5aad96a655fc4d862f342cca35090, type: 3}
   godType: 0
 --- !u!61 &8486616435051818566
 BoxCollider2D:

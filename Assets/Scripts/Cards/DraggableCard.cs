@@ -27,7 +27,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         card = GetComponent<Card>(); // Asegúrate de tener una referencia al componente Card
         originalPosition = rectTransform.anchoredPosition; // Guardar la posición original al inicio
         barraLocura = FindObjectOfType<BarraLocura>();
-        notificationEffect = FindObjectOfType<NotificationEffect>();
+        notificationEffect=  GameObject.FindGameObjectWithTag("NotificationEffect").GetComponent<NotificationEffect>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -58,7 +58,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             return;
 
         // Si hay un Building válido debajo, establecer el CardPrefab
-        if (currentBuilding != null)
+        if (currentBuilding != null && currentBuilding.cardPrefab == null)
         {
             currentBuilding.SetCardPrefab(card);
             SetDraggable(false); // Hacer que la carta no sea arrastrable
@@ -70,6 +70,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             // Si no hay Building válido, volver a la posición original
             rectTransform.anchoredPosition = originalPosition;
         }
+
     }
 
     // Método para cambiar el estado de draggable desde fuera del script
