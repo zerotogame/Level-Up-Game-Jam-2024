@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1324077976571218424}
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
+  - component: {fileID: 1141686310644770811}
   m_Layer: 5
   m_Name: Card_Eris_2
   m_TagString: Eris_Card
@@ -69,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1440840466, guid: d43fd488e3729d94d81b0cf375f6088c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -187,3 +188,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1141686310644770811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483634528787715998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6303fda03f1ea2c4c92870d65979034f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardIDInfo: 4
