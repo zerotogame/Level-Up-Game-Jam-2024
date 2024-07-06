@@ -34,6 +34,7 @@ public class Mazo : MonoBehaviour
         allCards.AddRange(lokiCartas);
         allCards.AddRange(cthuluCartas);
         allCards.AddRange(erisCartas);
+
         allCards = allCards.OrderBy(x => Random.value).ToList();
         nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
 
@@ -84,6 +85,8 @@ public class Mazo : MonoBehaviour
             Debug.LogError($"No hay suficientes cartas para instanciar {cantidad} cartas.");
             return;
         }
+
+        cartas = cartas.OrderBy(x => Random.value).ToList();
 
         // Obtener todos los contenedores "container_card" bajo Mazo
         Transform[] containers = transform.GetComponentsInChildren<Transform>()

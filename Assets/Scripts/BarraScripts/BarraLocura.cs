@@ -9,7 +9,7 @@ public class BarraLocura : MonoBehaviour
 
     public Image barraLocura;
     public GameObject pausePanel, victoryPanel, defeatPanel;
-
+    [SerializeField] private float valorIncremento= 0.25f;
 
     private void Start()
     {
@@ -121,39 +121,39 @@ public class BarraLocura : MonoBehaviour
 
     public void LokiMasLocura()
     {
-        barraLocura.fillAmount += .025f;
+        barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesLoki += 1f;
     }
 
     public void LokiMenosLocura()
     {
-        barraLocura.fillAmount -= .025f;
+        barraLocura.fillAmount -= valorIncremento;
         GameContStat.velocidadPersonajesLoki -= 1f;
         CondicionesVelocidadPerosnajes();
     }
 
     public void ErisMasLocura()
     {
-        barraLocura.fillAmount += .025f;
+        barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesEris += 1f;
     }
 
     public void ErisMenosLocura()
     {
-        barraLocura.fillAmount -= .025f;
+        barraLocura.fillAmount -= valorIncremento;
         GameContStat.velocidadPersonajesEris -= 1f;
         CondicionesVelocidadPerosnajes();
     }
 
     public void CuMasLocura()
     {
-        barraLocura.fillAmount += .025f;
+        barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesCthulhu += 1f;
     }
 
     public void CuMenosLocura()
     {
-        barraLocura.fillAmount -= .025f;
+        barraLocura.fillAmount -= valorIncremento;
         GameContStat.velocidadPersonajesCthulhu -= 1f;
         CondicionesVelocidadPerosnajes();
         
@@ -161,13 +161,13 @@ public class BarraLocura : MonoBehaviour
 
     public void VelesMasLocura()
     {
-        barraLocura.fillAmount += .025f;
+        barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesVeles += 1f;
     }
 
     public void VelesMenosLocura()
     {
-        barraLocura.fillAmount -= .025f;
+        barraLocura.fillAmount -= valorIncremento;
         GameContStat.velocidadPersonajesVeles -= 1f;
         CondicionesVelocidadPerosnajes();
     }
