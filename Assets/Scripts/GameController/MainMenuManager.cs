@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public GameObject opcionesPanel, creditosPanel, mainMenuPanel;
+    public GameObject infoOnImg, infoOffImg;
 
     public void JugarBoton() 
     {
@@ -44,5 +45,18 @@ public class MainMenuManager : MonoBehaviour
     {
         creditosPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
+    }
+
+    public void InfoOnBtnn()
+    {
+        GameContStat.infoMouseOver = true;
+        infoOnImg.SetActive(true);
+        infoOffImg.SetActive(false);
+    }
+    public void InfoOffBtnn()
+    {
+        GameContStat.infoMouseOver = false;
+        infoOnImg.SetActive(false);
+        infoOffImg.SetActive(true);
     }
 }
