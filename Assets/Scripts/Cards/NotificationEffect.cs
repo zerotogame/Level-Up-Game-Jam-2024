@@ -10,7 +10,7 @@ public enum TypeEffect
 
 public class NotificationEffect : MonoBehaviour
 {
-    public TextMeshProUGUI textPrefab; // Referencia al prefab de TextMeshPro en la UI
+    public GameObject notificationPrefab; // Prefab que contiene TextMeshProUGUI y el script NotificationEffect
     public float tiempoVida = 3f; // Tiempo de vida del mensaje
     public float desplazamientoY = 30f; // Cantidad de desplazamiento en el eje Y
     public RectTransform canvasRectTransform; // Referencia al RectTransform del Canvas
@@ -18,14 +18,34 @@ public class NotificationEffect : MonoBehaviour
     void Start()
     {
         // Obtener el RectTransform del Canvas
-        canvasRectTransform = GetComponent<RectTransform>();
+        if (canvasRectTransform == null)
+        {
+            canvasRectTransform = GetComponent<RectTransform>();
+        }
 
-        textPrefab = this.GetComponent<TextMeshProUGUI>();
+        if (notificationPrefab == null)
+        {
+            Debug.LogError("El prefab de Notification no está asignado en Start.");
+        }
     }
+
     public void MostrarMensaje(TypeEffect tipo, string mensaje)
     {
-        // Instanciar un nuevo TextMeshProUGUI
-        TextMeshProUGUI nuevoTexto = Instantiate(textPrefab, canvasRectTransform);
+        if (notificationPrefab == null)
+        {
+            Debug.LogError("El prefab de Notification no está asignado en MostrarMensaje.");
+            return;
+        }
+
+        // Crear un nuevo GameObject temporal para el mensaje
+        GameObject nuevoObjeto = Instantiate(notificationPrefab, canvasRectTransform);
+        TextMeshProUGUI nuevoTexto = nuevoObjeto.GetComponent<TextMeshProUGUI>();
+
+        if (nuevoTexto == null)
+        {
+            Debug.LogError("El prefab de Notification no contiene un componente TextMeshProUGUI.");
+            return;
+        }
 
         // Configurar el mensaje y el color
         switch (tipo)
@@ -33,11 +53,9 @@ public class NotificationEffect : MonoBehaviour
             case TypeEffect.Locura:
                 nuevoTexto.color = Color.red;
                 break;
-
             case TypeEffect.Inteligencia:
                 nuevoTexto.color = Color.blue;
                 break;
-
             default:
                 nuevoTexto.color = Color.white;
                 break;
@@ -51,7 +69,7 @@ public class NotificationEffect : MonoBehaviour
         nuevoTexto.rectTransform.anchoredPosition = posicionAleatoria;
 
         // Iniciar la animación
-        StartCoroutine(AnimarMensaje(nuevoTexto, tiempoVida, desplazamientoY));
+        StartCoroutine(AnimarMensaje(nuevoObjeto, nuevoTexto, tiempoVida, desplazamientoY));
     }
 
     Vector2 ObtenerPosicionAleatoria()
@@ -69,14 +87,24 @@ public class NotificationEffect : MonoBehaviour
         return new Vector2(randomX, randomY);
     }
 
-    IEnumerator AnimarMensaje(TextMeshProUGUI texto, float duracion, float desplazamientoY)
+    IEnumerator AnimarMensaje(GameObject objeto, TextMeshProUGUI texto, float duracion, float desplazamientoY)
     {
+        if (texto == null || objeto == null)
+        {
+            yield break;
+        }
+
         Vector3 posicionInicial = texto.rectTransform.anchoredPosition;
         Vector3 posicionFinal = posicionInicial + new Vector3(0, desplazamientoY, 0);
         float tiempoTranscurrido = 0;
 
         while (tiempoTranscurrido < duracion)
         {
+            if (texto == null || objeto == null)
+            {
+                yield break;
+            }
+
             tiempoTranscurrido += Time.deltaTime;
             float porcentajeCompletado = tiempoTranscurrido / duracion;
 
@@ -89,7 +117,10 @@ public class NotificationEffect : MonoBehaviour
             yield return null;
         }
 
-        // Destruir el objeto de texto después de la animación
-        Destroy(texto.gameObject);
+        if (objeto != null)
+        {
+            // Destruir el objeto temporal después de la animación
+            Destroy(objeto);
+        }
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - Area_Cthulhu
   - Cthulu_Card
   - Cuthulu_Card
+  - NotificationEffect
   layers:
   - Default
   - TransparentFX

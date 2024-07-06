@@ -1063,9 +1063,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Para aumentar la locura de humanidad arrastra una carta en el area del
+  m_text: 'Para aumentar la locura de humanidad arrastra una carta en el area del
     dios correspondiente... Pero cuidado si esa carta es colocada en el territorio
     de otro dios la inteligencia de la humanidad aumentara
+
+
+    Puedes desactivar
+    la informacion de las cartas en cualquier momento'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

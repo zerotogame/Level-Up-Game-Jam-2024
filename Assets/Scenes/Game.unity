@@ -5625,6 +5625,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731836512}
   m_CullTransparentMesh: 1
+--- !u!1 &736401773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736401774}
+  m_Layer: 5
+  m_Name: container_card_next
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &736401774
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736401773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1238255216}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &748161762
 GameObject:
   m_ObjectHideFlags: 0
@@ -10063,6 +10098,7 @@ RectTransform:
   - {fileID: 645069813}
   - {fileID: 784959403}
   - {fileID: 1384338817}
+  - {fileID: 736401774}
   m_Father: {fileID: 1949342649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -13466,6 +13502,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664331913}
   m_CullTransparentMesh: 1
+--- !u!1 &1667308574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5371455943230496624, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+  m_PrefabInstance: {fileID: 1692133684710794053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1667308576 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1465486880011489499, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+  m_PrefabInstance: {fileID: 1692133684710794053}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667308574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1675949059
 GameObject:
   m_ObjectHideFlags: 0
@@ -16215,6 +16267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NotificationEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 5371455943230496624, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: m_TagString
+      value: NotificationEffect
+      objectReference: {fileID: 0}
     - target: {fileID: 6093222314454751862, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16296,9 +16352,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7719392853599410486, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: textPrefab
+      value: 
+      objectReference: {fileID: 1667308576}
+    - target: {fileID: 7719392853599410486, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
       propertyPath: parentTransform
       value: 
       objectReference: {fileID: 1949342649}
+    - target: {fileID: 7719392853599410486, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: notificationPrefab
+      value: 
+      objectReference: {fileID: 1667308574}
     - target: {fileID: 7719392853599410486, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
       propertyPath: canvasRectTransform
       value: 
