@@ -13,6 +13,7 @@ public class InfoCard2 : MonoBehaviour
         panelesDioses[0] = GameObject.Find("LokiDorsalPanel");
         panelesDioses[3] = GameObject.Find("ErisDorsalPanel");
         panelesDioses[6] = GameObject.Find("VelesDorsalPanel");
+        panelesDioses[7] = GameObject.Find("VelesFrontal1Panel");
         panelesDioses[9] = GameObject.Find("CthulhuDorsalPanel");
 
     }
@@ -32,6 +33,7 @@ public class InfoCard2 : MonoBehaviour
         LokiDorsalPanelMethod();
         ErisDorsalPanelMethod();
         VelesDorsalPanelMethod();
+        VelesFrontal1PanelMethod();
         CthulhuDorsalPanelMethod();
     }
 
@@ -40,6 +42,7 @@ public class InfoCard2 : MonoBehaviour
         panelesDioses[0].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[3].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[6].gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        panelesDioses[7].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[9].gameObject.transform.GetChild(0).gameObject.SetActive(false);
     }
     private void LokiDorsalPanelMethod()
@@ -70,6 +73,16 @@ public class InfoCard2 : MonoBehaviour
                 panelesDioses[6].gameObject.transform.GetChild(0).gameObject.SetActive(true);
             else
                 panelesDioses[6].gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+    }
+    private void VelesFrontal1PanelMethod()
+    {
+        if (CardIDInfo == 7)
+        {
+            if (!pressed)
+                panelesDioses[7].gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            else
+                panelesDioses[7].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
     private void CthulhuDorsalPanelMethod()
