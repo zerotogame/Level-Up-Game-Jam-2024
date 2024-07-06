@@ -3,12 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PointBuilding
+  - Eris_Card
+  - Loki_Card
+  - Area_Veles
+  - Area_Eris
+  - Area_Loki
+  - Veles_Card
+  - Velvet_Card
+  - Area_Cthulhu
+  - Cthulu_Card
+  - Cuthulu_Card
+  - NotificationEffect
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - PointBuilding
+  - 
   - Water
   - UI
   - 
