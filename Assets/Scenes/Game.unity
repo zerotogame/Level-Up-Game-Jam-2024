@@ -914,6 +914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area-Veles
       objectReference: {fileID: 0}
+    - target: {fileID: 1682763577412965141, guid: 210902406faf2c74388870f35d4477a0, type: 3}
+      propertyPath: m_TagString
+      value: Area_Veles
+      objectReference: {fileID: 0}
     - target: {fileID: 2130538873107151104, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -75.4
@@ -1286,6 +1290,10 @@ PrefabInstance:
     - target: {fileID: 1682763577412965141, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_Name
       value: Area-Eris
+      objectReference: {fileID: 0}
+    - target: {fileID: 1682763577412965141, guid: 210902406faf2c74388870f35d4477a0, type: 3}
+      propertyPath: m_TagString
+      value: Area_Eris
       objectReference: {fileID: 0}
     - target: {fileID: 2130538873107151104, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3211,6 +3219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area-Cuthulu
       objectReference: {fileID: 0}
+    - target: {fileID: 1682763577412965141, guid: 210902406faf2c74388870f35d4477a0, type: 3}
+      propertyPath: m_TagString
+      value: Area_Cthulhu
+      objectReference: {fileID: 0}
     - target: {fileID: 2017614400385145153, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -3905,6 +3917,10 @@ PrefabInstance:
     - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_Name
       value: pointBuild (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
@@ -6032,6 +6048,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -7425,6 +7445,10 @@ PrefabInstance:
     - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
@@ -9079,6 +9103,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -9156,6 +9184,10 @@ PrefabInstance:
     - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
@@ -9948,6 +9980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area-Loki
       objectReference: {fileID: 0}
+    - target: {fileID: 1682763577412965141, guid: 210902406faf2c74388870f35d4477a0, type: 3}
+      propertyPath: m_TagString
+      value: Area_Loki
+      objectReference: {fileID: 0}
     - target: {fileID: 2130538873107151104, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 200
@@ -10399,6 +10435,10 @@ PrefabInstance:
     - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
@@ -11033,6 +11073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pointBuild (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -11444,6 +11488,10 @@ PrefabInstance:
     - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 822889308596267585, guid: 832ebf4188e187248962c3d49027a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
       propertyPath: m_LocalScale.x
