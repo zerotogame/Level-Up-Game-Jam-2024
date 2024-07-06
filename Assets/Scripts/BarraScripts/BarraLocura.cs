@@ -172,6 +172,14 @@ public class BarraLocura : MonoBehaviour
         CondicionesVelocidadPerosnajes();
     }
 
+    public void DecreaseLocura(float decrement,GodType godType)
+    {
+        barraLocura.fillAmount -= decrement;
+        CondicionesVelocidadPorTipoDios(godType);
+
+
+    }
+
     private void CondicionesVelocidadPerosnajes()
     {
         if (GameContStat.velocidadPersonajesLoki <= 1f)
@@ -182,5 +190,29 @@ public class BarraLocura : MonoBehaviour
             GameContStat.velocidadPersonajesCthulhu = 1f;
         if (GameContStat.velocidadPersonajesVeles <= 1f)
             GameContStat.velocidadPersonajesVeles = 1f;
+    }
+
+    private void CondicionesVelocidadPorTipoDios(GodType godType)
+    {
+        if (godType == GodType.Loki)
+        {
+            if (GameContStat.velocidadPersonajesLoki <= 1f)
+                GameContStat.velocidadPersonajesLoki = 1f;
+        }
+        if (godType == GodType.Eris)
+        {
+            if (GameContStat.velocidadPersonajesEris <= 1f)
+                GameContStat.velocidadPersonajesEris = 1f;
+        }
+        if (godType == GodType.Cthulhu)
+        {
+            if (GameContStat.velocidadPersonajesCthulhu <= 1f)
+                GameContStat.velocidadPersonajesCthulhu = 1f;
+        }
+        if (godType == GodType.Veles)
+        {
+            if (GameContStat.velocidadPersonajesVeles <= 1f)
+                GameContStat.velocidadPersonajesVeles = 1f;
+        }
     }
 }

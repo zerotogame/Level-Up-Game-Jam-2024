@@ -4,17 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
+public enum GodType
+{
+    Veles,
+    Loki,
+    Cthulhu,
+    Eris
+}
 public class Card : MonoBehaviour
 {
    [SerializeField] private string cardName;
    [SerializeField] private string cardDescription;
-   [SerializeField] private int locura;
-   [SerializeField] private int inteligencia;
-
-    public bool checkboxVeles;
-    public bool checkboxLoki;
-    public bool checkboxCuthulu;
-    public bool checkboxEris;
+   [SerializeField] private float locura =0f;
+   [SerializeField] private float inteligencia =0f;
+    public GodType godType;
 
     void Start()
     {
@@ -33,37 +36,40 @@ public class Card : MonoBehaviour
         set { cardDescription = value; }
     }
 
+    public float Locura
+    {
+        get { return locura; }
+        set { locura = value; }
+    }
+
+    public float Inteligencia
+    {
+        get { return inteligencia; }
+        set { inteligencia = value; }
+    }
+
     public void Play()
     {
         Debug.Log("Card Played: " + cardName);
     }
 
-    private void SetTypeGod(){
-         // Capturar el tag del objeto
-         string objectTag = gameObject.tag;
-
-         // Usar un switch para setear el checkbox correspondiente
-         switch (objectTag){
+    private void SetTypeGod()
+    {
+        switch (gameObject.tag)
+        {
             case "Veles_Card":
-                checkboxVeles = true;
-            break;
-
+                godType = GodType.Veles;
+                break;
             case "Loki_Card":
-                checkboxLoki = true;
-            break;
-
-            case "Cuthulu_Card":
-                checkboxCuthulu = true;
-            break;
-
+                godType = GodType.Loki;
+                break;
+            case "Cthulu_Card":
+                godType = GodType.Cthulhu;
+                break;
             case "Eris_Card":
-                checkboxEris = true;
-            break;
-
-            default:
-                Debug.LogWarning("Tag no reconocido: " + objectTag);
-            break;
-         }
+                godType = GodType.Eris;
+                break;
+        }
     }
 
 }

@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1802642955079909093
 CanvasRenderer:
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ee0fac743978242921e145a9e90577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: Hospital
+  _type: 1
   cardPrefab: {fileID: 0}
 --- !u!61 &8314118096189559421
 BoxCollider2D:

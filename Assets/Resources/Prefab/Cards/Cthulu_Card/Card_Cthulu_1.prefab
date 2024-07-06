@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7905241211896955286}
   m_Layer: 5
   m_Name: Card_Cthulu_1
-  m_TagString: Cuthulu_Card
+  m_TagString: Cthulu_Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   canvas: {fileID: 0}
   card: {fileID: 0}
   currentBuilding: {fileID: 0}
+  barraLocura: {fileID: 0}
 --- !u!114 &1324077976571218424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,11 +111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: 
   cardDescription: 
-  cardCost: 0
-  checkboxVelvet: 0
-  checkboxLoki: 0
-  checkboxCuthulu: 1
-  checkboxEris: 0
+  locura: 0
+  inteligencia: 0
+  godType: 0
 --- !u!61 &8486616435051818566
 BoxCollider2D:
   m_ObjectHideFlags: 0
