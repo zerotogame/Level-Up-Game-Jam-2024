@@ -5634,6 +5634,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 736401774}
+  - component: {fileID: 736401776}
+  - component: {fileID: 736401775}
   m_Layer: 5
   m_Name: container_card_next
   m_TagString: Untagged
@@ -5655,11 +5657,49 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1238255216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 128, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &736401775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736401773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &736401776
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736401773}
+  m_CullTransparentMesh: 1
 --- !u!1 &748161762
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,6 +7475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01833f35dac4d54b9a80fb88cf0ef6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelTut1: {fileID: 0}
+  panelTut2: {fileID: 0}
+  panelTut3: {fileID: 0}
+  panelTut4: {fileID: 0}
   panelOpciones: {fileID: 269175526}
   panelPausa: {fileID: 1888831259}
   textoEstadoActivoOver: {fileID: 1589446048}
@@ -10090,6 +10134,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 736401774}
   - {fileID: 1180627643}
   - {fileID: 608575112}
   - {fileID: 366668436}
@@ -10098,7 +10143,6 @@ RectTransform:
   - {fileID: 645069813}
   - {fileID: 784959403}
   - {fileID: 1384338817}
-  - {fileID: 736401774}
   m_Father: {fileID: 1949342649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -10164,6 +10208,7 @@ MonoBehaviour:
   erisPath: Prefab/Cards/Eris_Card
   totalCartasDioses: 2
   nextCardPrefab: {fileID: 0}
+  containerNextCard: {fileID: 736401773}
 --- !u!1 &1247753789
 GameObject:
   m_ObjectHideFlags: 0

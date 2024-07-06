@@ -14,7 +14,7 @@ public class Mazo : MonoBehaviour
     public int totalCartasDioses = 2;
 
     public GameObject nextCardPrefab; // Referencia al prefab de la próxima carta
-    public GameObject containerNextCard; // Referencia al contenedor de la próxima carta
+    //public GameObject containerNextCard; // Referencia al contenedor de la próxima carta
 
     private List<GameObject> velesCartas = new List<GameObject>();
     private List<GameObject> lokiCartas = new List<GameObject>();
@@ -39,7 +39,7 @@ public class Mazo : MonoBehaviour
 
         allCards = allCards.OrderBy(x => Random.value).ToList();
         nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
-        containerNextCard.GetComponent<Image>().sprite = nextCardPrefab.GetComponent<Card>().SpriteDorsal.sprite;
+        //containerNextCard.GetComponent<Image>().sprite = nextCardPrefab.GetComponent<Card>().SpriteDorsal.sprite;
 
         // Instanciar cartas
         InstanciarCartasEnContenedor(velesCartas, totalCartasDioses);
@@ -130,7 +130,7 @@ public class Mazo : MonoBehaviour
                 }
 
                 nextCardPrefab = allCards[Random.Range(0, allCards.Count)];
-                containerNextCard.GetComponent<Image>().sprite = nextCardPrefab.GetComponent<Card>().SpriteDorsal.sprite;
+                //containerNextCard.GetComponent<Image>().sprite = nextCardPrefab.GetComponent<Card>().SpriteDorsal.sprite;
 
                 Instantiate(nextCardPrefab, container);
                 Debug.Log("El contenedor ahora está vacío.");
