@@ -64,6 +64,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             SetDraggable(false); // Hacer que la carta no sea arrastrable
             CenterAndResizeCard(currentBuilding); // Centrar y reducir la carta
             CheckArea(card);
+            card.GetComponent<InfoCard2>().enabled = false; // Deshabilitar el componente Card
         }
         else
         {
