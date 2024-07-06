@@ -12,6 +12,11 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void CargarIntro()
+    {
+            SceneManager.LoadScene("Introduction");
+    }
+
     public void SalirBoton()
     {
         Application.Quit();

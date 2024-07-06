@@ -18,6 +18,8 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     public BarraLocura barraLocura;
     public NotificationEffect notificationEffect;
 
+    [SerializeField] private float valorIncremento= 0.05f;
+
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -133,20 +135,20 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     */
     private void IncreaseLocura(Card card)
     {
-        notificationEffect.MostrarMensaje(TypeEffect.Locura,"Aumento de locura +25");
+        notificationEffect.MostrarMensaje(TypeEffect.Locura,"Aumento de locura +" + valorIncremento);
         switch (card.godType)
         {
             case GodType.Veles:
-                barraLocura.VelesMasLocura();
+                barraLocura.VelesMasLocura(valorIncremento);
                 break;
             case GodType.Loki:
-                barraLocura.LokiMasLocura();
+                barraLocura.LokiMasLocura(valorIncremento);
                 break;
             case GodType.Cthulhu:
-                barraLocura.CuMasLocura();
+                barraLocura.CuMasLocura(valorIncremento);
                 break;
             case GodType.Eris:
-                barraLocura.ErisMasLocura();
+                barraLocura.ErisMasLocura(valorIncremento);
                 break;
             default:
                 break;
@@ -182,60 +184,60 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             case GodType.Loki:
                 if (tagArea.Contains("Eris"))
                 {
-                    decrement = 0.25f;
+                    decrement = 0.025f;
                 }
                 else if (tagArea.Contains("Veles"))
                 {
-                    decrement = 0.15f;
+                    decrement = 0.015f;
                 }
                 else if (tagArea.Contains("Cthulhu"))
                 {
-                    decrement = 0.10f;
+                    decrement = 0.010f;
                 }
                 break;
 
             case GodType.Eris:
                 if (tagArea.Contains("Loki"))
                 {
-                    decrement = 0.10f;
+                    decrement = 0.010f;
                 }
                 else if (tagArea.Contains("Veles"))
                 {
-                    decrement = 0.25f;
+                    decrement = 0.025f;
                 }
                 else if (tagArea.Contains("Cthulhu"))
                 {
-                    decrement = 0.15f;
+                    decrement = 0.015f;
                 }
                 break;
 
             case GodType.Veles:
                 if (tagArea.Contains("Loki"))
                 {
-                    decrement = 0.15f;
+                    decrement = 0.015f;
                 }
                 else if (tagArea.Contains("Eris"))
                 {
-                    decrement = 0.10f;
+                    decrement = 0.010f;
                 }
                 else if (tagArea.Contains("Cthulhu"))
                 {
-                    decrement = 0.25f;
+                    decrement = 0.025f;
                 }
                 break;
 
             case GodType.Cthulhu:
                 if (tagArea.Contains("Loki"))
                 {
-                    decrement = 0.25f;
+                    decrement = 0.025f;
                 }
                 else if (tagArea.Contains("Eris"))
                 {
-                    decrement = 0.15f;
+                    decrement = 0.015f;
                 }
                 else if (tagArea.Contains("Veles"))
                 {
-                    decrement = 0.10f;
+                    decrement = 0.010f;
                 }
                 break;
 

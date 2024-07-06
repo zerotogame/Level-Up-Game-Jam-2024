@@ -9,7 +9,7 @@ public class BarraLocura : MonoBehaviour
 
     public Image barraLocura;
     public GameObject pausePanel, victoryPanel, defeatPanel;
-    [SerializeField] private float valorIncremento= 0.25f;
+
 
     private void Start()
     {
@@ -31,20 +31,21 @@ public class BarraLocura : MonoBehaviour
 
     void TeclasLocura()
     {
+        float valorIncremento = 0.05f;
         if (Input.GetKeyDown(KeyCode.Q))
-            LokiMasLocura();
+            LokiMasLocura(valorIncremento);
         if (Input.GetKeyDown(KeyCode.W))
             LokiMenosLocura();
         if (Input.GetKeyDown(KeyCode.A))
-            ErisMasLocura();
+            ErisMasLocura(valorIncremento);
         if (Input.GetKeyDown(KeyCode.S))
             ErisMenosLocura();
         if (Input.GetKeyDown(KeyCode.Z))
-            VelesMasLocura();
+            VelesMasLocura(valorIncremento);
         if (Input.GetKeyDown(KeyCode.X))
             VelesMenosLocura();
         if (Input.GetKeyDown(KeyCode.E))
-            CuMasLocura();
+            CuMasLocura(valorIncremento);
         if (Input.GetKeyDown(KeyCode.R))
             CuMenosLocura();
     }
@@ -119,7 +120,7 @@ public class BarraLocura : MonoBehaviour
 
     // -------PERONAJES BOTONES--------------
 
-    public void LokiMasLocura()
+    public void LokiMasLocura(float valorIncremento)
     {
         barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesLoki += 1f;
@@ -127,12 +128,12 @@ public class BarraLocura : MonoBehaviour
 
     public void LokiMenosLocura()
     {
-        barraLocura.fillAmount -= valorIncremento;
+        barraLocura.fillAmount -= 0.025f;
         GameContStat.velocidadPersonajesLoki -= 1f;
         CondicionesVelocidadPerosnajes();
     }
 
-    public void ErisMasLocura()
+    public void ErisMasLocura(float valorIncremento)
     {
         barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesEris += 1f;
@@ -140,12 +141,12 @@ public class BarraLocura : MonoBehaviour
 
     public void ErisMenosLocura()
     {
-        barraLocura.fillAmount -= valorIncremento;
+        barraLocura.fillAmount -= 0.025f;
         GameContStat.velocidadPersonajesEris -= 1f;
         CondicionesVelocidadPerosnajes();
     }
 
-    public void CuMasLocura()
+    public void CuMasLocura(float valorIncremento)
     {
         barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesCthulhu += 1f;
@@ -153,13 +154,13 @@ public class BarraLocura : MonoBehaviour
 
     public void CuMenosLocura()
     {
-        barraLocura.fillAmount -= valorIncremento;
+        barraLocura.fillAmount -= 0.025f;
         GameContStat.velocidadPersonajesCthulhu -= 1f;
         CondicionesVelocidadPerosnajes();
         
     }
 
-    public void VelesMasLocura()
+    public void VelesMasLocura(float valorIncremento)
     {
         barraLocura.fillAmount += valorIncremento;
         GameContStat.velocidadPersonajesVeles += 1f;
@@ -167,7 +168,7 @@ public class BarraLocura : MonoBehaviour
 
     public void VelesMenosLocura()
     {
-        barraLocura.fillAmount -= valorIncremento;
+        barraLocura.fillAmount -= 0.025f;
         GameContStat.velocidadPersonajesVeles -= 1f;
         CondicionesVelocidadPerosnajes();
     }

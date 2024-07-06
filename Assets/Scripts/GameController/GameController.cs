@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-
+/*
     public BarraLocura barraLocura;
 
     void Start()
@@ -53,9 +53,9 @@ public class GameController : MonoBehaviour
           }
        }
 
-       /**
-        * Aumentar la locua de la barra de locura
-        *Condiciones:   -Si dios es Loki y se pone en area Eris decrementa en 0.25
+
+         Aumentar la locua de la barra de locura
+        Condiciones:   -Si dios es Loki y se pone en area Eris decrementa en 0.25
                         -Si dios es Loki y se pone en area Veles decrementa en 0.15
                         -Si dios es Loki y se pone en area Cthulu decrementa en 0.10
 
@@ -71,7 +71,7 @@ public class GameController : MonoBehaviour
                         -Si dios es Cthulu y se pone en area Eris decrementa en 0.15
                         -Si dios es Cthulu y se pone en area Veles decrementa en 0.10
 
-        */
+
 
        private void DecreaseLocura(Card card, string tagArea)
            {
@@ -145,5 +145,5 @@ public class GameController : MonoBehaviour
                    barraLocura.DecreaseLocura(decrement, card.godType);
                }
            }
-
+*/
 }

@@ -3138,7 +3138,6 @@ MonoBehaviour:
   pausePanel: {fileID: 1888831259}
   victoryPanel: {fileID: 1180839319}
   defeatPanel: {fileID: 523493397}
-  valorIncremento: 0.25
 --- !u!114 &424140301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11730,7 +11729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1675949060
 RectTransform:
   m_ObjectHideFlags: 0

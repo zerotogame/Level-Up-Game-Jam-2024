@@ -98,6 +98,8 @@ MonoBehaviour:
   card: {fileID: 0}
   currentBuilding: {fileID: 0}
   barraLocura: {fileID: 0}
+  notificationEffect: {fileID: 0}
+  valorIncremento: 0.05
 --- !u!114 &1324077976571218424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +196,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8483634528787715998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6303fda03f1ea2c4c92870d65979034f, type: 3}
   m_Name: 
