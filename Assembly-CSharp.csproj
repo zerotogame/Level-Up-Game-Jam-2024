@@ -71,8 +71,10 @@
     <Compile Include="Assets\Scripts\Personaje\InteligenciarefuerzoVisual.cs" />
     <Compile Include="Assets\Scripts\BarraScripts\BarraLocura.cs" />
     <Compile Include="Assets\Scripts\InfoCard2.cs" />
+    <Compile Include="Assets\Scripts\Cards\NotificationEffect.cs" />
     <Compile Include="Assets\Scripts\Cards\NextCardManager.cs" />
     <Compile Include="Assets\Scripts\GameController\GameContStat.cs" />
+    <Compile Include="Assets\Scripts\GameController\GameController.cs" />
     <Compile Include="Assets\Scripts\Personaje\Personaje.cs" />
   </ItemGroup>
   <ItemGroup>

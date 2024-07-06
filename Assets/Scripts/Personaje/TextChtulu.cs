@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class TextChtulu : MonoBehaviour
 {
-    private Animator animText;
+    private Animator animLocura;
     public int textID;
 
     private void Start()
     {
-        animText = GetComponent<Animator>();
+        animLocura = GetComponent<Animator>();
     }
     private void Update()
     {
         if (textID == 1 && Input.GetKeyDown(KeyCode.Q))
         {
-            animText.SetTrigger("MasLocura");
+            animLocura.SetTrigger("MasLocura");
         }
         if (textID == 2 && Input.GetKeyDown(KeyCode.A))
         {
-            animText.SetTrigger("MasLocura");
+            animLocura.SetTrigger("MasLocura");
         }
         if (textID == 3 && Input.GetKeyDown(KeyCode.Z))
         {
-            animText.SetTrigger("MasLocura");
+            animLocura.SetTrigger("MasLocura");
         }
         if (textID == 4 && Input.GetKeyDown(KeyCode.E)) 
         {
-            animText.SetTrigger("MasLocura");
+            animLocura.SetTrigger("MasLocura");
         }
     }
 }

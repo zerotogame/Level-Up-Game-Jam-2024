@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MasLocuraAnim
+  m_Name: LocuraEmojiAnim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 1.8, z: 0}
+        value: {x: -0.03, y: 1.8, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -29,7 +29,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.5
-        value: {x: 0, y: 2.2, z: 0}
+        value: {x: -0.03, y: 2.2, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -38,7 +38,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.6666667
-        value: {x: 0, y: 2.2, z: 0}
+        value: {x: -0.03, y: 2.2, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -47,7 +47,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1.1666666
-        value: {x: 0, y: 2.6, z: 0}
+        value: {x: -0.03, y: 2.6, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -108,7 +108,44 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
     flags: 0
-  m_PPtrCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 21300000, guid: c295319b40803d740b3993f6552a6827, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: 34d97e72d74f108439bcdb1f08e3a857, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: 2f7608ea64355014d9147b6a43b2125f, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: eb049eda301958942a994345fe2d57ad, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: 2b47555ff8da89645863e220733b4bd5, type: 3}
+    - time: 0.41666666
+      value: {fileID: 21300000, guid: c295319b40803d740b3993f6552a6827, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: 34d97e72d74f108439bcdb1f08e3a857, type: 3}
+    - time: 0.5833333
+      value: {fileID: 21300000, guid: 2f7608ea64355014d9147b6a43b2125f, type: 3}
+    - time: 0.6666667
+      value: {fileID: 21300000, guid: eb049eda301958942a994345fe2d57ad, type: 3}
+    - time: 0.75
+      value: {fileID: 21300000, guid: 2b47555ff8da89645863e220733b4bd5, type: 3}
+    - time: 0.8333333
+      value: {fileID: 21300000, guid: c295319b40803d740b3993f6552a6827, type: 3}
+    - time: 0.9166667
+      value: {fileID: 21300000, guid: 34d97e72d74f108439bcdb1f08e3a857, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: 2f7608ea64355014d9147b6a43b2125f, type: 3}
+    - time: 1.0833334
+      value: {fileID: 21300000, guid: eb049eda301958942a994345fe2d57ad, type: 3}
+    - time: 1.1666666
+      value: {fileID: 21300000, guid: 2b47555ff8da89645863e220733b4bd5, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -134,18 +171,42 @@ AnimationClip:
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
-    pptrCurveMapping: []
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: c295319b40803d740b3993f6552a6827, type: 3}
+    - {fileID: 21300000, guid: 34d97e72d74f108439bcdb1f08e3a857, type: 3}
+    - {fileID: 21300000, guid: 2f7608ea64355014d9147b6a43b2125f, type: 3}
+    - {fileID: 21300000, guid: eb049eda301958942a994345fe2d57ad, type: 3}
+    - {fileID: 21300000, guid: 2b47555ff8da89645863e220733b4bd5, type: 3}
+    - {fileID: 21300000, guid: c295319b40803d740b3993f6552a6827, type: 3}
+    - {fileID: 21300000, guid: 34d97e72d74f108439bcdb1f08e3a857, type: 3}
+    - {fileID: 21300000, guid: 2f7608ea64355014d9147b6a43b2125f, type: 3}
+    - {fileID: 21300000, guid: eb049eda301958942a994345fe2d57ad, type: 3}
+    - {fileID: 21300000, guid: 2b47555ff8da89645863e220733b4bd5, type: 3}
+    - {fileID: 21300000, guid: c295319b40803d740b3993f6552a6827, type: 3}
+    - {fileID: 21300000, guid: 34d97e72d74f108439bcdb1f08e3a857, type: 3}
+    - {fileID: 21300000, guid: 2f7608ea64355014d9147b6a43b2125f, type: 3}
+    - {fileID: 21300000, guid: eb049eda301958942a994345fe2d57ad, type: 3}
+    - {fileID: 21300000, guid: 2b47555ff8da89645863e220733b4bd5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1666666
+    m_StopTime: 1.1833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -162,7 +223,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: -0.03
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -171,7 +232,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0
+        value: -0.03
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -180,7 +241,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: 0
+        value: -0.03
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -189,7 +250,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1.1666666
-        value: 0
+        value: -0.03
         inSlope: 0
         outSlope: 0
         tangentMode: 136

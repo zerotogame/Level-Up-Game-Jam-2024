@@ -377,6 +377,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3087485938638802322, guid: 832ebf4188e187248962c3d49027a964, type: 3}
   m_PrefabInstance: {fileID: 27155764}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &53693933
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3050047151891035721, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_Name
+      value: PersonajeCaminataEris
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050047151891035721, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1955945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5161991
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625284902522575045, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a8ff0424a13ca241ab930f01f8a54fc, type: 3}
 --- !u!1 &65533932
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,6 +5560,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802536395}
   m_CullTransparentMesh: 1
+--- !u!1001 &812439876
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1955945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5161991
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909327425091925420, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888601673212287181, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_Name
+      value: PersonajeCaminataCthulhu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888601673212287181, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 805d9f0a03abc5448b0e43c02c286298, type: 3}
 --- !u!1 &814989929
 GameObject:
   m_ObjectHideFlags: 0
@@ -10341,6 +10463,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407902663}
   m_CullTransparentMesh: 1
+--- !u!1001 &1435630986
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 711774671989346589, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_Name
+      value: PersonajeCaminataVeles
+      objectReference: {fileID: 0}
+    - target: {fileID: 711774671989346589, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1955945
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5161991
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066203847710431358, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 399f0d47605d4a84b821733442c9e9c4, type: 3}
 --- !u!1 &1483431259
 GameObject:
   m_ObjectHideFlags: 0
@@ -13710,6 +13893,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051129067}
   m_CullTransparentMesh: 1
+--- !u!1001 &2060291455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1955945
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5161991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259156162959083897, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340160384418500009, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_Name
+      value: PersonajeCaminataLoki
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340160384418500009, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7ae0c03e3506994b95240d33a6cc567, type: 3}
 --- !u!1 &2065009715
 GameObject:
   m_ObjectHideFlags: 0
@@ -14334,3 +14578,7 @@ SceneRoots:
   - {fileID: 972781926}
   - {fileID: 1368356033}
   - {fileID: 1483431261}
+  - {fileID: 1435630986}
+  - {fileID: 2060291455}
+  - {fileID: 53693933}
+  - {fileID: 812439876}
