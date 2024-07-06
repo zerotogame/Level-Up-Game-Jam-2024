@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Personaje\RandomWalkManager.cs" />
     <Compile Include="Assets\Scripts\Cards\DraggableCard.cs" />
+    <Compile Include="Assets\Scripts\Personaje\TextChtulu.cs" />
     <Compile Include="Assets\Scripts\instanceBuilding.cs" />
     <Compile Include="Assets\Scripts\GameController\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\Cards\Mazo.cs" />
