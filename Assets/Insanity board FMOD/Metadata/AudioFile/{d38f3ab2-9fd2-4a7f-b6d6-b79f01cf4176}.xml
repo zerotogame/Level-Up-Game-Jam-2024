@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d38f3ab2-9fd2-4a7f-b6d6-b79f01cf4176}">
+		<property name="assetPath">
+			<value>generic-crowd-background-noise-31310.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>34.344000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e262cec8-b807-41ad-b8cd-6aac5d01144e}</destination>
+		</relationship>
+	</object>
+</objects>

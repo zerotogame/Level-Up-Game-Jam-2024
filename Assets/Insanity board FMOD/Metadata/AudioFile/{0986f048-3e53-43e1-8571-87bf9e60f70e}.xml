@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0986f048-3e53-43e1-8571-87bf9e60f70e}">
+		<property name="assetPath">
+			<value>angry-crowd-70647.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>40.415999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e262cec8-b807-41ad-b8cd-6aac5d01144e}</destination>
+		</relationship>
+	</object>
+</objects>

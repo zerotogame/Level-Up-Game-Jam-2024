@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{65abad10-8571-48a7-a200-5683b9b44a4f}">
+		<property name="assetPath">
+			<value>CthulhuDropCard1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.0899999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e262cec8-b807-41ad-b8cd-6aac5d01144e}</destination>
+		</relationship>
+	</object>
+</objects>
