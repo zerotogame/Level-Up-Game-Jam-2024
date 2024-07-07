@@ -109,13 +109,7 @@ public class BarraLocura : MonoBehaviour
     {
         if (barraLocura.fillAmount <= 0)
         {
-<<<<<<< HEAD
-             defeatPanel.SetActive(true);
-             Time.timeScale = 0f;
-=======
-
-            setDerrrotaPanel();
->>>>>>> origin/Rumo3
+            SetDerrrotaPanel();
         }
     }
 
