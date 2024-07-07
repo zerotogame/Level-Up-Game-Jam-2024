@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameplayController : MonoBehaviour
 {
     // Tutorial Paneles
-    public GameObject panelTut1, panelTut2, panelTut3, panelTut4, panelTutParent;
+    public GameObject panelTut1, panelTut2, panelTut3, panelTutParent;
 
     public GameObject panelOpciones, panelPausa;
     public GameObject tutOnBttn, tutOffBttn, infoCartasOnBttn, infoCartasOffBttn;
@@ -38,30 +38,31 @@ public class GameplayController : MonoBehaviour
     }
     public void Continuar1Bttn()
     {
-        Debug.Log("Continuar1Bttn");
+        //Debug.Log("Continuar1Bttn");
         panelTut1.SetActive(false);
         panelTut2.SetActive(true);
     }
     public void Continuar2Bttn()
     {
-        Debug.Log("Continuar2Bttn");
+        //Debug.Log("Continuar2Bttn");
         panelTut2.SetActive(false);
         panelTut3.SetActive(true);
     }
     public void Continuar3Bttn()
     {
-        Debug.Log("Continuar3Bttn");
+        //Debug.Log("Continuar3Bttn");
+        Time.timeScale = 1.0f;
         panelTut3.SetActive(false);
-        panelTut4.SetActive(true);
+
     }
     public void Continuar4Bttn()
     {
-        Debug.Log("Continuar4Bttn");
-        panelTut4.SetActive(false);
+        //Debug.Log("Continuar4Bttn");
+        panelTut3.SetActive(false);
         Time.timeScale = 1.0f;
 
         //Obtenemos el panel canvas padre de los tutoriales
-        panelTutParent.SetActive(false);
+        //panelTutParent.SetActive(false);
     }
 
 
