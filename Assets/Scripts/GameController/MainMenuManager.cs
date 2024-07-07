@@ -20,7 +20,7 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-    public void JugarBoton() 
+    public void JugarBoton()
     {
         SceneManager.LoadScene("Game");
     }

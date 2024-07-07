@@ -19,12 +19,12 @@ public class GameplayController : MonoBehaviour
             panelTutorialParent.SetActive(true);
             Time.timeScale = 0f;
         }
-        else 
+        else
         {
             panelTutorialParent.SetActive(false);
             Time.timeScale = 1f;
         }
-            
+
     }
 
     private void Update()
@@ -39,7 +39,7 @@ public class GameplayController : MonoBehaviour
         }
     }
 
-    public void Continuar1Bttn() 
+    public void Continuar1Bttn()
     {
         panelTut1.SetActive(false);
         panelTut2.SetActive(true);
@@ -72,8 +72,8 @@ public class GameplayController : MonoBehaviour
         panelPausa.SetActive(false);
         Time.timeScale = 1f;
     }
-    public void OpcionesBttn() 
-    { 
+    public void OpcionesBttn()
+    {
         panelOpciones.SetActive(true);
         panelPausa.SetActive(false);
     }
@@ -84,8 +84,8 @@ public class GameplayController : MonoBehaviour
     }
 
     // -------BOTONES OPCIONES--------------
-    public void InfoOnMouseOverBttn() 
-    { 
+    public void InfoOnMouseOverBttn()
+    {
         GameContStat.infoMouseOver = !GameContStat.infoMouseOver;
         if (GameContStat.infoMouseOver)
         {
@@ -98,8 +98,8 @@ public class GameplayController : MonoBehaviour
             textoEstadoInactivoOver.SetActive(true);
         }
     }
-    public void InfoClickDerechoBttn() 
-    { 
+    public void InfoClickDerechoBttn()
+    {
         GameContStat.infoMouseDerecho = !GameContStat.infoMouseDerecho;
     }
 
