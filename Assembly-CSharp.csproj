@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Cards\NotificationEffect.cs" />
     <Compile Include="Assets\Scripts\Cards\NextCardManager.cs" />
     <Compile Include="Assets\Scripts\GameController\GameContStat.cs" />
+    <Compile Include="Assets\Scripts\GameController\GameController.cs" />
     <Compile Include="Assets\Scripts\GameController\GameplayController.cs" />
     <Compile Include="Assets\Scripts\Cursor\CursorManager.cs" />
     <Compile Include="Assets\Scripts\Personaje\Personaje.cs" />
@@ -106,6 +107,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{180cdd2d-e691-419c-8504-ebd9b28cd6d3}.xml" />
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\ParameterPresetFolder\{545c4017-bfcf-4855-9ae7-d26d8fbcfa5b}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\Group\{c4758386-858e-49ca-b14e-9e65172951f7}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Insanity board FMOD\Metadata\Tags.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\ProfilerFolder\{8926f052-d474-4b04-b0fa-e5f985770fc3}.xml" />
@@ -152,7 +154,9 @@
     <None Include="Assets\Insanity board FMOD\Metadata\Platform\{c60852e5-0435-49a5-a45b-f304f984d230}.xml" />
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\Mixer.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Event\{41a481f1-200e-4896-9365-5d75ec09a989}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\Group\{dd5094fc-4df7-483b-b2e9-fb4fc63aae60}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\EncodingSetting\{f41aa176-4a44-41e2-8bfb-05766fa053e2}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\Group\{3d9868d1-9d59-48de-b031-92559d22d608}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Workspace.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{2cac5dad-3006-4bac-b6af-26fd0cdb5dca}.xml" />
@@ -177,8 +181,10 @@
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{44697881-c938-456c-adb8-37b023e4875b}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{d7f41d51-297b-4cfa-af69-a5ce1e808cd3}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Master.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\Snapshot\{ce61d324-9b39-467c-91bc-d7e14a2b9a2f}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Insanity board FMOD\Metadata\Event\{cb840ab7-dbe2-4766-b2c4-8d3abb6037bd}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\ParameterPreset\{8e7c5c40-2fc9-4a01-9cba-d08c4d06b5e4}.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1013,6 +1019,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="PsdPlugin">
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
       <Private>False</Private>
@@ -1133,10 +1143,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1211,13 +1217,13 @@
       <Project>{0CEFA6AC-7EBA-9A09-D5FF-2BB854875F65}</Project>
       <Name>FMODUnityResonance</Name>
     </ProjectReference>
-    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
-      <Project>{137E0F9C-1B8C-E873-6EFF-502F5736CAC3}</Project>
-      <Name>FMODUnityResonanceEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="FMODUnity.csproj">
       <Project>{E203DBDB-BB51-2004-7D54-02EB389870FC}</Project>
       <Name>FMODUnity</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
+      <Project>{137E0F9C-1B8C-E873-6EFF-502F5736CAC3}</Project>
+      <Name>FMODUnityResonanceEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

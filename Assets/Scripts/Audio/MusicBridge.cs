@@ -45,10 +45,34 @@ public class MusicBridge : MonoBehaviour // MusicBridge conecta los distintos sc
     {
         AudioNotificarPausa(isPaused);
     }
+    public void NotificarEstadoJuego(string evento)
+    {
+        switch (evento)
+        {
+            case "JuegoEnCurso":
+                MusicNotificarFinJuego(0);
+                break;
+            case "Ganar":
+                MusicNotificarFinJuego(1);
+                break;
+            case "Perder":
+                MusicNotificarFinJuego(2);
+                break;
+            case "NoDestruir":
+                musicBehaviourInstance.DontDestroyMusic();
+                break;
+            default:
+                throw new ArgumentException("ERROR.Parámetro no válido.");
+        }
+    }
 
     public void DestroyMusic()
     {
         musicBehaviourInstance.DestroyMusic();
+    }
+    private void MusicNotificarFinJuego(int estadoJuego)
+    {
+        musicBehaviourInstance.OnGameStateChanged(estadoJuego); // 0 = en juego, 1 = Victoria, 2 = Derrota. 
     }
 
     private void AudioNotificarLocura(int locura)

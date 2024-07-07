@@ -36,13 +36,32 @@ public class MusicBehaviour : MonoBehaviour //Modifica los distintos parámetros 
             levelMusic.SetParameter("enPausa", 1);
         }
     }
-    #endregion
+    public void OnGameStateChanged(int gameState)
+    {
+        switch (gameState)
+        {
+            case 0: // Normal
+                levelMusic.SetParameter("estadoNivel", 0);
+                break;
+            case 1: // Ganar
+                levelMusic.SetParameter("estadoNivel", 1);
+                break;
+            case 2: // Perder
+                levelMusic.SetParameter("estadoNivel", 2);
+                break;
+            default:
+                throw new ArgumentException("ERROR. MusicNotificarFinJuego() solo debe tener como parámetro los valores 0, 1 o 2.");
+        }
+    }
+
+        #endregion
 
 
-    public void MusicStart()
+        public void MusicStart()
     {
         levelMusic.Play();
     }
+
     public void MusicStop()
     {
         levelMusic.Stop();

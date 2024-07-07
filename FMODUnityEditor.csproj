@@ -60,8 +60,8 @@
     <Analyzer Include="A:\Program Files\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorUtils.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\LogViewer.cs" />
+    <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorUtils.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\FMODEventPlayableEditor.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioEventEmitterGizmoDrawer.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\EditorBankRef.cs" />
