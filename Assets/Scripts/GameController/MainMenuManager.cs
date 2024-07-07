@@ -8,6 +8,18 @@ public class MainMenuManager : MonoBehaviour
     public GameObject opcionesPanel, creditosPanel, mainMenuPanel;
     public GameObject tutOnBttn, tutOffBttn;
 
+    private void Start()
+    {
+        if (GameContStat.tutoriaActivo)
+        {
+            PanelTutorialActivo();
+        }
+        else
+        {
+            PanelTutorialInactivo();
+        }
+    }
+
     public void JugarBoton() 
     {
         SceneManager.LoadScene("Game");

@@ -26,6 +26,19 @@ public class GameplayController : MonoBehaviour
         }
             
     }
+
+    private void Update()
+    {
+        if (GameContStat.tutoriaActivo)
+        {
+            PanelTutorial1Activo();
+        }
+        else
+        {
+            PanelTutorial1Inactivo();
+        }
+    }
+
     public void Continuar1Bttn() 
     {
         panelTut1.SetActive(false);
