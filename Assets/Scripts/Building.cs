@@ -9,6 +9,7 @@ public enum BuildingType
     Hospital,
     Casa
 }
+
 public class Building : MonoBehaviour
 {
     private string _objectID;

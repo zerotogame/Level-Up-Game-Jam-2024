@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class InstanceBuilding : MonoBehaviour
 {
     public List<Building> buildings; // Lista de edificios
@@ -29,7 +28,11 @@ public class InstanceBuilding : MonoBehaviour
         List<Transform> anchorPoints = new List<Transform>();
         for (int i = 0; i < transform.childCount; i++)
         {
-            anchorPoints.Add(transform.GetChild(i));
+            string tagName = transform.GetChild(i).tag;
+            if (tagName == "PointReferenceBuilding"){
+               anchorPoints.Add(transform.GetChild(i));
+            }
+
         }
 
         // Determinar aleatoriamente el número de edificios a generar
