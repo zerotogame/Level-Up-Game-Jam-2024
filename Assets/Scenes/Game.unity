@@ -17173,15 +17173,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7171118112416623756, guid: ceaaeed5336ec3943825f4321e15a932, type: 3}
       propertyPath: m_Color.b
-      value: 0.44705883
+      value: 0.48340157
       objectReference: {fileID: 0}
     - target: {fileID: 7171118112416623756, guid: ceaaeed5336ec3943825f4321e15a932, type: 3}
       propertyPath: m_Color.g
-      value: 0.44705883
+      value: 0.48340157
       objectReference: {fileID: 0}
     - target: {fileID: 7171118112416623756, guid: ceaaeed5336ec3943825f4321e15a932, type: 3}
       propertyPath: m_Color.r
-      value: 0.6039216
+      value: 0.6698113
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
