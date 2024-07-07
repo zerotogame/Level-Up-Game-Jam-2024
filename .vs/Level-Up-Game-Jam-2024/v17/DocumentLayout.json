@@ -1,0 +1,214 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|c:\\repos\\11.levelup-gamejam2024\\level-up-game-jam-2024\\assets\\scripts\\persistentmanager\\persistentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\persistentmanager\\persistentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|c:\\repos\\11.levelup-gamejam2024\\level-up-game-jam-2024\\assets\\scripts\\gamecontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\infocard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\infocard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\personaje\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\gamecontroller\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\gamecontroller\\gamecontstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\gamecontstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\barrascripts\\barralocura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\barrascripts\\barralocura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Personaje\\TextChtulu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\inteligenciarefuerzovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\personaje\\inteligenciarefuerzovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\randomwalkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\personaje\\randomwalkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cards\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersistentManager.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\PersistentManager\\PersistentManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PersistentManager\\PersistentManager.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\PersistentManager\\PersistentManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PersistentManager\\PersistentManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T23:11:19.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainMenuManager.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\MainMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\MainMenuManager.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\MainMenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\MainMenuManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T14:19:19.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameplayController.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameplayController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\GameplayController.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameplayController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\GameplayController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T13:22:07.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Mazo.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Mazo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cards\\Mazo.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Mazo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cards\\Mazo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T20:25:13.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InfoCard2.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\InfoCard2.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InfoCard2.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\InfoCard2.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InfoCard2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T20:16:28.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InteligenciarefuerzoVisual.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T19:15:55.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TextChtulu.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\TextChtulu.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Personaje\\TextChtulu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T15:35:18.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Card.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cards\\Card.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Card.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cards\\Card.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T13:07:05.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RandomWalkManager.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T01:21:17.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Personaje.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\Personaje.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\Personaje.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\Personaje.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Personaje\\Personaje.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T21:16:11.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameContStat.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameContStat.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\GameContStat.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameContStat.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\GameContStat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T21:03:08.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BarraLocura.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAywAoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T20:37:26.783Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

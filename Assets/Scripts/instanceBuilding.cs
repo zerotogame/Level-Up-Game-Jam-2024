@@ -2,51 +2,65 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class instanceBuilding : MonoBehaviour
+public class InstanceBuilding : MonoBehaviour
 {
-      public Building prefab; // El prefab que quieres instanciar
-      public int numberOfPrefabs = 3; // Número de prefabs a instanciar
-      public RectTransform area; // El RectTransform que define el área
-      public List<Building> buildings = new List<Building>(); // Lista de edificios
+    public List<Building> buildings; // Lista de edificios
+    public RectTransform area; // El RectTransform que define el área
 
-      void Start()
-      {
-          area = GetComponent<RectTransform>();
+    [Header("Número minimo de edificios")]
+    [SerializeField] private int minBuildings = 3;
+    // Número máximo de edificios
+    //Se indica de forma automatica dependiendo del numero de puntos de anclaje que tenga el objeto
+   [SerializeField] private int maxBuildings = 3;
 
-          for (int i = 0; i < numberOfPrefabs; i++)
-          {
-              InstantiatePrefabInArea();
-          }
-      }
-
-      void InstantiatePrefabInArea()
-      {
-          Vector3 randomPosition = GetRandomPositionInArea();
-          Building prefab = GetRandomBuilding();
-          Building instance = Instantiate(prefab, area);
-          instance.GetComponent<RectTransform>().anchoredPosition = randomPosition;
-      }
-
-      Vector3 GetRandomPositionInArea()
-      {
-          // Obtener las dimensiones del RectTransform
-          float width = area.rect.width;
-          float height = area.rect.height;
-
-          // Calcular una posición aleatoria dentro del RectTransform
-          float randomX = Random.Range(-width / 2, width / 2);
-          float randomY = Random.Range(-height / 2, height / 2);
-
-          return new Vector3(randomX, randomY, 0);
-      }
-
-     /**
-     Metodo que en el array selecciona un building aleatorio
-     */
-
-        public Building GetRandomBuilding()
+    void Start()
+    {
+        // Verificar que hay al menos 3 prefabs en la lista de edificios
+        if (buildings.Count < 3)
         {
-            int randomIndex = Random.Range(0, buildings.Count);
-            return buildings[randomIndex];
+            Debug.LogError("Debes asignar al menos 3 prefabs en la lista 'buildings'.");
+            return;
         }
+
+        area = GetComponent<RectTransform>();
+        maxBuildings = area.childCount;
+
+        // Obtener los puntos de anclaje (hijos del objeto actual)
+        List<Transform> anchorPoints = new List<Transform>();
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            anchorPoints.Add(transform.GetChild(i));
+        }
+
+        // Determinar aleatoriamente el número de edificios a generar
+        int numBuildings = Random.Range(minBuildings, Mathf.Min(maxBuildings + 1, anchorPoints.Count + 1));
+
+        // Instanciar edificios en los puntos de anclaje seleccionados aleatoriamente
+        for (int i = 0; i < numBuildings; i++)
+        {
+            // Seleccionar un punto de anclaje aleatorio
+            int randomIndex = Random.Range(0, anchorPoints.Count);
+            Transform anchor = anchorPoints[randomIndex];
+
+            // Instanciar un edificio aleatorio como hijo del punto de anclaje
+            Building randomBuilding = GetRandomBuilding();
+            Building instance = Instantiate(randomBuilding, anchor.position, anchor.rotation, anchor);
+
+            // Eliminar el punto de anclaje de la lista para no reutilizarlo
+            anchorPoints.RemoveAt(randomIndex);
+        }
+
+        // Eliminar los puntos de anclaje no utilizados
+        foreach (Transform unusedAnchor in anchorPoints)
+        {
+            Destroy(unusedAnchor.gameObject);
+        }
+    }
+
+    // Método para obtener un edificio aleatorio de la lista de edificios
+    public Building GetRandomBuilding()
+    {
+        int randomIndex = Random.Range(0, buildings.Count);
+        return buildings[randomIndex];
+    }
 }

@@ -3,6 +3,10 @@
 /Library
 /Temp
 /Logs
+/UserSettings
+/Assets/Plugins/
+/.vs
+.vsconfig
 
 
 # Ignore idea directory
