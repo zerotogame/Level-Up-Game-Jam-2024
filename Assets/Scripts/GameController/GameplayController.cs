@@ -14,6 +14,7 @@ public class GameplayController : MonoBehaviour
     // -------TUTORIAL BOTONES Y PANELES------------
     private void Start()
     {
+
         GameObject instanciaMusic = GameObject.Find("Music");
         levelAudio = instanciaMusic.GetComponent<MusicBridge>();
         levelAudio.NotificarPausaMusica(false);
@@ -22,7 +23,7 @@ public class GameplayController : MonoBehaviour
             Time.timeScale = 0f;
             panelTutParent.SetActive(true);
         }
-        else 
+        else
         {
             Time.timeScale = 1f;
             panelTutParent.SetActive(false);
