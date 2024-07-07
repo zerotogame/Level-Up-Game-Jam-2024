@@ -61,6 +61,9 @@ public class MusicBridge : MonoBehaviour // MusicBridge conecta los distintos sc
             case "NoDestruir":
                 musicBehaviourInstance.DontDestroyMusic();
                 break;
+            case "DetenerMusica":
+                musicBehaviourInstance.DontDestroyMusic();
+                break;
             default:
                 throw new ArgumentException("ERROR.Parámetro no válido.");
         }
@@ -79,6 +82,15 @@ public class MusicBridge : MonoBehaviour // MusicBridge conecta los distintos sc
     {
         musicBehaviourInstance.GameStateChange(locura);
         audioBehaviourInstance.GameStateChange(locura);
+    }
+    private void DetenerMusica(int locura)
+    {
+        musicBehaviourInstance.MusicStop();
+        audioBehaviourInstance.AudioStop();
+    }
+    public void DetenerAmbience()
+    {
+        audioBehaviourInstance.AudioStop();
     }
     private void AudioNotificarPausa(bool isPaused)
     {

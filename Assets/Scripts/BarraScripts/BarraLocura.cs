@@ -25,6 +25,7 @@ public class BarraLocura : MonoBehaviour
 
         GameObject instanciaMusic = GameObject.Find("Music");
         levelAudio = instanciaMusic.GetComponent<MusicBridge>();
+        levelAudio.NotificarEstadoJuego("JuegoEnCurso");
     }
     private void Update()
     {
@@ -96,6 +97,9 @@ public class BarraLocura : MonoBehaviour
         if (barraLocura.fillAmount >= 1)
         {
             victoryPanel.SetActive(true);
+            levelAudio.DetenerAmbience();
+            levelAudio.NotificarCambioAudio(100);
+            levelAudio.NotificarEstadoJuego("Ganar");
             Time.timeScale = 0f;
         }
     }
@@ -103,6 +107,7 @@ public class BarraLocura : MonoBehaviour
     {
         if (barraLocura.fillAmount <= 0)
         {
+
             setDerrrotaPanel();
         }
     }
