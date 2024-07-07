@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class InstanceBuilding : MonoBehaviour
 {
     public List<Building> buildings; // Lista de edificios
@@ -13,6 +13,8 @@ public class InstanceBuilding : MonoBehaviour
     //Se indica de forma automatica dependiendo del numero de puntos de anclaje que tenga el objeto
    [SerializeField] private int maxBuildings = 3;
 
+   string areaName;
+
     void Start()
     {
         // Verificar que hay al menos 3 prefabs en la lista de edificios
@@ -23,13 +25,20 @@ public class InstanceBuilding : MonoBehaviour
         }
 
         area = GetComponent<RectTransform>();
+        areaName = area.name;
+        Debug.Log("Area name: " + areaName);
+
         maxBuildings = area.childCount;
 
         // Obtener los puntos de anclaje (hijos del objeto actual)
         List<Transform> anchorPoints = new List<Transform>();
         for (int i = 0; i < transform.childCount; i++)
         {
-            anchorPoints.Add(transform.GetChild(i));
+            string tagName = transform.GetChild(i).tag;
+            if (tagName == "PointReferenceBuilding"){
+               anchorPoints.Add(transform.GetChild(i));
+            }
+
         }
 
         // Determinar aleatoriamente el número de edificios a generar
@@ -44,7 +53,14 @@ public class InstanceBuilding : MonoBehaviour
 
             // Instanciar un edificio aleatorio como hijo del punto de anclaje
             Building randomBuilding = GetRandomBuilding();
+            if(randomBuilding._type == BuildingType.Casa){
+                selectSpriteCasa(areaName,randomBuilding);
+
+            }
+
+
             Building instance = Instantiate(randomBuilding, anchor.position, anchor.rotation, anchor);
+
 
             // Eliminar el punto de anclaje de la lista para no reutilizarlo
             anchorPoints.RemoveAt(randomIndex);
@@ -62,5 +78,32 @@ public class InstanceBuilding : MonoBehaviour
     {
         int randomIndex = Random.Range(0, buildings.Count);
         return buildings[randomIndex];
+    }
+
+
+    //Dependiendo del nombre del area se selecciona el sprite correspondiente
+    private void selectSpriteCasa(string areaName,Building instance) {
+        switch (areaName){
+            case "Area-Loki":
+                Sprite spriteLoki = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_loki");
+                instance.GetComponent<Image>().sprite = spriteLoki;
+
+            break;
+            case"Area-Cuthulu":
+                Sprite spriteCut = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_cthulu");
+                instance.GetComponent<Image>().sprite  = spriteCut;
+            break;
+            case"Area-Veles":
+                Sprite spriteVeles = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_veles");
+                instance.GetComponent<Image>().sprite  = spriteVeles;
+            break;
+            case"Area-Eris":
+                Sprite spriteEris = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_eris");
+                instance.GetComponent<Image>().sprite  = spriteEris;
+            break;
+            default:
+            break;
+        }
+
     }
 }
