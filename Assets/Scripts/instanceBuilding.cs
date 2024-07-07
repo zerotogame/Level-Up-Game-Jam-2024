@@ -12,6 +12,8 @@ public class InstanceBuilding : MonoBehaviour
     //Se indica de forma automatica dependiendo del numero de puntos de anclaje que tenga el objeto
    [SerializeField] private int maxBuildings = 3;
 
+   string areaName;
+
     void Start()
     {
         // Verificar que hay al menos 3 prefabs en la lista de edificios
@@ -22,6 +24,9 @@ public class InstanceBuilding : MonoBehaviour
         }
 
         area = GetComponent<RectTransform>();
+        areaName = area.name;
+        Debug.Log("Area name: " + areaName);
+
         maxBuildings = area.childCount;
 
         // Obtener los puntos de anclaje (hijos del objeto actual)
@@ -49,6 +54,7 @@ public class InstanceBuilding : MonoBehaviour
             Building randomBuilding = GetRandomBuilding();
             Building instance = Instantiate(randomBuilding, anchor.position, anchor.rotation, anchor);
 
+
             // Eliminar el punto de anclaje de la lista para no reutilizarlo
             anchorPoints.RemoveAt(randomIndex);
         }
@@ -65,5 +71,33 @@ public class InstanceBuilding : MonoBehaviour
     {
         int randomIndex = Random.Range(0, buildings.Count);
         return buildings[randomIndex];
+    }
+
+
+    //Dependiendo del nombre del area se selecciona el sprite correspondiente
+    private void selectSpriteCasa(string areaName,Building instance) {
+        switch (areaName){
+            case "Area-Loki":
+                Sprite spriteLoki = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_loki.png");
+                Debug.Log("Sprite: " + spriteLoki);
+                instance.GetComponent<SpriteRenderer>().sprite = spriteLoki;
+
+            break;
+            case"Area-Cuthulu":
+                Sprite spriteCut = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_cuthulu.png");
+                instance.GetComponent<SpriteRenderer>().sprite = spriteCut;
+            break;
+            case"Area-Veles":
+                Sprite spriteVeles = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_veles.png");
+                instance.GetComponent<SpriteRenderer>().sprite = spriteVeles;
+            break;
+            case"Area-Eris":
+                Sprite spriteEris = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_eris.png");
+                instance.GetComponent<SpriteRenderer>().sprite = spriteEris;
+            break;
+            default:
+            break;
+        }
+
     }
 }
