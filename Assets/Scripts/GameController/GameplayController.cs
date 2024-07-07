@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameplayController : MonoBehaviour
 {
     // Tutorial Paneles
-    public GameObject panelTut1, panelTut2, panelTut3, panelTut4;
+    public GameObject panelTut1, panelTut2, panelTut3, panelTut4, panelTutorialParent;
+    public GameObject tutOnBttn, tutOffBttn;
 
     public GameObject panelOpciones, panelPausa;
     public GameObject textoEstadoActivoOver, textoEstadoInactivoOver;
@@ -13,9 +14,32 @@ public class GameplayController : MonoBehaviour
     // -------TUTORIAL BOTONES Y PANELES------------
     private void Start()
     {
-        Time.timeScale = 0f;
+        if (GameContStat.tutoriaActivo)
+        {
+            panelTutorialParent.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            panelTutorialParent.SetActive(false);
+            Time.timeScale = 1f;
+        }
+
     }
-    public void Continuar1Bttn() 
+
+    private void Update()
+    {
+        if (GameContStat.tutoriaActivo)
+        {
+            PanelTutorial1Activo();
+        }
+        else
+        {
+            PanelTutorial1Inactivo();
+        }
+    }
+
+    public void Continuar1Bttn()
     {
         panelTut1.SetActive(false);
         panelTut2.SetActive(true);
@@ -48,8 +72,8 @@ public class GameplayController : MonoBehaviour
         panelPausa.SetActive(false);
         Time.timeScale = 1f;
     }
-    public void OpcionesBttn() 
-    { 
+    public void OpcionesBttn()
+    {
         panelOpciones.SetActive(true);
         panelPausa.SetActive(false);
     }
@@ -60,8 +84,8 @@ public class GameplayController : MonoBehaviour
     }
 
     // -------BOTONES OPCIONES--------------
-    public void InfoOnMouseOverBttn() 
-    { 
+    public void InfoOnMouseOverBttn()
+    {
         GameContStat.infoMouseOver = !GameContStat.infoMouseOver;
         if (GameContStat.infoMouseOver)
         {
@@ -74,8 +98,24 @@ public class GameplayController : MonoBehaviour
             textoEstadoInactivoOver.SetActive(true);
         }
     }
-    public void InfoClickDerechoBttn() 
-    { 
+    public void InfoClickDerechoBttn()
+    {
         GameContStat.infoMouseDerecho = !GameContStat.infoMouseDerecho;
+    }
+
+    // ---------BOTONES TUTORIAL-----------------
+    public void PanelTutorial1Activo()
+    {
+        //GameContStat.infoMouseOver = true;
+        GameContStat.tutoriaActivo = true;
+        tutOnBttn.SetActive(true);
+        tutOffBttn.SetActive(false);
+    }
+    public void PanelTutorial1Inactivo()
+    {
+        //GameContStat.infoMouseOver = false;
+        GameContStat.tutoriaActivo = false;
+        tutOnBttn.SetActive(false);
+        tutOffBttn.SetActive(true);
     }
 }
