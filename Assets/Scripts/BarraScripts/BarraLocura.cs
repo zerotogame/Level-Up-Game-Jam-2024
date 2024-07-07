@@ -105,9 +105,14 @@ public class BarraLocura : MonoBehaviour
     {
         if (barraLocura.fillAmount <= 0)
         {
-            defeatPanel.SetActive(true);
-            Time.timeScale = 0f;
+            setDerrrotaPanel();
         }
+    }
+
+    public void setDerrrotaPanel()
+    {
+        defeatPanel.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     // -------PERONAJES BOTONES--------------

@@ -76,7 +76,8 @@ public class InstanceBuilding : MonoBehaviour
     void Update()
     {
         // Aquí puedes realizar cualquier acción adicional necesaria al limpiar el prefab de la carta
-        bool isAllPointsHaveBuilding = AllPointsHaveBuilding();
+        //bool isAllPointsHaveBuilding = AllPointsHaveBuilding();
+        bool isAllPointsHaveBuilding = false;
         Debug.Log("isAllPointsHaveBuilding: " + isAllPointsHaveBuilding);
 
         if (isAllPointsHaveBuilding)
@@ -84,7 +85,7 @@ public class InstanceBuilding : MonoBehaviour
             Debug.Log("All points have building");
             barraLocura = GameObject.Find("BarraLocuraImg").GetComponent<BarraLocura>();
             Debug.Log("barraLocura: " + barraLocura);
-            barraLocura.CondicionDeDerrota();
+            barraLocura.setDerrrotaPanel();
         }
     }
 
@@ -123,10 +124,14 @@ public class InstanceBuilding : MonoBehaviour
 
     private bool AllPointsHaveBuilding()
     {
+
+        int numBuildings = transform.childCount;
+        Debug.Log("numBuildings: " + numBuildings);
         // Obtener los puntos de anclaje (hijos del objeto actual)
-        for (int i = 0; i < transform.childCount; i++)
+        for (int i = 0; i < numBuildings; i++)
         {
             Transform anchor = transform.GetChild(i);
+            Debug.Log("Anchor: " + anchor.tag);
             if (anchor.tag == "PointReferenceBuilding")
             {
                 if (anchor.childCount == 0)
