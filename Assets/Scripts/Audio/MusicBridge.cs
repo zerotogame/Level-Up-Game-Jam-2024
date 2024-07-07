@@ -15,7 +15,7 @@ public class MusicBridge : MonoBehaviour // MusicBridge conecta los distintos sc
         musicBehaviourInstance = GetComponent<MusicBehaviour>();
         //audioBehaviourInstance = GetComponent<AudioBehaviour>();
 
-        GameObject objetoAmbience = GameObject.Find("Ambience"); //Bucar el objeto Ambience para modificar los parámetros del sonido ambeintal
+        GameObject objetoAmbience = GameObject.Find("AmbienceAudio"); //Bucar el objeto Ambience para modificar los parámetros del sonido ambeintal
 
         if (objetoAmbience != null)
         {
