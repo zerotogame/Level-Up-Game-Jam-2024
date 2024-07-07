@@ -9,6 +9,7 @@ public class BarraLocura : MonoBehaviour
 
     public Image barraLocura;
     public GameObject victoryPanel, defeatPanel;
+    [SerializeField] private float valorIncremento = 0.05f;
 
 
     private void Start()
@@ -31,7 +32,6 @@ public class BarraLocura : MonoBehaviour
 
     void TeclasLocura()
     {
-        float valorIncremento = 0.05f;
         if (Input.GetKeyDown(KeyCode.Q))
             LokiMasLocura(valorIncremento);
         if (Input.GetKeyDown(KeyCode.W))

@@ -5,9 +5,9 @@ using UnityEngine;
 public class RandomWalkManager : MonoBehaviour
 {
     public GameObject spritePrefab; // Prefab del sprite
-    public int numberOfSprites = 10; // Número de sprites a generar
-    public Vector2 areaCenter = Vector2.zero; // Centro del área de generación
-    public Vector2 areaSize = new Vector2(10f, 10f); // Tamaño del área de generación
+    public int numberOfSprites = 10; // Nï¿½mero de sprites a generar
+    public Vector2 areaCenter = Vector2.zero; // Centro del ï¿½rea de generaciï¿½n
+    public Vector2 areaSize = new Vector2(10f, 10f); // Tamaï¿½o del ï¿½rea de generaciï¿½n
     public float moveSpeed = 2f; // Velocidad de movimiento del sprite
 
     void Awake()
@@ -20,12 +20,12 @@ public class RandomWalkManager : MonoBehaviour
 
     void SpawnRandomSprite()
     {
-        // Generar una posición aleatoria dentro del área de generación
+        // Generar una posiciï¿½n aleatoria dentro del ï¿½rea de generaciï¿½n
         float randomX = Random.Range(areaCenter.x - areaSize.x / 2, areaCenter.x + areaSize.x / 2);
         float randomY = Random.Range(areaCenter.y - areaSize.y / 2, areaCenter.y + areaSize.y / 2);
         Vector2 randomPosition = new Vector2(randomX, randomY);
 
-        // Crear el sprite y asignar su posición inicial
+        // Crear el sprite y asignar su posiciï¿½n inicial
         GameObject newSprite = Instantiate(spritePrefab, randomPosition, Quaternion.identity);
 
         // Configurar el script RandomWalk en el sprite
