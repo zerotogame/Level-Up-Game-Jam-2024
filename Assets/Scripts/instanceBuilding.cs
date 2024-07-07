@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class InstanceBuilding : MonoBehaviour
 {
     public List<Building> buildings; // Lista de edificios
@@ -52,6 +53,12 @@ public class InstanceBuilding : MonoBehaviour
 
             // Instanciar un edificio aleatorio como hijo del punto de anclaje
             Building randomBuilding = GetRandomBuilding();
+            if(randomBuilding._type == BuildingType.Casa){
+                selectSpriteCasa(areaName,randomBuilding);
+
+            }
+
+
             Building instance = Instantiate(randomBuilding, anchor.position, anchor.rotation, anchor);
 
 
@@ -78,22 +85,21 @@ public class InstanceBuilding : MonoBehaviour
     private void selectSpriteCasa(string areaName,Building instance) {
         switch (areaName){
             case "Area-Loki":
-                Sprite spriteLoki = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_loki.png");
-                Debug.Log("Sprite: " + spriteLoki);
-                instance.GetComponent<SpriteRenderer>().sprite = spriteLoki;
+                Sprite spriteLoki = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_loki");
+                instance.GetComponent<Image>().sprite = spriteLoki;
 
             break;
             case"Area-Cuthulu":
-                Sprite spriteCut = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_cuthulu.png");
-                instance.GetComponent<SpriteRenderer>().sprite = spriteCut;
+                Sprite spriteCut = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_cthulu");
+                instance.GetComponent<Image>().sprite  = spriteCut;
             break;
             case"Area-Veles":
-                Sprite spriteVeles = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_veles.png");
-                instance.GetComponent<SpriteRenderer>().sprite = spriteVeles;
+                Sprite spriteVeles = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_veles");
+                instance.GetComponent<Image>().sprite  = spriteVeles;
             break;
             case"Area-Eris":
-                Sprite spriteEris = Resources.Load<Sprite>("Assets/Resources/Img/Sprites/Building/Casas/casa_eris.png");
-                instance.GetComponent<SpriteRenderer>().sprite = spriteEris;
+                Sprite spriteEris = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_eris");
+                instance.GetComponent<Image>().sprite  = spriteEris;
             break;
             default:
             break;

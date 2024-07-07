@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8293868463678346799}
   - component: {fileID: 1662150288620120877}
   m_Layer: 5
-  m_Name: iglesia
+  m_Name: Comercio
   m_TagString: PointBuilding
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3d7bcf38ad59ae5499c3573bec108e5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a665d649edfc3bf48afb1051bbf3da89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,8 +90,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ee0fac743978242921e145a9e90577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: 0
+  _type: 3
   cardPrefab: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!61 &-8293868463678346799
 BoxCollider2D:
   m_ObjectHideFlags: 0
