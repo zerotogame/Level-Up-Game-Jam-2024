@@ -21,7 +21,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - tutorial
   - Water
   - UI
   - 
@@ -51,6 +51,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: tutorial
+    uniqueID: 3757199825
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
