@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\GameController\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\Cards\Mazo.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
+    <Compile Include="Assets\Scripts\Cursor\CursorPruebaCartas.cs" />
     <Compile Include="Assets\Scripts\Cards\Card.cs" />
     <Compile Include="Assets\Scripts\Personaje\InteligenciarefuerzoVisual.cs" />
     <Compile Include="Assets\Scripts\BarraScripts\BarraLocura.cs" />

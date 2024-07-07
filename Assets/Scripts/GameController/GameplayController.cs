@@ -5,15 +5,36 @@ using UnityEngine;
 public class GameplayController : MonoBehaviour
 {
     // Tutorial Paneles
-    public GameObject panelTut1, panelTut2, panelTut3, panelTut4;
+    public GameObject panelTut1, panelTut2, panelTut3, panelTut4, panelTutParent;
 
     public GameObject panelOpciones, panelPausa;
-    public GameObject textoEstadoActivoOver, textoEstadoInactivoOver;
+    public GameObject tutOnBttn, tutOffBttn, infoCartasOnBttn, infoCartasOffBttn;
 
     // -------TUTORIAL BOTONES Y PANELES------------
     private void Start()
     {
-        Time.timeScale = 0f;
+        if (GameContStat.tutoriaActivo)
+        {
+            Time.timeScale = 0f;
+            panelTutParent.SetActive(true);
+        }
+        else 
+        {
+            Time.timeScale = 1f;
+            panelTutParent.SetActive(false);
+        }
+    }
+    private void Update()
+    {
+        if (GameContStat.tutoriaActivo)
+            PanelTutorialActivo();
+        else
+            PanelTutorialInactivo();
+
+        if (GameContStat.infoMouseOver)
+            InfoCArtasOn();
+        else
+            InfoCArtasOff();
     }
     public void Continuar1Bttn()
     {
@@ -60,22 +81,31 @@ public class GameplayController : MonoBehaviour
     }
 
     // -------BOTONES OPCIONES--------------
-    public void InfoOnMouseOverBttn()
+
+    public void PanelTutorialActivo()
     {
-        GameContStat.infoMouseOver = !GameContStat.infoMouseOver;
-        if (GameContStat.infoMouseOver)
-        {
-            textoEstadoActivoOver.SetActive(true);
-            textoEstadoInactivoOver.SetActive(false);
-        }
-        else
-        {
-            textoEstadoActivoOver.SetActive(false);
-            textoEstadoInactivoOver.SetActive(true);
-        }
+        GameContStat.tutoriaActivo = true;
+        tutOnBttn.SetActive(true);
+        tutOffBttn.SetActive(false);
     }
-    public void InfoClickDerechoBttn()
+    public void PanelTutorialInactivo()
     {
-        GameContStat.infoMouseDerecho = !GameContStat.infoMouseDerecho;
+        GameContStat.tutoriaActivo = false;
+        tutOnBttn.SetActive(false);
+        tutOffBttn.SetActive(true);
+    }
+
+    public void InfoCArtasOn()
+    {
+        GameContStat.infoMouseOver = true;
+        infoCartasOnBttn.SetActive(true);
+        infoCartasOffBttn.SetActive(false);
+    }
+
+    public void InfoCArtasOff()
+    {
+        GameContStat.infoMouseOver = false;
+        infoCartasOnBttn.SetActive(false);
+        infoCartasOffBttn.SetActive(true);
     }
 }

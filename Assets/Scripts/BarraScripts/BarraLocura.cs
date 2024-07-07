@@ -28,7 +28,7 @@ public class BarraLocura : MonoBehaviour
         CondicionDeVictoria();
         CondicionDeDerrota();
         TeclasLocura();
-        BarraAutomacia();
+        //BarraAutomacia();
     }
 
     void TeclasLocura()
