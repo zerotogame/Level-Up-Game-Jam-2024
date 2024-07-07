@@ -6,12 +6,13 @@ public class InstanceBuilding : MonoBehaviour
 {
     public List<Building> buildings; // Lista de edificios
     public RectTransform area; // El RectTransform que define el área
+    private BarraLocura barraLocura;
 
     [Header("Número minimo de edificios")]
-    [SerializeField] private int minBuildings = 3;
+    public int minBuildings = 3;
     // Número máximo de edificios
     //Se indica de forma automatica dependiendo del numero de puntos de anclaje que tenga el objeto
-   [SerializeField] private int maxBuildings = 3;
+    public int maxBuildings = 3;
 
    string areaName;
 
@@ -43,7 +44,7 @@ public class InstanceBuilding : MonoBehaviour
 
         // Determinar aleatoriamente el número de edificios a generar
         int numBuildings = Random.Range(minBuildings, Mathf.Min(maxBuildings + 1, anchorPoints.Count + 1));
-
+        Debug.Log("numBuildings: " + numBuildings);
         // Instanciar edificios en los puntos de anclaje seleccionados aleatoriamente
         for (int i = 0; i < numBuildings; i++)
         {
@@ -70,6 +71,18 @@ public class InstanceBuilding : MonoBehaviour
         foreach (Transform unusedAnchor in anchorPoints)
         {
             Destroy(unusedAnchor.gameObject);
+        }
+    }
+
+    void Update()
+    {
+        // Aquí puedes realizar cualquier acción adicional necesaria al limpiar el prefab de la carta
+        bool isAllPointsHavenCard= allPointsHaveCard();
+        Debug.Log("isAllPointsHavenCard: "+isAllPointsHavenCard);
+
+        if(isAllPointsHavenCard){
+            barraLocura = GameObject.Find("BarraLocuraImg").GetComponent<BarraLocura>();
+            barraLocura.CondicionDeDerrota();
         }
     }
 
@@ -105,5 +118,20 @@ public class InstanceBuilding : MonoBehaviour
             break;
         }
 
+    }
+
+    private bool allPointsHaveCard(){
+        int totalChilds = transform.childCount;
+        Debug.Log("totalChilds: " + totalChilds);
+        for (int i = 0; i < totalChilds; i++)
+        {
+            Card card = transform.GetChild(i).GetComponent<Card>();
+            Debug.Log("card " + card);
+            if(card == null){
+                return false;
+            }
+
+        }
+        return true;
     }
 }

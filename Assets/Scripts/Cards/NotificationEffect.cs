@@ -75,10 +75,10 @@ public class NotificationEffect : MonoBehaviour
     Vector2 ObtenerPosicionAleatoria()
     {
         // Obtener los límites del Canvas
-        float minX = -canvasRectTransform.rect.width / 2;
-        float maxX = canvasRectTransform.rect.width / 2;
-        float minY = -canvasRectTransform.rect.height / 2;
-        float maxY = canvasRectTransform.rect.height / 2;
+        float minX = -canvasRectTransform.rect.width / 4;
+        float maxX = canvasRectTransform.rect.width / 4;
+        float minY = -canvasRectTransform.rect.height / 4;
+        float maxY = canvasRectTransform.rect.height / 4;
 
         // Calcular una posición aleatoria dentro de los límites
         float randomX = Random.Range(minX, maxX);
