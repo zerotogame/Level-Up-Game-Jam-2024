@@ -16,6 +16,7 @@ TagManager:
   - Cthulu_Card
   - Cuthulu_Card
   - NotificationEffect
+  - PointReferenceBuilding
   layers:
   - Default
   - TransparentFX
