@@ -1174,7 +1174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601533349546402103, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 641312540462672290, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1786,7 +1786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601533349546402103, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 601533349546402103, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_Material
@@ -3948,6 +3948,7 @@ MonoBehaviour:
   victoryPanel: {fileID: 1180839319}
   defeatPanel: {fileID: 523493397}
   valorIncremento: 0.05
+  valorDecremento: 0.025
 --- !u!114 &424140301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4171,7 +4172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601533349546402103, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 641312540462672290, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12764,7 +12765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601533349546402103, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 641312540462672290, guid: 210902406faf2c74388870f35d4477a0, type: 3}
       propertyPath: m_LocalPosition.x
