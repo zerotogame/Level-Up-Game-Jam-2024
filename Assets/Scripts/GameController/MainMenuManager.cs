@@ -6,19 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public GameObject opcionesPanel, creditosPanel, mainMenuPanel;
-    public GameObject tutOnBttn, tutOffBttn;
-
-    private void Start()
-    {
-        if (GameContStat.tutoriaActivo)
-        {
-            PanelTutorialActivo();
-        }
-        else
-        {
-            PanelTutorialInactivo();
-        }
-    }
+    public GameObject infoOnImg, infoOffImg;
 
     public void JugarBoton() 
     {
@@ -59,18 +47,16 @@ public class MainMenuManager : MonoBehaviour
         mainMenuPanel.SetActive(true);
     }
 
-    public void PanelTutorialActivo()
+    public void InfoOnBtnn()
     {
-        //GameContStat.infoMouseOver = true;
-        GameContStat.tutoriaActivo = true;
-        tutOnBttn.SetActive(true);
-        tutOffBttn.SetActive(false);
+        GameContStat.infoMouseOver = true;
+        infoOnImg.SetActive(true);
+        infoOffImg.SetActive(false);
     }
-    public void PanelTutorialInactivo()
+    public void InfoOffBtnn()
     {
-        //GameContStat.infoMouseOver = false;
-        GameContStat.tutoriaActivo = false;
-        tutOnBttn.SetActive(false);
-        tutOffBttn.SetActive(true);
+        GameContStat.infoMouseOver = false;
+        infoOnImg.SetActive(false);
+        infoOffImg.SetActive(true);
     }
 }
