@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DC3E7C17-881F-DAED-5876-25EEA6B783C0}</ProjectGuid>
+    <ProjectGuid>{0CEFA6AC-7EBA-9A09-D5FF-2BB854875F65}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>FMODUnityResonance</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -60,136 +60,11 @@
     <Analyzer Include="A:\Program Files\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Personaje\RandomWalkManager.cs" />
-    <Compile Include="Assets\Scripts\Cards\DraggableCard.cs" />
-    <Compile Include="Assets\Scripts\Personaje\TextChtulu.cs" />
-    <Compile Include="Assets\Scripts\instanceBuilding.cs" />
-    <Compile Include="Assets\Scripts\Audio\AudioBehaviour.cs" />
-    <Compile Include="Assets\Scripts\GameController\MainMenuManager.cs" />
-    <Compile Include="Assets\Scripts\Audio\MusicBridge.cs" />
-    <Compile Include="Assets\Scripts\Cards\Mazo.cs" />
-    <Compile Include="Assets\Scripts\Building.cs" />
-    <Compile Include="Assets\Scripts\Cursor\CursorPruebaCartas.cs" />
-    <Compile Include="Assets\Scripts\Cards\Card.cs" />
-    <Compile Include="Assets\Scripts\Personaje\InteligenciarefuerzoVisual.cs" />
-    <Compile Include="Assets\Scripts\BarraScripts\BarraLocura.cs" />
-    <Compile Include="Assets\Scripts\Audio\MusicBehaviour.cs" />
-    <Compile Include="Assets\Scripts\InfoCard2.cs" />
-    <Compile Include="Assets\Scripts\Cards\NotificationEffect.cs" />
-    <Compile Include="Assets\Scripts\Cards\NextCardManager.cs" />
-    <Compile Include="Assets\Scripts\GameController\GameContStat.cs" />
-    <Compile Include="Assets\Scripts\GameController\GameplayController.cs" />
-    <Compile Include="Assets\Scripts\Cursor\CursorManager.cs" />
-    <Compile Include="Assets\Scripts\Personaje\Personaje.cs" />
+    <Compile Include="Assets\Plugins\FMOD\addons\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
+    <Compile Include="Assets\Plugins\FMOD\addons\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Event\{0ea81685-82b9-4c78-a36b-08ee83db7185}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\EventFolder\{a1bbdb2a-778e-4d54-a00b-b5c78bc77f47}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{231e427c-d353-4cfc-8dae-5726506ad302}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Bank\{8b58de90-0fd4-404a-b45d-00569fb1e104}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{8f060251-dcb3-4619-84d9-ae1cd2924e9b}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{2b2ea175-e788-43b5-bdde-cd42eee3d182}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{34de9f40-75dd-4c6d-a673-c78650878208}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Event\{d9cff275-bf7b-4d96-891a-6c685dad3753}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\BankFolder\{06206104-162c-4095-bcd7-c89c2c24a7c4}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Asset\{e262cec8-b807-41ad-b8cd-6aac5d01144e}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EncodingSetting\{f41aa176-4a44-41e2-8bfb-05766fa053e2}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{dc6cd9b9-cde0-4627-be1e-d3981ecea616}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{a1bbdb2a-778e-4d54-a00b-b5c78bc77f47}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\ParameterPresetFolder\{545c4017-bfcf-4855-9ae7-d26d8fbcfa5b}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{d9cff275-bf7b-4d96-891a-6c685dad3753}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\SnapshotGroup\{f923bfbf-f558-4f53-9407-0a589ec99770}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{0b815a5d-8dc7-4a94-92da-d2cefbfb5d38}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\SandboxFolder\{b7cf8eea-bfdc-4a66-8bb4-e3f484e0d4dd}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{bfcbd63f-a4cb-4d6c-a1f8-67a917ff0e87}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{180cdd2d-e691-419c-8504-ebd9b28cd6d3}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\ParameterPresetFolder\{545c4017-bfcf-4855-9ae7-d26d8fbcfa5b}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Group\{c4758386-858e-49ca-b14e-9e65172951f7}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Tags.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\ProfilerFolder\{8926f052-d474-4b04-b0fa-e5f985770fc3}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{0ea81685-82b9-4c78-a36b-08ee83db7185}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\EffectPresetFolder\{60d4a08d-dcee-4042-98ae-c94c428bf0e1}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{64d6da47-4d36-45e6-9c93-ac6717cbcbbb}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{d38f3ab2-9fd2-4a7f-b6d6-b79f01cf4176}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\BankFolder\{06206104-162c-4095-bcd7-c89c2c24a7c4}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{3badb2d1-4b38-4965-b9f1-00ea2f1c53a2}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{84af75d2-0e91-4249-8b29-6501fa0094eb}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{592d7ec6-2b5d-407f-91ed-19ecc6b6717d}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{bac71758-fbe5-4bf9-93f6-1253f5731db7}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Master.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Asset\{e262cec8-b807-41ad-b8cd-6aac5d01144e}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{7f03e163-e77c-454b-ad37-e8f8e993386a}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\SnapshotGroup\{f923bfbf-f558-4f53-9407-0a589ec99770}.xml" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Tags.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\EventFolder\{14bfd137-80a8-495d-ba09-d73abf5e269a}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{0986f048-3e53-43e1-8571-87bf9e60f70e}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\EventFolder\{bac71758-fbe5-4bf9-93f6-1253f5731db7}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Bank\{a34f360a-ffa1-42d8-a1bf-b77417665359}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Insanity board FMOD\Metadata\ParameterPreset\{f1cead8d-359c-4cab-9c90-a2d7afd3439b}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EffectPresetFolder\{60d4a08d-dcee-4042-98ae-c94c428bf0e1}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{65abad10-8571-48a7-a200-5683b9b44a4f}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{e1fef276-3090-49b3-b0b9-658d80d542dc}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\SandboxFolder\{b7cf8eea-bfdc-4a66-8bb4-e3f484e0d4dd}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Return\{a0442cfc-7e87-408b-a102-4ca3bbf564ea}.xml" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{f43d1f69-d4f1-4912-b919-bc8b0a2259e9}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{228ef867-a218-4c2b-8af4-e32fdadb9003}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\EventFolder\{bf48c664-cacf-4e86-ac44-0dbc5c244252}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Return\{a0442cfc-7e87-408b-a102-4ca3bbf564ea}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{14bfd137-80a8-495d-ba09-d73abf5e269a}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{492b92d3-e0f8-4eb0-a4a4-7077d1a12c0c}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Bank\{03fbf38f-ed0e-4e0e-9d84-aa2eb9bafe3b}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Platform\{c60852e5-0435-49a5-a45b-f304f984d230}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Mixer.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{41a481f1-200e-4896-9365-5d75ec09a989}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Group\{dd5094fc-4df7-483b-b2e9-fb4fc63aae60}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\EncodingSetting\{f41aa176-4a44-41e2-8bfb-05766fa053e2}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Group\{3d9868d1-9d59-48de-b031-92559d22d608}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Workspace.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{2cac5dad-3006-4bac-b6af-26fd0cdb5dca}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{a364a9b3-0894-4f15-adc4-68443f7dac5f}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{dbe6401f-c5b9-46d2-a8b7-4409810160a8}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{bf48c664-cacf-4e86-ac44-0dbc5c244252}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{8ddff656-9328-448e-962c-ae8c03b839b5}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{59284e57-c0fc-41be-aac6-48f05ebef3d9}.xml" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{c702007f-82cb-4cb0-be75-8f5ad133c7ec}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Workspace.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Bank\{a34f360a-ffa1-42d8-a1bf-b77417665359}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{ad9a1ab8-9a29-4e6b-bdd4-86c60cf6d81f}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Mixer.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Bank\{5c97a69c-1e4b-4548-a5fe-df9d47f209ce}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{8d245043-9d08-476e-9498-b5b56d6ab167}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\Platform\{c60852e5-0435-49a5-a45b-f304f984d230}.xml" />
-    <None Include="Assets\Resources\Insanity board FMOD\Metadata\ProfilerFolder\{8926f052-d474-4b04-b0fa-e5f985770fc3}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{be826fc6-6cb4-4d02-b6ea-6ec22bf6587a}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\ParameterPreset\{4d621738-d3f1-4e69-a3cc-507141776151}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{44697881-c938-456c-adb8-37b023e4875b}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{d7f41d51-297b-4cfa-af69-a5ce1e808cd3}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Master.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Snapshot\{ce61d324-9b39-467c-91bc-d7e14a2b9a2f}.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\Insanity board FMOD\Metadata\Event\{cb840ab7-dbe2-4766-b2c4-8d3abb6037bd}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{3fe90cc4-2c68-4ea2-aaa6-c778b7bd72c0}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\ParameterPreset\{8e7c5c40-2fc9-4a01-9cba-d08c4d06b5e4}.xml" />
+    <None Include="Assets\Plugins\FMOD\addons\ResonanceAudio\Scripts\FMODUnityResonance.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -524,12 +399,48 @@
       <HintPath>A:\Program Files\2022.3.35f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>A:\Program Files\2022.3.35f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>A:\Program Files\2022.3.35f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -1020,212 +931,16 @@
       <HintPath>A:\Program Files\2022.3.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Path.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Aseprite.Common">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Collections">
-      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Aseprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FMODUnityEditor.csproj">
-      <Project>{82928B61-5E21-8417-609C-560262BF105E}</Project>
-      <Name>FMODUnityEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="FMODUnityResonance.csproj">
-      <Project>{0CEFA6AC-7EBA-9A09-D5FF-2BB854875F65}</Project>
-      <Name>FMODUnityResonance</Name>
-    </ProjectReference>
-    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
-      <Project>{137E0F9C-1B8C-E873-6EFF-502F5736CAC3}</Project>
-      <Name>FMODUnityResonanceEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="FMODUnity.csproj">
       <Project>{E203DBDB-BB51-2004-7D54-02EB389870FC}</Project>
       <Name>FMODUnity</Name>

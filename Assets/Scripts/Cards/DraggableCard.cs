@@ -14,6 +14,12 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     [SerializeField]
     private Building currentBuilding; // Para mantener el Building actual
     private Vector2 originalPosition; // Para guardar la posición original de la carta
+    FMOD.Studio.EventInstance agarrarCartas;
+
+    FMOD.Studio.EventInstance sonidoCartaCthulhu;
+    FMOD.Studio.EventInstance sonidoCartaLuki;
+    FMOD.Studio.EventInstance sonidoCartaEris;
+    FMOD.Studio.EventInstance sonidoCartaVeles;
 
     public BarraLocura barraLocura;
     public NotificationEffect notificationEffect;
@@ -28,6 +34,12 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         originalPosition = rectTransform.anchoredPosition; // Guardar la posición original al inicio
         barraLocura = FindObjectOfType<BarraLocura>();
         notificationEffect=  GameObject.FindGameObjectWithTag("NotificationEffect").GetComponent<NotificationEffect>();
+        agarrarCartas = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/AgarrarCarta");
+
+        sonidoCartaCthulhu = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SoltarCarta_Cthulhu");
+        sonidoCartaLuki = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SoltarCarta_Loki");
+        sonidoCartaEris = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SoltarCarta_Eris");
+        sonidoCartaVeles = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SoltarCarta_Veles");
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -38,6 +50,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
         // Permitir que la carta sea arrastrada
         rectTransform.SetAsLastSibling();
+        agarrarCartas.start();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -48,7 +61,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
         Vector2 position;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, eventData.position, canvas.worldCamera, out position);
-        rectTransform.position = canvas.transform.TransformPoint(position);
+        rectTransform.position = canvas.transform.TransformPoint(position);        
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -65,6 +78,8 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             CenterAndResizeCard(currentBuilding); // Centrar y reducir la carta
             CheckArea(card);
             card.GetComponent<InfoCard2>().enabled = true; // Deshabilitar el componente Card
+            string tagArea = card.gameObject.transform.parent.parent.parent.tag;
+            SonidoDioses(card, tagArea);
         }
         else
         {
@@ -252,6 +267,38 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         {
             notificationEffect.MostrarMensaje(TypeEffect.Inteligencia,"Aumento de la Inteligencia +" + decrement/100);
             barraLocura.DecreaseLocura(decrement, card.godType);
+        }
+    }
+    private void SonidoDioses(Card card, string tagArea)
+    {   
+        switch (card.godType)
+        {
+            case GodType.Veles:
+                if(tagArea.Contains("Veles"))
+                {
+                    sonidoCartaVeles.start();
+                }                
+                break;
+            case GodType.Loki:
+                if (tagArea.Contains("Loki"))
+                {
+                    sonidoCartaLuki.start();
+                }                
+                break;
+            case GodType.Cthulhu:
+                if (tagArea.Contains("Loki"))
+                {
+                    sonidoCartaCthulhu.start();
+                }                
+                break;
+            case GodType.Eris:
+                if (tagArea.Contains("Eris"))
+                {
+                    sonidoCartaEris.start();
+                }
+                break;
+            default:
+                break;
         }
     }
 }
