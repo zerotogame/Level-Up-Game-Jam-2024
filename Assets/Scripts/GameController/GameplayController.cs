@@ -9,10 +9,14 @@ public class GameplayController : MonoBehaviour
 
     public GameObject panelOpciones, panelPausa;
     public GameObject tutOnBttn, tutOffBttn, infoCartasOnBttn, infoCartasOffBttn;
+    public MusicBridge levelAudio;
 
     // -------TUTORIAL BOTONES Y PANELES------------
     private void Start()
     {
+        GameObject instanciaMusic = GameObject.Find("Music");
+        levelAudio = instanciaMusic.GetComponent<MusicBridge>();
+        levelAudio.NotificarPausaMusica(false);
         if (GameContStat.tutoriaActivo)
         {
             Time.timeScale = 0f;
@@ -71,11 +75,13 @@ public class GameplayController : MonoBehaviour
     {
         panelPausa.SetActive(true);
         Time.timeScale = 0f;
+        levelAudio.NotificarPausaMusica(true);
     }
     public void PauseButtonBack()
     {
         panelPausa.SetActive(false);
         Time.timeScale = 1f;
+        levelAudio.NotificarPausaMusica(false);
     }
     public void OpcionesBttn()
     {
