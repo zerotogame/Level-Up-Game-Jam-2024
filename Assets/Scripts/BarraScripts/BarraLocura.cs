@@ -11,6 +11,7 @@ public class BarraLocura : MonoBehaviour
     public GameObject victoryPanel, defeatPanel;
     [SerializeField] private float valorIncremento = 0.05f;
     [SerializeField] private float valorDecremento = 0.025f;
+    public MusicBridge levelAudio;
 
 
     private void Start()
@@ -21,6 +22,9 @@ public class BarraLocura : MonoBehaviour
         GameContStat.velocidadPersonajesEris = 1f;
         GameContStat.velocidadPersonajesCthulhu = 1f;
         GameContStat.barraLocuraCantidad = 0.5f;
+
+        GameObject instanciaMusic = GameObject.Find("Music");
+        levelAudio = instanciaMusic.GetComponent<MusicBridge>();
     }
     private void Update()
     {
@@ -28,7 +32,7 @@ public class BarraLocura : MonoBehaviour
         CondicionDeVictoria();
         CondicionDeDerrota();
         TeclasLocura();
-        //BarraAutomacia();
+        BarraLocuraMusica();
     }
 
     void TeclasLocura()
@@ -51,30 +55,24 @@ public class BarraLocura : MonoBehaviour
             CuMenosLocura();
     }
 
-    void BarraAutomacia()
+    void BarraLocuraMusica()
     {
-        if (barraLocura.fillAmount >= 0.7f)
-        {
-            barraLocura.fillAmount += 0.025f * Time.deltaTime;
-            GameContStat.velocidadPersonajesLoki += .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesVeles += .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesEris += .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesCthulhu += .5f * Time.deltaTime;
-        }
-        if (barraLocura.fillAmount < 0.7f && barraLocura.fillAmount > 0.3f)
-        {
-            barraLocura.fillAmount = barraLocura.fillAmount;
-        }
-        if (barraLocura.fillAmount < 0.6f)
-        {
-            GameContStat.velocidadPersonajesLoki -= .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesVeles -= .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesEris -= .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesCthulhu -= .5f * Time.deltaTime;
-            CondicionesVelocidadPerosnajes();
-        }
         if (barraLocura.fillAmount < 0.3f)
-            barraLocura.fillAmount -= 0.025f * Time.deltaTime;
+        {
+            levelAudio.NotificarCambioAudio(30);
+        }
+        if (barraLocura.fillAmount > 0.3f && barraLocura.fillAmount < 0.4f)
+        {
+            levelAudio.NotificarCambioAudio(40);
+        }
+        if (barraLocura.fillAmount > 0.55f && barraLocura.fillAmount < 0.75f)
+        {
+            levelAudio.NotificarCambioAudio(60);
+        }
+        if (barraLocura.fillAmount > 0.75f)
+        {
+            levelAudio.NotificarCambioAudio(75);
+        }           
     }
 
     // -------PANELES BOTONES--------------
