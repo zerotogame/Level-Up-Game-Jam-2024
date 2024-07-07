@@ -90,6 +90,8 @@ public class BarraLocura : MonoBehaviour
     public void ReiniciarButton()
     {
         SceneManager.LoadScene("Game");
+        levelAudio.NotificarCambioAudio(20);
+        levelAudio.NotificarEstadoJuego("JuegoEnCurso");
         Time.timeScale = 1f;
     }
     private void CondicionDeVictoria()
