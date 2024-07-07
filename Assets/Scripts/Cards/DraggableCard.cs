@@ -152,7 +152,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     */
     private void IncreaseLocura(Card card)
     {
-        notificationEffect.MostrarMensaje(TypeEffect.Locura,"Aumento de locura +" + valorIncremento);
+        notificationEffect.MostrarMensaje(TypeEffect.Locura,"Aumento de locura +" + valorIncremento*100);
         switch (card.godType)
         {
             case GodType.Veles:
@@ -265,7 +265,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
         if (decrement > 0)
         {
-            notificationEffect.MostrarMensaje(TypeEffect.Inteligencia,"Aumento de la Inteligencia +" + decrement/100);
+            notificationEffect.MostrarMensaje(TypeEffect.Inteligencia,"Aumento de la Inteligencia +" + decrement*100);
             barraLocura.DecreaseLocura(decrement, card.godType);
         }
     }

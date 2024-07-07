@@ -47,6 +47,11 @@ public class Building : MonoBehaviour
         set { _type = value; }
     }
 
+    public Card GetCardPrefab()
+    {
+        return cardPrefab;
+    }
+
     public void SetCardPrefab(Card card)
     {
         cardPrefab = card;
