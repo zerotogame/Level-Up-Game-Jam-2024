@@ -1381,26 +1381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1949342649}
     m_Modifications:
-    - target: {fileID: 1138038813173573070, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1453323376738129713, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 972781927}
-    - target: {fileID: 1453323376738129713, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: InfoCArtasOn
-      objectReference: {fileID: 0}
-    - target: {fileID: 1453323376738129713, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameplayController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1820081460295281427, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2401979625440401663, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1417,38 +1401,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OpcionesPanel (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4191736770855258978, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4394268082833050134, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 972781927}
-    - target: {fileID: 4394268082833050134, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: InfoCArtasOff
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394268082833050134, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameplayController, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 5129855314137643216, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 972781927}
-    - target: {fileID: 5129855314137643216, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PanelTutorialActivo
-      objectReference: {fileID: 0}
-    - target: {fileID: 5129855314137643216, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameplayController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5383086740663401140, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5604984826186316177, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1529,30 +1489,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5739424345499983948, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8311632991370072139, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8409084755752740715, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8803150418585721182, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 972781927}
-    - target: {fileID: 8803150418585721182, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PanelTutorialInactivo
-      objectReference: {fileID: 0}
-    - target: {fileID: 8803150418585721182, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameplayController, Assembly-CSharp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1571,6 +1511,16 @@ GameObject:
 --- !u!1 &147350808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6563599447798718040, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
+  m_PrefabInstance: {fileID: 147350805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &147350809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2197550095837108518, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
+  m_PrefabInstance: {fileID: 147350805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &147350810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8073733471572968699, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
   m_PrefabInstance: {fileID: 147350805}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &147350811 stripped
@@ -6935,6 +6885,8 @@ MonoBehaviour:
   panelPausa: {fileID: 1888831259}
   infoCartasOnBttn: {fileID: 147350808}
   infoCartasOffBttn: {fileID: 147350807}
+  tutOnBttn: {fileID: 147350810}
+  tutOffBttn: {fileID: 147350809}
   levelAudio: {fileID: 0}
 --- !u!1 &973915643
 GameObject:

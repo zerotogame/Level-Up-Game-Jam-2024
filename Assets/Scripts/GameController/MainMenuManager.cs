@@ -15,6 +15,11 @@ public class MainMenuManager : MonoBehaviour
             InfoCArtasOn();
         else
             InfoCArtasOff();
+
+        if (GameContStat.isTutorialOn)
+            TutOnBttn();
+        else
+            TutOffBttn();
     }
 
     public void JugarBoton()
@@ -24,7 +29,10 @@ public class MainMenuManager : MonoBehaviour
 
     public void TutorialBoton() 
     {
-        SceneManager.LoadScene("TutorialScene");
+        if(GameContStat.isTutorialOn)
+            SceneManager.LoadScene("TutorialScene");
+        else
+            SceneManager.LoadScene("Game");
     }
 
     public void CargarIntro()
@@ -73,5 +81,18 @@ public class MainMenuManager : MonoBehaviour
         GameContStat.infoMouseOver = false;
         infoCartasOnBttn.SetActive(false);
         infoCartasOffBttn.SetActive(true);
+    }
+
+    public void TutOnBttn()
+    {
+        GameContStat.isTutorialOn = true;
+        tutOnBttn.SetActive(true);
+        tutOffBttn.SetActive(false);
+    }
+    public void TutOffBttn()
+    {
+        GameContStat.isTutorialOn = false;
+        tutOnBttn.SetActive(false);
+        tutOffBttn.SetActive(true);
     }
 }

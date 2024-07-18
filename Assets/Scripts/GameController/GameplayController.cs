@@ -6,6 +6,7 @@ public class GameplayController : MonoBehaviour
 {
     public GameObject panelOpciones, panelPausa;
     public GameObject infoCartasOnBttn, infoCartasOffBttn;
+    public GameObject tutOnBttn, tutOffBttn;
     public MusicBridge levelAudio;
 
     // -------BOTONES DE OPCIONES------------
@@ -21,6 +22,11 @@ public class GameplayController : MonoBehaviour
             InfoCArtasOn();
         else
             InfoCArtasOff();
+
+        if (GameContStat.isTutorialOn)
+            TutOnBttn();
+        else
+            TutOffBttn();
     }
     // -------PANELES BOTONES--------------
     public void PauseButton()
@@ -59,5 +65,18 @@ public class GameplayController : MonoBehaviour
         GameContStat.infoMouseOver = false;
         infoCartasOnBttn.SetActive(false);
         infoCartasOffBttn.SetActive(true);
+    }
+
+    public void TutOnBttn() 
+    {
+        GameContStat.isTutorialOn = true;
+        tutOnBttn.SetActive(true);
+        tutOffBttn.SetActive(false);
+    }
+    public void TutOffBttn()
+    {
+        GameContStat.isTutorialOn = false;
+        tutOnBttn.SetActive(false);
+        tutOffBttn.SetActive(true);
     }
 }
