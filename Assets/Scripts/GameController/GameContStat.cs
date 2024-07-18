@@ -12,8 +12,6 @@ public static class GameContStat
     public static bool infoMouseOver = true;
     public static bool infoMouseDerecho = false;
 
-    public static bool tutoriaActivo = true;
-
     // VARIABLES ESTATICAS(NO CAMBIA SU VALOR) DE IDENTIFICACION
 
     public static float CardIDLoki1 = 1.1f;

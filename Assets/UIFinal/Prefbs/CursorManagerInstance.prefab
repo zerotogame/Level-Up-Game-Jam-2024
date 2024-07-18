@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d600794b0554308459ad9e3f8565a971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalCursor: {fileID: 2800000, guid: 2f7d6c168a8900c40ad303fffb6bcd0e, type: 3}
+  normalCursor: {fileID: 2800000, guid: a60dce9011d1f31489cfa481c9e11652, type: 3}
   handCursor: {fileID: 2800000, guid: d7039e9ed56852d4c9ecd224317a41e9, type: 3}
   hoverCursor: {fileID: 2800000, guid: c4d15e86dfc486941a3f435da5d5d3da, type: 3}

@@ -11,11 +11,6 @@ public class MainMenuManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameContStat.tutoriaActivo)
-            PanelTutorialActivo();
-        else
-            PanelTutorialInactivo();
-
         if (GameContStat.infoMouseOver)
             InfoCArtasOn();
         else
@@ -25,6 +20,11 @@ public class MainMenuManager : MonoBehaviour
     public void JugarBoton()
     {
         SceneManager.LoadScene("Game");
+    }
+
+    public void TutorialBoton() 
+    {
+        SceneManager.LoadScene("TutorialScene");
     }
 
     public void CargarIntro()
@@ -59,19 +59,6 @@ public class MainMenuManager : MonoBehaviour
     {
         creditosPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
-    }
-
-    public void PanelTutorialActivo()
-    {
-        GameContStat.tutoriaActivo = true;
-        tutOnBttn.SetActive(true);
-        tutOffBttn.SetActive(false);
-    }
-    public void PanelTutorialInactivo()
-    {
-        GameContStat.tutoriaActivo = false;
-        tutOnBttn.SetActive(false);
-        tutOffBttn.SetActive(true);
     }
 
     public void InfoCArtasOn() 
