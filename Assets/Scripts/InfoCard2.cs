@@ -27,7 +27,7 @@ public class InfoCard2 : MonoBehaviour
 
     private void OnMouseDown()
     {
-        CursorManager.Instance.SetHandCursor();
+        //CursorManager.Instance.SetHandCursor();
         pressed = true;
     }
 
@@ -38,7 +38,7 @@ public class InfoCard2 : MonoBehaviour
 
     private void OnMouseOver()
     {
-        CursorManager.Instance.SetHoverCursor();
+        //CursorManager.Instance.SetHoverCursor();
         if (GameContStat.infoMouseOver && !GameContStat.infoMouseDerecho)
         {
             LokiDorsalPanelMethod();
@@ -76,7 +76,7 @@ public class InfoCard2 : MonoBehaviour
 
     private void OnMouseExit()
     {
-        CursorManager.Instance.SetNormalCursor();
+        //CursorManager.Instance.SetNormalCursor();
         panelesDioses[0].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[1].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[2].gameObject.transform.GetChild(0).gameObject.SetActive(false);
