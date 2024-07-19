@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Cards\NotificationEffect.cs" />
     <Compile Include="Assets\Scripts\Cards\NextCardManager.cs" />
     <Compile Include="Assets\Scripts\GameController\GameContStat.cs" />
+    <Compile Include="Assets\Scripts\Cards\ImageChanger.cs" />
     <Compile Include="Assets\Scripts\GameController\GameplayController.cs" />
     <Compile Include="Assets\Scripts\TutorialSceneScripts\GraficTutorial.cs" />
     <Compile Include="Assets\Scripts\Cursor\CursorManager.cs" />

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   - component: {fileID: 1437276966521763155}
+  - component: {fileID: 6302813894031410326}
   m_Layer: 5
   m_Name: Card_Veles_1
   m_TagString: Veles_Card
@@ -203,3 +204,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardIDInfo: 7
+--- !u!114 &6302813894031410326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483634528787715998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10251883f02252b4295ad5d4163856f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageComponent: {fileID: 2276869944980965969}
+  image1: {fileID: 21300000, guid: 738b4e8d2907e584183b13d6854cf8f1, type: 3}
+  image2: {fileID: 21300000, guid: 1bfe7643b6fd6434e92c808175c3ff5a, type: 3}

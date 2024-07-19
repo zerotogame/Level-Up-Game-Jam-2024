@@ -14,6 +14,8 @@ public static class GameContStat
 
     public static bool isTutorialOn = true;
 
+    public static int modoDeJuego = 1; // 1-Facil 2-Normal 3-Dificil
+
     // VARIABLES ESTATICAS(NO CAMBIA SU VALOR) DE IDENTIFICACION
 
     public static float CardIDLoki1 = 1.1f;

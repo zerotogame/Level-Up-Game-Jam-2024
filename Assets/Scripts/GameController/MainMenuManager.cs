@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public GameObject opcionesPanel, creditosPanel, mainMenuPanel;
+    public GameObject mainBttnPanel, modosBttnPanel;
     public GameObject tutOnBttn, tutOffBttn;
     public GameObject infoCartasOnBttn, infoCartasOffBttn;
 
@@ -24,7 +25,29 @@ public class MainMenuManager : MonoBehaviour
 
     public void JugarBoton()
     {
-        SceneManager.LoadScene("Game");
+        mainBttnPanel.SetActive(false);
+        modosBttnPanel.SetActive(true);
+    }
+    public void JugarBackBoton()
+    {
+        mainBttnPanel.SetActive(true);
+        modosBttnPanel.SetActive(false);
+    }
+
+    public void FacilBttn() 
+    {
+        GameContStat.modoDeJuego = 1;
+        TutorialBoton();
+    }
+    public void NormalBttn()
+    {
+        GameContStat.modoDeJuego = 2;
+        TutorialBoton();
+    }
+    public void DificilBttn()
+    {
+        GameContStat.modoDeJuego = 3;
+        TutorialBoton();
     }
 
     public void TutorialBoton() 
