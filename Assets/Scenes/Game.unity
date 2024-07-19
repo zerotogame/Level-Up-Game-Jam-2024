@@ -14890,6 +14890,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1949342649}
     m_Modifications:
+    - target: {fileID: 1465486880011489499, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465486880011489499, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465486880011489499, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465486880011489499, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465486880011489499, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5371455943230496624, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
       propertyPath: m_Name
       value: NotificationEffect
@@ -14928,7 +14948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6093222314454751862, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 362.29
       objectReference: {fileID: 0}
     - target: {fileID: 6093222314454751862, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
       propertyPath: m_SizeDelta.y
