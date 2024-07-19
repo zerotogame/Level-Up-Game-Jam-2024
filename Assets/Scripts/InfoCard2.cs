@@ -8,7 +8,7 @@ public class InfoCard2 : MonoBehaviour
 
     bool pressed = false;
     public float CardIDInfo;
-    private void Start()
+    private void Awake()
     {
         panelesDioses[0] = GameObject.Find("LokiDorsalPanel");
         panelesDioses[1] = GameObject.Find("LokiFrontal1Panel");
