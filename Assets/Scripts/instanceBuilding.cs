@@ -82,7 +82,12 @@ public class InstanceBuilding : MonoBehaviour
         if (isAllPointsHaveCardPrefab)
         {
             barraLocura = GameObject.Find("BarraLocuraImg").GetComponent<BarraLocura>();
-            barraLocura.SetDerrrotaPanel();
+            float totalLocura = barraLocura.GetComponent<Image>().fillAmount;
+            if(totalLocura >= 0.5f){
+                barraLocura.SetVictoriaPanel();
+            }else{
+                barraLocura.SetDerrrotaPanel();
+            }
         }
     }
 

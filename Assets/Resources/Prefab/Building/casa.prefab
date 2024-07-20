@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2d7b4ec75c936334cac69f88b3b3be55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a16a53baf17ef984fb43d627e949fb55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 2
   cardPrefab: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!61 &4223333044152998165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,7 +136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15, y: 15}
+  m_Size: {x: 20, y: 20}
   m_EdgeRadius: 0
 --- !u!50 &-511752410751524091
 Rigidbody2D:

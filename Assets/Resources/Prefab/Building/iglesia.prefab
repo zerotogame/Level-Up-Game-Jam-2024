@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   cardPrefab: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!61 &-8293868463678346799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,7 +136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15, y: 15}
+  m_Size: {x: 20, y: 20}
   m_EdgeRadius: 0
 --- !u!50 &1662150288620120877
 Rigidbody2D:
