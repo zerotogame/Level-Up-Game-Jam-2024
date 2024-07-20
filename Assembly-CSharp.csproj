@@ -90,6 +90,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Insanity board FMOD\Metadata\Bank\{8b58de90-0fd4-404a-b45d-00569fb1e104}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{8f060251-dcb3-4619-84d9-ae1cd2924e9b}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{2b2ea175-e788-43b5-bdde-cd42eee3d182}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{34de9f40-75dd-4c6d-a673-c78650878208}.xml" />
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\Event\{d9cff275-bf7b-4d96-891a-6c685dad3753}.xml" />
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\BankFolder\{06206104-162c-4095-bcd7-c89c2c24a7c4}.xml" />
@@ -111,7 +112,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Insanity board FMOD\Metadata\Tags.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\ProfilerFolder\{8926f052-d474-4b04-b0fa-e5f985770fc3}.xml" />
-    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{4128922d-edaf-4582-9b1a-8b7839a1ad06}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Event\{0ea81685-82b9-4c78-a36b-08ee83db7185}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\EffectPresetFolder\{60d4a08d-dcee-4042-98ae-c94c428bf0e1}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -146,6 +146,8 @@
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\SandboxFolder\{b7cf8eea-bfdc-4a66-8bb4-e3f484e0d4dd}.xml" />
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\Return\{a0442cfc-7e87-408b-a102-4ca3bbf564ea}.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{f43d1f69-d4f1-4912-b919-bc8b0a2259e9}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{228ef867-a218-4c2b-8af4-e32fdadb9003}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\EventFolder\{bf48c664-cacf-4e86-ac44-0dbc5c244252}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Return\{a0442cfc-7e87-408b-a102-4ca3bbf564ea}.xml" />
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\EventFolder\{14bfd137-80a8-495d-ba09-d73abf5e269a}.xml" />
@@ -171,6 +173,7 @@
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{c702007f-82cb-4cb0-be75-8f5ad133c7ec}.xml" />
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\Workspace.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Bank\{a34f360a-ffa1-42d8-a1bf-b77417665359}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{ad9a1ab8-9a29-4e6b-bdd4-86c60cf6d81f}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Mixer.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Bank\{5c97a69c-1e4b-4548-a5fe-df9d47f209ce}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{8d245043-9d08-476e-9498-b5b56d6ab167}.xml" />
@@ -178,12 +181,14 @@
     <None Include="Assets\Resources\Insanity board FMOD\Metadata\ProfilerFolder\{8926f052-d474-4b04-b0fa-e5f985770fc3}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{be826fc6-6cb4-4d02-b6ea-6ec22bf6587a}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\ParameterPreset\{4d621738-d3f1-4e69-a3cc-507141776151}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{44697881-c938-456c-adb8-37b023e4875b}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{d7f41d51-297b-4cfa-af69-a5ce1e808cd3}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Master.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\Snapshot\{ce61d324-9b39-467c-91bc-d7e14a2b9a2f}.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Insanity board FMOD\Metadata\Event\{cb840ab7-dbe2-4766-b2c4-8d3abb6037bd}.xml" />
+    <None Include="Assets\Insanity board FMOD\Metadata\AudioFile\{3fe90cc4-2c68-4ea2-aaa6-c778b7bd72c0}.xml" />
     <None Include="Assets\Insanity board FMOD\Metadata\ParameterPreset\{8e7c5c40-2fc9-4a01-9cba-d08c4d06b5e4}.xml" />
   </ItemGroup>
   <ItemGroup>
