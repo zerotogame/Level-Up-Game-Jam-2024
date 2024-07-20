@@ -24,6 +24,10 @@ public class AudioBehaviour : MonoBehaviour //Modifica los distintos parámetros 
     {
         levelAmbience.SetParameter("Locura", locura);
     }
+    public void AudioStop()
+    {
+        levelAmbience.Stop();
+    }
     #endregion
 }
 

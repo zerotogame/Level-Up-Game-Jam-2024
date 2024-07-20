@@ -4,52 +4,45 @@ using UnityEngine;
 
 public class GameplayController : MonoBehaviour
 {
-    // Tutorial Paneles
-    public GameObject panelTut1, panelTut2, panelTut3, panelTut4;
-
     public GameObject panelOpciones, panelPausa;
-    public GameObject textoEstadoActivoOver, textoEstadoInactivoOver;
+    public GameObject infoCartasOnBttn, infoCartasOffBttn;
+    public GameObject tutOnBttn, tutOffBttn;
+    public MusicBridge levelAudio;
 
-    // -------TUTORIAL BOTONES Y PANELES------------
+    // -------BOTONES DE OPCIONES------------
     private void Start()
     {
-        Time.timeScale = 0f;
+        GameObject instanciaMusic = GameObject.Find("Music");
+        levelAudio = instanciaMusic.GetComponent<MusicBridge>();
+        levelAudio.NotificarPausaMusica(false);
     }
-    public void Continuar1Bttn() 
+    private void Update()
     {
-        panelTut1.SetActive(false);
-        panelTut2.SetActive(true);
-    }
-    public void Continuar2Bttn()
-    {
-        panelTut2.SetActive(false);
-        panelTut3.SetActive(true);
-    }
-    public void Continuar3Bttn()
-    {
-        panelTut3.SetActive(false);
-        panelTut4.SetActive(true);
-    }
-    public void Continuar4Bttn()
-    {
-        panelTut4.SetActive(false);
-        Time.timeScale = 1.0f;
-    }
+        if (GameContStat.infoMouseOver)
+            InfoCArtasOn();
+        else
+            InfoCArtasOff();
 
-
+        if (GameContStat.isTutorialOn)
+            TutOnBttn();
+        else
+            TutOffBttn();
+    }
     // -------PANELES BOTONES--------------
     public void PauseButton()
     {
         panelPausa.SetActive(true);
         Time.timeScale = 0f;
+        levelAudio.NotificarPausaMusica(true);
     }
     public void PauseButtonBack()
     {
         panelPausa.SetActive(false);
         Time.timeScale = 1f;
+        levelAudio.NotificarPausaMusica(false);
     }
-    public void OpcionesBttn() 
-    { 
+    public void OpcionesBttn()
+    {
         panelOpciones.SetActive(true);
         panelPausa.SetActive(false);
     }
@@ -60,22 +53,30 @@ public class GameplayController : MonoBehaviour
     }
 
     // -------BOTONES OPCIONES--------------
-    public void InfoOnMouseOverBttn() 
-    { 
-        GameContStat.infoMouseOver = !GameContStat.infoMouseOver;
-        if (GameContStat.infoMouseOver)
-        {
-            textoEstadoActivoOver.SetActive(true);
-            textoEstadoInactivoOver.SetActive(false);
-        }
-        else
-        {
-            textoEstadoActivoOver.SetActive(false);
-            textoEstadoInactivoOver.SetActive(true);
-        }
+    public void InfoCArtasOn()
+    {
+        GameContStat.infoMouseOver = true;
+        infoCartasOnBttn.SetActive(true);
+        infoCartasOffBttn.SetActive(false);
     }
-    public void InfoClickDerechoBttn() 
-    { 
-        GameContStat.infoMouseDerecho = !GameContStat.infoMouseDerecho;
+
+    public void InfoCArtasOff()
+    {
+        GameContStat.infoMouseOver = false;
+        infoCartasOnBttn.SetActive(false);
+        infoCartasOffBttn.SetActive(true);
+    }
+
+    public void TutOnBttn() 
+    {
+        GameContStat.isTutorialOn = true;
+        tutOnBttn.SetActive(true);
+        tutOffBttn.SetActive(false);
+    }
+    public void TutOffBttn()
+    {
+        GameContStat.isTutorialOn = false;
+        tutOnBttn.SetActive(false);
+        tutOffBttn.SetActive(true);
     }
 }

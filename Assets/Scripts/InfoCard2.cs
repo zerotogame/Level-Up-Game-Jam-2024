@@ -8,12 +8,14 @@ public class InfoCard2 : MonoBehaviour
 
     bool pressed = false;
     public float CardIDInfo;
-    private void Start()
+    private void Awake()
     {
         panelesDioses[0] = GameObject.Find("LokiDorsalPanel");
         panelesDioses[1] = GameObject.Find("LokiFrontal1Panel");
+        panelesDioses[2] = GameObject.Find("LokiFrontal2Panel");
         panelesDioses[3] = GameObject.Find("ErisDorsalPanel");
         panelesDioses[4] = GameObject.Find("ErisFrontal1Panel");
+        panelesDioses[5] = GameObject.Find("ErisFrontal2Panel");
         panelesDioses[6] = GameObject.Find("VelesDorsalPanel");
         panelesDioses[7] = GameObject.Find("VelesFrontal1Panel");
         panelesDioses[8] = GameObject.Find("VelesFrontal2Panel");
@@ -25,6 +27,7 @@ public class InfoCard2 : MonoBehaviour
 
     private void OnMouseDown()
     {
+        //CursorManager.Instance.SetHandCursor();
         pressed = true;
     }
 
@@ -35,12 +38,15 @@ public class InfoCard2 : MonoBehaviour
 
     private void OnMouseOver()
     {
+        //CursorManager.Instance.SetHoverCursor();
         if (GameContStat.infoMouseOver && !GameContStat.infoMouseDerecho)
         {
             LokiDorsalPanelMethod();
             LokiFrontal1PanelMethod();
+            LokiFrontal2PanelMethod();
             ErisDorsalPanelMethod();
             ErisFrontal1PanelMethod();
+            ErisFrontal2PanelMethod();
             VelesDorsalPanelMethod();
             VelesFrontal1PanelMethod();
             VelesFrontal2PanelMethod();
@@ -54,8 +60,10 @@ public class InfoCard2 : MonoBehaviour
             {
                 LokiDorsalPanelMethod();
                 LokiFrontal1PanelMethod();
+                LokiFrontal2PanelMethod();
                 ErisDorsalPanelMethod();
                 ErisFrontal1PanelMethod();
+                ErisFrontal2PanelMethod();
                 VelesDorsalPanelMethod();
                 VelesFrontal1PanelMethod();
                 VelesFrontal2PanelMethod();
@@ -68,10 +76,13 @@ public class InfoCard2 : MonoBehaviour
 
     private void OnMouseExit()
     {
+        //CursorManager.Instance.SetNormalCursor();
         panelesDioses[0].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[1].gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        panelesDioses[2].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[3].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[4].gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        panelesDioses[5].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[6].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[7].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         panelesDioses[8].gameObject.transform.GetChild(0).gameObject.SetActive(false);
@@ -99,6 +110,16 @@ public class InfoCard2 : MonoBehaviour
                 panelesDioses[1].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
+    private void LokiFrontal2PanelMethod()
+    {
+        if (CardIDInfo == 2)
+        {
+            if (!pressed)
+                panelesDioses[2].gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            else
+                panelesDioses[2].gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+    }
     private void ErisDorsalPanelMethod()
     {
         if (CardIDInfo == 3)
@@ -117,6 +138,16 @@ public class InfoCard2 : MonoBehaviour
                 panelesDioses[4].gameObject.transform.GetChild(0).gameObject.SetActive(true);
             else
                 panelesDioses[4].gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+    }
+    private void ErisFrontal2PanelMethod()
+    {
+        if (CardIDInfo == 5)
+        {
+            if (!pressed)
+                panelesDioses[5].gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            else
+                panelesDioses[5].gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
     private void VelesDorsalPanelMethod() 

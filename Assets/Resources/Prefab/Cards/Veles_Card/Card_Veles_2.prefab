@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   - component: {fileID: 3971424403630299802}
+  - component: {fileID: 7282062207471441723}
   m_Layer: 5
   m_Name: Card_Veles_2
   m_TagString: Veles_Card
@@ -70,7 +71,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -91234519, guid: be53c214ffe708b47a45e2ffb07cb42d, type: 3}
+  m_Sprite: {fileID: -816274496, guid: 892fc9680c742a14b8480a659fbc8c2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -203,3 +204,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardIDInfo: 8
+--- !u!114 &7282062207471441723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483634528787715998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10251883f02252b4295ad5d4163856f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageComponent: {fileID: 2276869944980965969}
+  image1: {fileID: 21300000, guid: 98f575b691564f943bbb1e5418d01877, type: 3}
+  image2: {fileID: 21300000, guid: 0063b1044d849b34d8ff2366ea43e50a, type: 3}

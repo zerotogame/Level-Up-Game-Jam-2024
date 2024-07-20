@@ -6,10 +6,56 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public GameObject opcionesPanel, creditosPanel, mainMenuPanel;
+    public GameObject mainBttnPanel, modosBttnPanel;
+    public GameObject tutOnBttn, tutOffBttn;
+    public GameObject infoCartasOnBttn, infoCartasOffBttn;
 
-    public void JugarBoton() 
+    private void Update()
     {
-        SceneManager.LoadScene("Game");
+        if (GameContStat.infoMouseOver)
+            InfoCArtasOn();
+        else
+            InfoCArtasOff();
+
+        if (GameContStat.isTutorialOn)
+            TutOnBttn();
+        else
+            TutOffBttn();
+    }
+
+    public void JugarBoton()
+    {
+        mainBttnPanel.SetActive(false);
+        modosBttnPanel.SetActive(true);
+    }
+    public void JugarBackBoton()
+    {
+        mainBttnPanel.SetActive(true);
+        modosBttnPanel.SetActive(false);
+    }
+
+    public void FacilBttn() 
+    {
+        GameContStat.modoDeJuego = 1;
+        TutorialBoton();
+    }
+    public void NormalBttn()
+    {
+        GameContStat.modoDeJuego = 2;
+        TutorialBoton();
+    }
+    public void DificilBttn()
+    {
+        GameContStat.modoDeJuego = 3;
+        TutorialBoton();
+    }
+
+    public void TutorialBoton() 
+    {
+        if(GameContStat.isTutorialOn)
+            SceneManager.LoadScene("TutorialScene");
+        else
+            SceneManager.LoadScene("Game");
     }
 
     public void CargarIntro()
@@ -44,5 +90,32 @@ public class MainMenuManager : MonoBehaviour
     {
         creditosPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
+    }
+
+    public void InfoCArtasOn() 
+    {
+        GameContStat.infoMouseOver = true;
+        infoCartasOnBttn.SetActive(true);
+        infoCartasOffBttn.SetActive(false);
+    }
+
+    public void InfoCArtasOff() 
+    {
+        GameContStat.infoMouseOver = false;
+        infoCartasOnBttn.SetActive(false);
+        infoCartasOffBttn.SetActive(true);
+    }
+
+    public void TutOnBttn()
+    {
+        GameContStat.isTutorialOn = true;
+        tutOnBttn.SetActive(true);
+        tutOffBttn.SetActive(false);
+    }
+    public void TutOffBttn()
+    {
+        GameContStat.isTutorialOn = false;
+        tutOnBttn.SetActive(false);
+        tutOffBttn.SetActive(true);
     }
 }

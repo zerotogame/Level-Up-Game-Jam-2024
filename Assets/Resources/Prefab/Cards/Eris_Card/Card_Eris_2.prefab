@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   - component: {fileID: 1141686310644770811}
+  - component: {fileID: 8773114511736277116}
   m_Layer: 5
   m_Name: Card_Eris_2
   m_TagString: Eris_Card
@@ -70,7 +71,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1440840466, guid: d43fd488e3729d94d81b0cf375f6088c, type: 3}
+  m_Sprite: {fileID: 876645582, guid: a1246787a71575b4f93d21011648d47e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -202,4 +203,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6303fda03f1ea2c4c92870d65979034f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CardIDInfo: 4
+  CardIDInfo: 5
+--- !u!114 &8773114511736277116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483634528787715998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10251883f02252b4295ad5d4163856f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageComponent: {fileID: 2276869944980965969}
+  image1: {fileID: 21300000, guid: 600be0f3898e68e4dab3a5c68935f053, type: 3}
+  image2: {fileID: 21300000, guid: d660cdbe3b8bd724f93a17cb457a39b5, type: 3}

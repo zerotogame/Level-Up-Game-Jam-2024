@@ -9,16 +9,22 @@ public class BarraLocura : MonoBehaviour
 
     public Image barraLocura;
     public GameObject victoryPanel, defeatPanel;
-
-
+    [SerializeField] private float valorIncremento = 0.05f;
+    [SerializeField] private float valorDecremento = 0.025f;
+    public MusicBridge levelAudio;
     private void Start()
     {
+        CheckModo();
         Time.timeScale = 1f;
         GameContStat.velocidadPersonajesLoki = 1f;
         GameContStat.velocidadPersonajesVeles = 1f;
         GameContStat.velocidadPersonajesEris = 1f;
         GameContStat.velocidadPersonajesCthulhu = 1f;
         GameContStat.barraLocuraCantidad = 0.5f;
+
+        GameObject instanciaMusic = GameObject.Find("Music");
+        levelAudio = instanciaMusic.GetComponent<MusicBridge>();
+        levelAudio.NotificarEstadoJuego("JuegoEnCurso");
     }
     private void Update()
     {
@@ -26,12 +32,28 @@ public class BarraLocura : MonoBehaviour
         CondicionDeVictoria();
         CondicionDeDerrota();
         TeclasLocura();
-        BarraAutomacia();
+        BarraLocuraMusica();
+    }
+
+    void CheckModo() // Modo de Juego
+    {
+        if (GameContStat.modoDeJuego == 1) // Facil
+        {
+            valorIncremento = 0.1f;
+            valorDecremento = 0f;
+        }
+        if (GameContStat.modoDeJuego == 2) // Normal
+        {
+            valorIncremento = 0.075f;
+        }
+        if (GameContStat.modoDeJuego == 3) // Dificil
+        {
+            valorIncremento = 0.05f;
+        }
     }
 
     void TeclasLocura()
     {
-        float valorIncremento = 0.05f;
         if (Input.GetKeyDown(KeyCode.Q))
             LokiMasLocura(valorIncremento);
         if (Input.GetKeyDown(KeyCode.W))
@@ -50,30 +72,24 @@ public class BarraLocura : MonoBehaviour
             CuMenosLocura();
     }
 
-    void BarraAutomacia()
+    void BarraLocuraMusica()
     {
-        if (barraLocura.fillAmount >= 0.7f)
-        {
-            barraLocura.fillAmount += 0.025f * Time.deltaTime;
-            GameContStat.velocidadPersonajesLoki += .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesVeles += .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesEris += .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesCthulhu += .5f * Time.deltaTime;
-        }
-        if (barraLocura.fillAmount < 0.7f && barraLocura.fillAmount > 0.3f)
-        {
-            barraLocura.fillAmount = barraLocura.fillAmount;
-        }
-        if (barraLocura.fillAmount < 0.6f)
-        {
-            GameContStat.velocidadPersonajesLoki -= .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesVeles -= .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesEris -= .5f * Time.deltaTime;
-            GameContStat.velocidadPersonajesCthulhu -= .5f * Time.deltaTime;
-            CondicionesVelocidadPerosnajes();
-        }
         if (barraLocura.fillAmount < 0.3f)
-            barraLocura.fillAmount -= 0.025f * Time.deltaTime;
+        {
+            levelAudio.NotificarCambioAudio(30);
+        }
+        if (barraLocura.fillAmount > 0.3f && barraLocura.fillAmount < 0.4f)
+        {
+            levelAudio.NotificarCambioAudio(40);
+        }
+        if (barraLocura.fillAmount > 0.55f && barraLocura.fillAmount < 0.75f)
+        {
+            levelAudio.NotificarCambioAudio(60);
+        }
+        if (barraLocura.fillAmount > 0.75f)
+        {
+            levelAudio.NotificarCambioAudio(75);
+        }           
     }
 
     // -------PANELES BOTONES--------------
@@ -90,6 +106,8 @@ public class BarraLocura : MonoBehaviour
     public void ReiniciarButton()
     {
         SceneManager.LoadScene("Game");
+        levelAudio.NotificarCambioAudio(20);
+        levelAudio.NotificarEstadoJuego("JuegoEnCurso");
         Time.timeScale = 1f;
     }
     private void CondicionDeVictoria()
@@ -97,16 +115,24 @@ public class BarraLocura : MonoBehaviour
         if (barraLocura.fillAmount >= 1)
         {
             victoryPanel.SetActive(true);
+            levelAudio.DetenerAmbience();
+            levelAudio.NotificarCambioAudio(100);
+            levelAudio.NotificarEstadoJuego("Ganar");
             Time.timeScale = 0f;
         }
     }
-    private void CondicionDeDerrota()
+    public void CondicionDeDerrota()
     {
         if (barraLocura.fillAmount <= 0)
         {
-            defeatPanel.SetActive(true);
-            Time.timeScale = 0f;
+            SetDerrrotaPanel();
         }
+    }
+
+    public void SetDerrrotaPanel()
+    {
+        defeatPanel.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     // -------PERONAJES BOTONES--------------
@@ -119,7 +145,7 @@ public class BarraLocura : MonoBehaviour
 
     public void LokiMenosLocura()
     {
-        barraLocura.fillAmount -= 0.025f;
+        barraLocura.fillAmount -= valorDecremento;
         GameContStat.velocidadPersonajesLoki -= 1f;
         CondicionesVelocidadPerosnajes();
     }
@@ -132,7 +158,7 @@ public class BarraLocura : MonoBehaviour
 
     public void ErisMenosLocura()
     {
-        barraLocura.fillAmount -= 0.025f;
+        barraLocura.fillAmount -= valorDecremento;
         GameContStat.velocidadPersonajesEris -= 1f;
         CondicionesVelocidadPerosnajes();
     }
@@ -145,7 +171,7 @@ public class BarraLocura : MonoBehaviour
 
     public void CuMenosLocura()
     {
-        barraLocura.fillAmount -= 0.025f;
+        barraLocura.fillAmount -= valorDecremento;
         GameContStat.velocidadPersonajesCthulhu -= 1f;
         CondicionesVelocidadPerosnajes();
         
@@ -159,7 +185,7 @@ public class BarraLocura : MonoBehaviour
 
     public void VelesMenosLocura()
     {
-        barraLocura.fillAmount -= 0.025f;
+        barraLocura.fillAmount -=valorDecremento;
         GameContStat.velocidadPersonajesVeles -= 1f;
         CondicionesVelocidadPerosnajes();
     }

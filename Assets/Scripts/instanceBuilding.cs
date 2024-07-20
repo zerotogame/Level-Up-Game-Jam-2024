@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class InstanceBuilding : MonoBehaviour
 {
     public List<Building> buildings; // Lista de edificios
     public RectTransform area; // El RectTransform que define el área
+    private BarraLocura barraLocura;
 
     [Header("Número minimo de edificios")]
-    [SerializeField] private int minBuildings = 3;
+    public int minBuildings = 3;
     // Número máximo de edificios
     //Se indica de forma automatica dependiendo del numero de puntos de anclaje que tenga el objeto
-   [SerializeField] private int maxBuildings = 3;
+    public int maxBuildings = 3;
 
-   string areaName;
+    string areaName;
 
     void Start()
     {
@@ -26,7 +28,7 @@ public class InstanceBuilding : MonoBehaviour
 
         area = GetComponent<RectTransform>();
         areaName = area.name;
-        Debug.Log("Area name: " + areaName);
+        //Debug.Log("Area name: " + areaName);
 
         maxBuildings = area.childCount;
 
@@ -35,15 +37,15 @@ public class InstanceBuilding : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             string tagName = transform.GetChild(i).tag;
-            if (tagName == "PointReferenceBuilding"){
-               anchorPoints.Add(transform.GetChild(i));
+            if (tagName == "PointReferenceBuilding")
+            {
+                anchorPoints.Add(transform.GetChild(i));
             }
-
         }
 
         // Determinar aleatoriamente el número de edificios a generar
         int numBuildings = Random.Range(minBuildings, Mathf.Min(maxBuildings + 1, anchorPoints.Count + 1));
-
+        //Debug.Log("numBuildings: " + numBuildings);
         // Instanciar edificios en los puntos de anclaje seleccionados aleatoriamente
         for (int i = 0; i < numBuildings; i++)
         {
@@ -53,14 +55,12 @@ public class InstanceBuilding : MonoBehaviour
 
             // Instanciar un edificio aleatorio como hijo del punto de anclaje
             Building randomBuilding = GetRandomBuilding();
-            if(randomBuilding._type == BuildingType.Casa){
-                selectSpriteCasa(areaName,randomBuilding);
-
+            if (randomBuilding._type == BuildingType.Casa)
+            {
+                selectSpriteCasa(areaName, randomBuilding);
             }
 
-
             Building instance = Instantiate(randomBuilding, anchor.position, anchor.rotation, anchor);
-
 
             // Eliminar el punto de anclaje de la lista para no reutilizarlo
             anchorPoints.RemoveAt(randomIndex);
@@ -73,6 +73,19 @@ public class InstanceBuilding : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        // Aquí puedes realizar cualquier acción adicional necesaria al limpiar el prefab de la carta
+        bool isAllPointsHaveCardPrefab = AllAreasHaveCardPrefab();
+        //Debug.Log("isAllPointsHaveCardPrefab: " + isAllPointsHaveCardPrefab);
+
+        if (isAllPointsHaveCardPrefab)
+        {
+            barraLocura = GameObject.Find("BarraLocuraImg").GetComponent<BarraLocura>();
+            barraLocura.SetDerrrotaPanel();
+        }
+    }
+
     // Método para obtener un edificio aleatorio de la lista de edificios
     public Building GetRandomBuilding()
     {
@@ -80,30 +93,63 @@ public class InstanceBuilding : MonoBehaviour
         return buildings[randomIndex];
     }
 
-
-    //Dependiendo del nombre del area se selecciona el sprite correspondiente
-    private void selectSpriteCasa(string areaName,Building instance) {
-        switch (areaName){
+    // Dependiendo del nombre del area se selecciona el sprite correspondiente
+    private void selectSpriteCasa(string areaName, Building instance)
+    {
+        switch (areaName)
+        {
             case "Area-Loki":
                 Sprite spriteLoki = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_loki");
                 instance.GetComponent<Image>().sprite = spriteLoki;
-
-            break;
-            case"Area-Cuthulu":
+                break;
+            case "Area-Cuthulu":
                 Sprite spriteCut = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_cthulu");
-                instance.GetComponent<Image>().sprite  = spriteCut;
-            break;
-            case"Area-Veles":
+                instance.GetComponent<Image>().sprite = spriteCut;
+                break;
+            case "Area-Veles":
                 Sprite spriteVeles = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_veles");
-                instance.GetComponent<Image>().sprite  = spriteVeles;
-            break;
-            case"Area-Eris":
+                instance.GetComponent<Image>().sprite = spriteVeles;
+                break;
+            case "Area-Eris":
                 Sprite spriteEris = Resources.Load<Sprite>("Img/Sprites/Building/Casas/casa_eris");
-                instance.GetComponent<Image>().sprite  = spriteEris;
-            break;
+                instance.GetComponent<Image>().sprite = spriteEris;
+                break;
             default:
-            break;
+                break;
         }
+    }
 
+    private bool AllAreasHaveCardPrefab()
+    {
+        // Obtener todas las áreas
+        InstanceBuilding[] allAreas = FindObjectsOfType<InstanceBuilding>();
+        //Debug.Log("allAreas: " + allAreas.Length);
+        foreach (InstanceBuilding area in allAreas)
+        {
+            // Obtener los puntos de anclaje (hijos del objeto actual)
+            for (int i = 0; i < area.transform.childCount; i++)
+            {
+                Transform anchor = area.transform.GetChild(i);
+                if (anchor.tag == "PointReferenceBuilding")
+                {
+                    //Debug.Log("Anchor: " + anchor);
+                    for (int j = 0; j < anchor.childCount; j++)
+                    {
+                        Building building = anchor.GetChild(j).GetComponent<Building>();
+                        //Debug.Log("Building: " + building.name);
+                        if (building != null)
+                        {
+                            Card card = building.GetCardPrefab();
+                            //Debug.Log("Card: " + card);
+                            if (card == null)
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return true;
     }
 }

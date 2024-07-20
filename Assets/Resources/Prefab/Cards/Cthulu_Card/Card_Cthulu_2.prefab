@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   - component: {fileID: 6230463045499035198}
+  - component: {fileID: 1426379986508272903}
   m_Layer: 5
   m_Name: Card_Cthulu_2
   m_TagString: Cthulu_Card
@@ -70,7 +71,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1156314392, guid: 4b843d8eb107ea84f8e05f8a0d0840ad, type: 3}
+  m_Sprite: {fileID: 957673882, guid: 7f0207d99cf441c48a8b67ace52ae87b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -203,3 +204,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardIDInfo: 11
+--- !u!114 &1426379986508272903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483634528787715998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10251883f02252b4295ad5d4163856f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageComponent: {fileID: 2276869944980965969}
+  image1: {fileID: 21300000, guid: b18d2cd2f379dad4cb98e53d791c84a0, type: 3}
+  image2: {fileID: 21300000, guid: 15c68f2b17998e94194bffc0bf164d2c, type: 3}
