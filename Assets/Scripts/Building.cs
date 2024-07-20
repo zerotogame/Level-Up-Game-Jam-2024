@@ -22,9 +22,9 @@ public class Building : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Building script started.");
-        Debug.Log("Object ID: " + _objectID);
-        Debug.Log("Type: " + _type.ToString());
+        //Debug.Log("Building script started.");
+        //Debug.Log("Object ID: " + _objectID);
+        //Debug.Log("Type: " + _type.ToString());
         generateId();
         setSprite();
     }
@@ -55,14 +55,14 @@ public class Building : MonoBehaviour
     public void SetCardPrefab(Card card)
     {
         cardPrefab = card;
-        Debug.Log("Card Prefab set to: " + (cardPrefab != null ? cardPrefab.name : "null"));
+        //Debug.Log("Card Prefab set to: " + (cardPrefab != null ? cardPrefab.name : "null"));
         // Aquí puedes realizar cualquier acción adicional necesaria al establecer el prefab de la carta
     }
 
     public void ClearCardPrefab()
     {
         cardPrefab = null;
-        Debug.Log("Card Prefab cleared.");
+        //Debug.Log("Card Prefab cleared.");
         // Aquí puedes realizar cualquier acción adicional necesaria al limpiar el prefab de la carta
     }
 
@@ -74,13 +74,13 @@ public class Building : MonoBehaviour
     void setSprite()
     {
         Sprite[] sprites = getRandomSprite();
-        Debug.Log("Setting sprite..." + _type.ToString());
-        Debug.Log("Sprites: " + (sprites != null ? sprites.Length.ToString() : "null"));
+        //Debug.Log("Setting sprite..." + _type.ToString());
+        //Debug.Log("Sprites: " + (sprites != null ? sprites.Length.ToString() : "null"));
 
         if (sprites != null)
         {
             int randomIndex = Random.Range(0, sprites.Length);
-            Debug.Log("Random index: " + randomIndex);
+            //Debug.Log("Random index: " + randomIndex);
             //sprite = sprites[randomIndex];
             GetComponent<Image>().sprite = sprites[randomIndex];
         }

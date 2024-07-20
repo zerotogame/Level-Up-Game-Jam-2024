@@ -51,10 +51,10 @@ public class NotificationEffect : MonoBehaviour
         switch (tipo)
         {
             case TypeEffect.Locura:
-                nuevoTexto.color = Color.red;
+                nuevoTexto.color = Color.cyan;
                 break;
             case TypeEffect.Inteligencia:
-                nuevoTexto.color = Color.blue;
+                nuevoTexto.color = Color.green;
                 break;
             default:
                 nuevoTexto.color = Color.white;
@@ -65,14 +65,14 @@ public class NotificationEffect : MonoBehaviour
         nuevoTexto.alpha = 1f; // Asegúrate de que el texto sea completamente opaco al inicio
 
         // Posicionar en una ubicación aleatoria dentro del Canvas
-        Vector2 posicionAleatoria = ObtenerPosicionAleatoria();
-        nuevoTexto.rectTransform.anchoredPosition = posicionAleatoria;
+        //Vector2 posicionAleatoria = ObtenerPosicionAleatoria();
+        nuevoTexto.rectTransform.anchoredPosition = Vector2.zero;
 
         // Iniciar la animación
         StartCoroutine(AnimarMensaje(nuevoObjeto, nuevoTexto, tiempoVida, desplazamientoY));
     }
 
-    Vector2 ObtenerPosicionAleatoria()
+    /*Vector2 ObtenerPosicionAleatoria()
     {
         // Obtener los límites del Canvas
         float minX = -canvasRectTransform.rect.width / 4;
@@ -85,7 +85,7 @@ public class NotificationEffect : MonoBehaviour
         float randomY = Random.Range(minY, maxY);
 
         return new Vector2(randomX, randomY);
-    }
+    }*/
 
     IEnumerator AnimarMensaje(GameObject objeto, TextMeshProUGUI texto, float duracion, float desplazamientoY)
     {

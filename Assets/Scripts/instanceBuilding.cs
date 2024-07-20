@@ -28,7 +28,7 @@ public class InstanceBuilding : MonoBehaviour
 
         area = GetComponent<RectTransform>();
         areaName = area.name;
-        Debug.Log("Area name: " + areaName);
+        //Debug.Log("Area name: " + areaName);
 
         maxBuildings = area.childCount;
 
@@ -45,7 +45,7 @@ public class InstanceBuilding : MonoBehaviour
 
         // Determinar aleatoriamente el número de edificios a generar
         int numBuildings = Random.Range(minBuildings, Mathf.Min(maxBuildings + 1, anchorPoints.Count + 1));
-        Debug.Log("numBuildings: " + numBuildings);
+        //Debug.Log("numBuildings: " + numBuildings);
         // Instanciar edificios en los puntos de anclaje seleccionados aleatoriamente
         for (int i = 0; i < numBuildings; i++)
         {
@@ -77,7 +77,7 @@ public class InstanceBuilding : MonoBehaviour
     {
         // Aquí puedes realizar cualquier acción adicional necesaria al limpiar el prefab de la carta
         bool isAllPointsHaveCardPrefab = AllAreasHaveCardPrefab();
-        Debug.Log("isAllPointsHaveCardPrefab: " + isAllPointsHaveCardPrefab);
+        //Debug.Log("isAllPointsHaveCardPrefab: " + isAllPointsHaveCardPrefab);
 
         if (isAllPointsHaveCardPrefab)
         {
@@ -123,7 +123,7 @@ public class InstanceBuilding : MonoBehaviour
     {
         // Obtener todas las áreas
         InstanceBuilding[] allAreas = FindObjectsOfType<InstanceBuilding>();
-        Debug.Log("allAreas: " + allAreas.Length);
+        //Debug.Log("allAreas: " + allAreas.Length);
         foreach (InstanceBuilding area in allAreas)
         {
             // Obtener los puntos de anclaje (hijos del objeto actual)
@@ -132,15 +132,15 @@ public class InstanceBuilding : MonoBehaviour
                 Transform anchor = area.transform.GetChild(i);
                 if (anchor.tag == "PointReferenceBuilding")
                 {
-                    Debug.Log("Anchor: " + anchor);
+                    //Debug.Log("Anchor: " + anchor);
                     for (int j = 0; j < anchor.childCount; j++)
                     {
                         Building building = anchor.GetChild(j).GetComponent<Building>();
-                        Debug.Log("Building: " + building.name);
+                        //Debug.Log("Building: " + building.name);
                         if (building != null)
                         {
                             Card card = building.GetCardPrefab();
-                            Debug.Log("Card: " + card);
+                            //Debug.Log("Card: " + card);
                             if (card == null)
                             {
                                 return false;

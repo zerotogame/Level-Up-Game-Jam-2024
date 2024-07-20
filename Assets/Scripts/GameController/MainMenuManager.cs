@@ -6,25 +6,56 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public GameObject opcionesPanel, creditosPanel, mainMenuPanel;
+    public GameObject mainBttnPanel, modosBttnPanel;
     public GameObject tutOnBttn, tutOffBttn;
     public GameObject infoCartasOnBttn, infoCartasOffBttn;
 
     private void Update()
     {
-        if (GameContStat.tutoriaActivo)
-            PanelTutorialActivo();
-        else
-            PanelTutorialInactivo();
-
         if (GameContStat.infoMouseOver)
             InfoCArtasOn();
         else
             InfoCArtasOff();
+
+        if (GameContStat.isTutorialOn)
+            TutOnBttn();
+        else
+            TutOffBttn();
     }
 
     public void JugarBoton()
     {
-        SceneManager.LoadScene("Game");
+        mainBttnPanel.SetActive(false);
+        modosBttnPanel.SetActive(true);
+    }
+    public void JugarBackBoton()
+    {
+        mainBttnPanel.SetActive(true);
+        modosBttnPanel.SetActive(false);
+    }
+
+    public void FacilBttn() 
+    {
+        GameContStat.modoDeJuego = 1;
+        TutorialBoton();
+    }
+    public void NormalBttn()
+    {
+        GameContStat.modoDeJuego = 2;
+        TutorialBoton();
+    }
+    public void DificilBttn()
+    {
+        GameContStat.modoDeJuego = 3;
+        TutorialBoton();
+    }
+
+    public void TutorialBoton() 
+    {
+        if(GameContStat.isTutorialOn)
+            SceneManager.LoadScene("TutorialScene");
+        else
+            SceneManager.LoadScene("Game");
     }
 
     public void CargarIntro()
@@ -61,19 +92,6 @@ public class MainMenuManager : MonoBehaviour
         mainMenuPanel.SetActive(true);
     }
 
-    public void PanelTutorialActivo()
-    {
-        GameContStat.tutoriaActivo = true;
-        tutOnBttn.SetActive(true);
-        tutOffBttn.SetActive(false);
-    }
-    public void PanelTutorialInactivo()
-    {
-        GameContStat.tutoriaActivo = false;
-        tutOnBttn.SetActive(false);
-        tutOffBttn.SetActive(true);
-    }
-
     public void InfoCArtasOn() 
     {
         GameContStat.infoMouseOver = true;
@@ -86,5 +104,18 @@ public class MainMenuManager : MonoBehaviour
         GameContStat.infoMouseOver = false;
         infoCartasOnBttn.SetActive(false);
         infoCartasOffBttn.SetActive(true);
+    }
+
+    public void TutOnBttn()
+    {
+        GameContStat.isTutorialOn = true;
+        tutOnBttn.SetActive(true);
+        tutOffBttn.SetActive(false);
+    }
+    public void TutOffBttn()
+    {
+        GameContStat.isTutorialOn = false;
+        tutOnBttn.SetActive(false);
+        tutOffBttn.SetActive(true);
     }
 }

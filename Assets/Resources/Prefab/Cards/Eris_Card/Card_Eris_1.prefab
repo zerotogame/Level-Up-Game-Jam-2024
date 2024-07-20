@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8486616435051818566}
   - component: {fileID: 7905241211896955286}
   - component: {fileID: 6720601847323748798}
+  - component: {fileID: 9079070163272471249}
   m_Layer: 5
   m_Name: Card_Eris_1
   m_TagString: Eris_Card
@@ -203,3 +204,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardIDInfo: 4
+--- !u!114 &9079070163272471249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483634528787715998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10251883f02252b4295ad5d4163856f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageComponent: {fileID: 2276869944980965969}
+  image1: {fileID: 21300000, guid: 53cc7ab211fb8d446a66e2570e115ea5, type: 3}
+  image2: {fileID: 21300000, guid: 160c7ee315b04644395c169dcb7dda07, type: 3}

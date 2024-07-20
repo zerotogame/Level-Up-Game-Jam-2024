@@ -12,10 +12,9 @@ public class BarraLocura : MonoBehaviour
     [SerializeField] private float valorIncremento = 0.05f;
     [SerializeField] private float valorDecremento = 0.025f;
     public MusicBridge levelAudio;
-
-
     private void Start()
     {
+        CheckModo();
         Time.timeScale = 1f;
         GameContStat.velocidadPersonajesLoki = 1f;
         GameContStat.velocidadPersonajesVeles = 1f;
@@ -34,6 +33,23 @@ public class BarraLocura : MonoBehaviour
         CondicionDeDerrota();
         TeclasLocura();
         BarraLocuraMusica();
+    }
+
+    void CheckModo() // Modo de Juego
+    {
+        if (GameContStat.modoDeJuego == 1) // Facil
+        {
+            valorIncremento = 0.1f;
+            valorDecremento = 0f;
+        }
+        if (GameContStat.modoDeJuego == 2) // Normal
+        {
+            valorIncremento = 0.075f;
+        }
+        if (GameContStat.modoDeJuego == 3) // Dificil
+        {
+            valorIncremento = 0.05f;
+        }
     }
 
     void TeclasLocura()

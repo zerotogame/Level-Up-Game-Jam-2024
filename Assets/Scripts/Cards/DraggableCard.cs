@@ -26,8 +26,14 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     [SerializeField] private float valorIncremento= 0.05f;
 
+    // Valores de decremento
+    private float valor1 = 0.05f, valor2 = 0.03f, valor3 = 0.025f, valor4 = 0.02f;
+
     private void Start()
     {
+        // Checa modo de juego
+        CheckModo();
+
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         card = GetComponent<Card>(); // Asegúrate de tener una referencia al componente Card
@@ -40,6 +46,29 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         sonidoCartaLuki = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SoltarCarta_Loki");
         sonidoCartaEris = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SoltarCarta_Eris");
         sonidoCartaVeles = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SoltarCarta_Veles");
+    }
+    void CheckModo() // Modo de Juego
+    {
+        if (GameContStat.modoDeJuego == 1) // Facil
+        {
+            valorIncremento = 0.1f;
+            valor1 = 0; 
+            valor2 = 0;
+            valor3 = 0;
+            valor4 = 0;
+        }
+        if (GameContStat.modoDeJuego == 2) // Normal
+        {
+            valorIncremento = 0.075f;
+            valor1 = 0.025f;
+            valor2 = 0.025f;
+            valor3 = 0.025f;
+            valor4 = 0.025f;
+        }
+        if (GameContStat.modoDeJuego == 3) // Dificil
+        {
+            valorIncremento = 0.05f;
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -152,7 +181,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     */
     private void IncreaseLocura(Card card)
     {
-        notificationEffect.MostrarMensaje(TypeEffect.Locura,"Aumento de locura +" + valorIncremento*100);
+        notificationEffect.MostrarMensaje(TypeEffect.Locura,"LOCURA    +" + valorIncremento*100);
         switch (card.godType)
         {
             case GodType.Veles:
@@ -201,60 +230,60 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             case GodType.Loki:
                 if (tagArea.Contains("Eris"))
                 {
-                    decrement = 0.050f;
+                    decrement = valor1;
                 }
                 else if (tagArea.Contains("Veles"))
                 {
-                    decrement = 0.030f;
+                    decrement = valor2;
                 }
                 else if (tagArea.Contains("Cthulhu"))
                 {
-                    decrement = 0.020f;
+                    decrement = valor4;
                 }
                 break;
 
             case GodType.Eris:
                 if (tagArea.Contains("Loki"))
                 {
-                    decrement = 0.020f;
+                    decrement = valor4;
                 }
                 else if (tagArea.Contains("Veles"))
                 {
-                    decrement = 0.050f;
+                    decrement = valor1;
                 }
                 else if (tagArea.Contains("Cthulhu"))
                 {
-                    decrement = 0.030f;
+                    decrement = valor2;
                 }
                 break;
 
             case GodType.Veles:
                 if (tagArea.Contains("Loki"))
                 {
-                    decrement = 0.050f;
+                    decrement = valor1;
                 }
                 else if (tagArea.Contains("Eris"))
                 {
-                    decrement = 0.025f;
+                    decrement = valor3;
                 }
                 else if (tagArea.Contains("Cthulhu"))
                 {
-                    decrement = 0.050f;
+                    decrement = valor1;
                 }
                 break;
 
             case GodType.Cthulhu:
                 if (tagArea.Contains("Loki"))
                 {
-                    decrement = 0.050f;
+                    decrement = valor1;
                 }
                 else if (tagArea.Contains("Eris"))
                 {
-                    decrement = 0.025f;
+                    decrement = valor3;
                 }
                 else if (tagArea.Contains("Veles"))
                 {
-                    decrement = 0.050f;
+                    decrement = valor1;
                 }
                 break;
 
@@ -265,7 +294,7 @@ public class DraggableCard : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
         if (decrement > 0)
         {
-            notificationEffect.MostrarMensaje(TypeEffect.Inteligencia,"Aumento de la Inteligencia +" + decrement*100);
+            notificationEffect.MostrarMensaje(TypeEffect.Inteligencia,"INTELIGENCIA +" + decrement*100);
             barraLocura.DecreaseLocura(decrement, card.godType);
         }
     }
