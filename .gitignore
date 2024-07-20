@@ -8,6 +8,8 @@
 /.vs
 .vsconfig
 
+fmod_editor.log
+
 
 # Ignore idea directory
 .idea
