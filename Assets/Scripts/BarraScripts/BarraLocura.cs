@@ -114,11 +114,7 @@ public class BarraLocura : MonoBehaviour
     {
         if (barraLocura.fillAmount >= 1)
         {
-            victoryPanel.SetActive(true);
-            levelAudio.DetenerAmbience();
-            levelAudio.NotificarCambioAudio(100);
-            levelAudio.NotificarEstadoJuego("Ganar");
-            Time.timeScale = 0f;
+            SetVictoriaPanel();
         }
     }
     public void CondicionDeDerrota()
@@ -132,6 +128,14 @@ public class BarraLocura : MonoBehaviour
     public void SetDerrrotaPanel()
     {
         defeatPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+    public void SetVictoriaPanel()
+    {
+        victoryPanel.SetActive(true);
+        levelAudio.DetenerAmbience();
+        levelAudio.NotificarCambioAudio(100);
+        levelAudio.NotificarEstadoJuego("Ganar");
         Time.timeScale = 0f;
     }
 
