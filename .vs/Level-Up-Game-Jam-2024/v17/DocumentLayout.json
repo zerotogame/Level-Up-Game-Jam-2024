@@ -1,101 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Repos\\Level-Up-Game-Jam-2024\\",
+  "WorkspaceRootPath": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|e:\\repos\\level-up-game-jam-2024\\assets\\scripts\\audio\\volumesliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\volumesliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|e:\\repos\\level-up-game-jam-2024\\assets\\scripts\\audio\\volumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\volumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\musicbridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\musicbridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\musicbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\musicbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\gamecontroller\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\gamecontroller\\gamecontstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\gamecontroller\\gamecontstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\gamecontstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\tutorialscenescripts\\grafictutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|c:\\repos\\11.levelup-gamejam2024\\level-up-game-jam-2024\\assets\\scripts\\gamecontroller\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\tutorialscenescripts\\grafictutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorialscenescripts\\grafictutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\textscripts\\typewriteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\textscripts\\typewriteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\volumesliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\volumesliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\barrascripts\\barralocura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\barrascripts\\barralocura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\infocard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\infocard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\cursor\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cursor\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\gamecontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\gamecontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E203DBDB-BB51-2004-7D54-02EB389870FC}|FMODUnity.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\plugins\\fmod\\src\\runtimeutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\musicbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\musicbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\volumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\volumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\musicbridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\musicbridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\textscripts\\typewriteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\textscripts\\typewriteeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\barrascripts\\barralocura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\barrascripts\\barralocura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\infocard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\infocard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\cursor\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cursor\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E203DBDB-BB51-2004-7D54-02EB389870FC}|FMODUnity.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\plugins\\fmod\\src\\runtimeutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E203DBDB-BB51-2004-7D54-02EB389870FC}|FMODUnity.csproj|solutionrelative:assets\\plugins\\fmod\\src\\runtimeutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E203DBDB-BB51-2004-7D54-02EB389870FC}|FMODUnity.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\plugins\\fmod\\src\\runtimemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E203DBDB-BB51-2004-7D54-02EB389870FC}|FMODUnity.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\plugins\\fmod\\src\\runtimemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E203DBDB-BB51-2004-7D54-02EB389870FC}|FMODUnity.csproj|solutionrelative:assets\\plugins\\fmod\\src\\runtimemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\instancebuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\instancebuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\instancebuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\audiobehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\audio\\audiobehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\audiobehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\draggablecard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\draggablecard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cards\\draggablecard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\inteligenciarefuerzovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\inteligenciarefuerzovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\personaje\\inteligenciarefuerzovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\personaje\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Personaje\\TextChtulu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\randomwalkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\personaje\\randomwalkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\personaje\\randomwalkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|E:\\Repos\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\assets\\scripts\\cards\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3E7C17-881F-DAED-5876-25EEA6B783C0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cards\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -106,78 +106,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VolumeSliders.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeSliders.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\VolumeSliders.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeSliders.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\VolumeSliders.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T02:15:02.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VolumeController.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\VolumeController.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Audio\\VolumeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T01:55:47.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BarraLocura.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIA0wBsAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T20:37:26.783Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "VolumeSliders.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeSliders.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\VolumeSliders.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeSliders.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Audio\\VolumeSliders.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwA0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T02:15:02.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MusicBehaviour.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBehaviour.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\MusicBehaviour.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBehaviour.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\Audio\\MusicBehaviour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T16:07:00.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T16:07:00.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "GraficTutorial.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TutorialSceneScripts\\GraficTutorial.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TutorialSceneScripts\\GraficTutorial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TutorialSceneScripts\\GraficTutorial.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TutorialSceneScripts\\GraficTutorial.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TutorialSceneScripts\\GraficTutorial.cs",
               "RelativeToolTip": "Assets\\Scripts\\TutorialSceneScripts\\GraficTutorial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAjAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T03:22:48.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "GameplayController.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameplayController.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameplayController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\GameplayController.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameplayController.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameplayController.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameController\\GameplayController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -185,11 +158,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "InfoCard2.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\InfoCard2.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\InfoCard2.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InfoCard2.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\InfoCard2.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\InfoCard2.cs",
               "RelativeToolTip": "Assets\\Scripts\\InfoCard2.cs",
               "ViewState": "AQIAAMAAAAAAAAAAAAA+wE4AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -199,9 +172,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "RuntimeUtils.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeUtils.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeUtils.cs",
               "RelativeDocumentMoniker": "Assets\\Plugins\\FMOD\\src\\RuntimeUtils.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeUtils.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeUtils.cs",
               "RelativeToolTip": "Assets\\Plugins\\FMOD\\src\\RuntimeUtils.cs",
               "ViewState": "AQIAAEcCAAAAAAAAAIA0wFMCAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,48 +182,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MainMenuManager.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\MainMenuManager.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\MainMenuManager.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\MainMenuManager.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\MainMenuManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameController\\MainMenuManager.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAkwC0AAAAFAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAswE4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T14:19:19.484Z"
+              "WhenOpened": "2024-07-06T14:19:19.484Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "GameContStat.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameContStat.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameContStat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\GameContStat.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameContStat.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\GameController\\GameContStat.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameController\\GameContStat.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T21:03:08.537Z"
+              "WhenOpened": "2024-07-03T21:03:08.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "BarraLocura.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BarraScripts\\BarraLocura.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIA0wBsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T20:37:26.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VolumeController.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\VolumeController.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\VolumeController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Audio\\VolumeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T01:55:47.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MusicBridge.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBridge.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBridge.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\MusicBridge.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBridge.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\MusicBridge.cs",
               "RelativeToolTip": "Assets\\Scripts\\Audio\\MusicBridge.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T15:33:45.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T15:33:45.301Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "RuntimeManager.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeManager.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeManager.cs",
               "RelativeDocumentMoniker": "Assets\\Plugins\\FMOD\\src\\RuntimeManager.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeManager.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Plugins\\FMOD\\src\\RuntimeManager.cs",
               "RelativeToolTip": "Assets\\Plugins\\FMOD\\src\\RuntimeManager.cs",
               "ViewState": "AQIAAGEEAAAAAAAAAAAEwAMFAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,11 +256,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CursorManager.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cursor\\CursorManager.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cursor\\CursorManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cursor\\CursorManager.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cursor\\CursorManager.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cursor\\CursorManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Cursor\\CursorManager.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwCkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -270,11 +268,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TypeWriteEffect.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TextScripts\\TypeWriteEffect.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TextScripts\\TypeWriteEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TextScripts\\TypeWriteEffect.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TextScripts\\TypeWriteEffect.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\TextScripts\\TypeWriteEffect.cs",
               "RelativeToolTip": "Assets\\Scripts\\TextScripts\\TypeWriteEffect.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwCIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -284,9 +282,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "DraggableCard.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\DraggableCard.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\DraggableCard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cards\\DraggableCard.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\DraggableCard.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\DraggableCard.cs",
               "RelativeToolTip": "Assets\\Scripts\\Cards\\DraggableCard.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAIwFAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -296,9 +294,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "instanceBuilding.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\instanceBuilding.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\instanceBuilding.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\instanceBuilding.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\instanceBuilding.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\instanceBuilding.cs",
               "RelativeToolTip": "Assets\\Scripts\\instanceBuilding.cs",
               "ViewState": "AQIAAG0AAAAAAAAAAAAvwIwAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -308,9 +306,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "Building.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Building.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Building.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Building.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Building.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Building.cs",
               "RelativeToolTip": "Assets\\Scripts\\Building.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAawBgAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -320,9 +318,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "Mazo.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Mazo.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Mazo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cards\\Mazo.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Mazo.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Mazo.cs",
               "RelativeToolTip": "Assets\\Scripts\\Cards\\Mazo.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -332,9 +330,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "InteligenciarefuerzoVisual.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
               "RelativeToolTip": "Assets\\Scripts\\Personaje\\InteligenciarefuerzoVisual.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -344,9 +342,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "AudioBehaviour.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\AudioBehaviour.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\AudioBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioBehaviour.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\AudioBehaviour.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Audio\\AudioBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\Audio\\AudioBehaviour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -356,9 +354,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "TextChtulu.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\TextChtulu.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\TextChtulu.cs",
               "RelativeToolTip": "Assets\\Scripts\\Personaje\\TextChtulu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -368,9 +366,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "Card.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Card.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Card.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cards\\Card.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Card.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Cards\\Card.cs",
               "RelativeToolTip": "Assets\\Scripts\\Cards\\Card.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -380,9 +378,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "RandomWalkManager.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Personaje\\RandomWalkManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -392,9 +390,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "Personaje.cs",
-              "DocumentMoniker": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\Personaje.cs",
+              "DocumentMoniker": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\Personaje.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Personaje\\Personaje.cs",
-              "ToolTip": "E:\\Repos\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\Personaje.cs",
+              "ToolTip": "C:\\Repos\\11.LevelUp-GameJam2024\\Level-Up-Game-Jam-2024\\Assets\\Scripts\\Personaje\\Personaje.cs",
               "RelativeToolTip": "Assets\\Scripts\\Personaje\\Personaje.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

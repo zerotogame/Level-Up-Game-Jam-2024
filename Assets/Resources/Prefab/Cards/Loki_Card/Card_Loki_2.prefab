@@ -218,4 +218,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageComponent: {fileID: 2276869944980965969}
   image1: {fileID: 21300000, guid: 8621fa7dc24a980438949a6cf6ce689c, type: 3}
-  image2: {fileID: 21300000, guid: d732bf7b41adc5840b3102f050e2bf12, type: 3}
+  image2: {fileID: 21300000, guid: e57d4dc6bdd388d4ea3b891a3cd79e67, type: 3}

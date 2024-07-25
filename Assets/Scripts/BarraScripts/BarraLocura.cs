@@ -118,7 +118,7 @@ public class BarraLocura : MonoBehaviour
             levelAudio.DetenerAmbience();
             levelAudio.NotificarCambioAudio(100);
             levelAudio.NotificarEstadoJuego("Ganar");
-            Time.timeScale = 0f;
+            Invoke(nameof(VicDefeatWait), 3f);
         }
     }
     public void CondicionDeDerrota()
@@ -132,7 +132,7 @@ public class BarraLocura : MonoBehaviour
     public void SetDerrrotaPanel()
     {
         defeatPanel.SetActive(true);
-        Time.timeScale = 0f;
+        Invoke(nameof(VicDefeatWait), 3f);
     }
 
     // -------PERONAJES BOTONES--------------
@@ -232,5 +232,10 @@ public class BarraLocura : MonoBehaviour
             if (GameContStat.velocidadPersonajesVeles <= 1f)
                 GameContStat.velocidadPersonajesVeles = 1f;
         }
+    }
+
+    private void VicDefeatWait() 
+    {
+        Time.timeScale = 0f;
     }
 }

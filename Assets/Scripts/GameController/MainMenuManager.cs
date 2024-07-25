@@ -9,6 +9,12 @@ public class MainMenuManager : MonoBehaviour
     public GameObject mainBttnPanel, modosBttnPanel;
     public GameObject tutOnBttn, tutOffBttn;
     public GameObject infoCartasOnBttn, infoCartasOffBttn;
+    public GameObject aciveButtons, deactiveButtons;
+
+    private void Start()
+    {
+        ActiveButtonsModes();
+    }
 
     private void Update()
     {
@@ -34,33 +40,40 @@ public class MainMenuManager : MonoBehaviour
         modosBttnPanel.SetActive(false);
     }
 
+    private void ActiveButtonsModes() 
+    {
+        if (GameContStat.introPlayed)
+        {
+            deactiveButtons.SetActive(false);
+            aciveButtons.SetActive(true);
+        }
+    }
+
     public void FacilBttn() 
     {
         GameContStat.modoDeJuego = 1;
-        TutorialBoton();
+        SceneManager.LoadScene("Game");
     }
     public void NormalBttn()
     {
         GameContStat.modoDeJuego = 2;
-        TutorialBoton();
+        SceneManager.LoadScene("Game");
     }
     public void DificilBttn()
     {
         GameContStat.modoDeJuego = 3;
-        TutorialBoton();
+        SceneManager.LoadScene("Game");
     }
 
     public void TutorialBoton() 
     {
-        if(GameContStat.isTutorialOn)
-            SceneManager.LoadScene("TutorialScene");
-        else
-            SceneManager.LoadScene("Game");
+        GameContStat.modoDeJuego = 1;
+        SceneManager.LoadScene("TutorialScene");
     }
 
     public void CargarIntro()
     {
-            SceneManager.LoadScene("Introduction");
+        SceneManager.LoadScene("Introduction");
     }
 
     public void SalirBoton()

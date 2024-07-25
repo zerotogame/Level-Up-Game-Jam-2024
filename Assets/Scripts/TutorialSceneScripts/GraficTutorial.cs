@@ -25,5 +25,6 @@ public class GraficTutorial : MonoBehaviour
     public void Cont4Bttn()
     {
         SceneManager.LoadScene("Game");
+        GameContStat.introPlayed = true;
     }
 }
