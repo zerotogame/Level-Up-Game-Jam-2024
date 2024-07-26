@@ -10,15 +10,16 @@ public enum TypeEffect
 
 public class NotificationEffect : MonoBehaviour
 {
+    public Transform trans;
     public GameObject notificationPrefab; // Prefab que contiene TextMeshProUGUI y el script NotificationEffect
     public float tiempoVida = 3f; // Tiempo de vida del mensaje
     public float desplazamientoY = 30f; // Cantidad de desplazamiento en el eje Y
-    public RectTransform canvasRectTransform; // Referencia al RectTransform del Canvas
+    //public RectTransform canvasRectTransform; // Referencia al RectTransform del Canvas
 
     void Start()
     {
         // Obtener el RectTransform del Canvas
-        if (canvasRectTransform == null)
+        /*if (canvasRectTransform == null)
         {
             canvasRectTransform = GetComponent<RectTransform>();
         }
@@ -26,7 +27,7 @@ public class NotificationEffect : MonoBehaviour
         if (notificationPrefab == null)
         {
             Debug.LogError("El prefab de Notification no está asignado en Start.");
-        }
+        }*/
     }
 
     public void MostrarMensaje(TypeEffect tipo, string mensaje)
@@ -38,7 +39,7 @@ public class NotificationEffect : MonoBehaviour
         }
 
         // Crear un nuevo GameObject temporal para el mensaje
-        GameObject nuevoObjeto = Instantiate(notificationPrefab, canvasRectTransform);
+        GameObject nuevoObjeto = Instantiate(notificationPrefab, trans);
         TextMeshProUGUI nuevoTexto = nuevoObjeto.GetComponent<TextMeshProUGUI>();
 
         if (nuevoTexto == null)

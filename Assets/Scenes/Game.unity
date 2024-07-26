@@ -17143,6 +17143,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7719392853599410486, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
+      propertyPath: trans
+      value: 
+      objectReference: {fileID: 778037286}
+    - target: {fileID: 7719392853599410486, guid: b1013069c84b51f4eaf04dd4af390edc, type: 3}
       propertyPath: parentTransform
       value: 
       objectReference: {fileID: 1949342649}
