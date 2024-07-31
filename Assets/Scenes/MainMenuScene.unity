@@ -3372,6 +3372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OpcionesPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4376209280590420859, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
+      propertyPath: volumeType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4394268082833050134, guid: fb1d0a4b73612f94a9c3c0ee69d4e282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
